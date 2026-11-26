@@ -3,20 +3,20 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="description" content="Comandas, telas da churrasqueira e da cozinha, delivery e faturamento.">
+<meta name="description" content="Comandas, churrasqueira, cozinha e delivery do Brasa Spetus.">
 <meta name="theme-color" content="#F1F3F7" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#0E121A" media="(prefers-color-scheme: dark)">
-<link rel="manifest" href="manifest.webmanifest">
-<link rel="icon" type="image/png" href="icon-192.png">
-<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="manifest.webmanifest?v=a448a9be">
+<link rel="icon" type="image/png" href="icon-192.png?v=a448a9be">
+<link rel="apple-touch-icon" href="apple-touch-icon.png?v=a448a9be">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-title" content="Salão PDV">
+<meta name="apple-mobile-web-app-title" content="Brasa Spetus">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <style>:root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0;font:14px/1.4 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}img{max-width:100%}[hidden]{display:none!important}</style>
 </head>
 <body>
-<title>Salão PDV</title>
+<title>Brasa Spetus</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
 <style>
@@ -62,6 +62,15 @@
   --shadow:0 1px 2px rgba(0,0,0,.4),0 6px 18px rgba(0,0,0,.35);
   color-scheme:dark;
 }
+/* temas que o gerente escolhe em Gerência › Ajustes › Tema (Clássico é o de cima) */
+:root[data-skin="brasa"]{--bg:#F7F2EC; --surface:#FFFDFA; --surface-2:#EFE6DC; --ink:#1F1712; --muted:#6B5D53; --line:#E4D8CB; --accent:#C2410C; --on-accent:#FFFFFF; --occ:#FCE7D8; --floor:#ECE3D8; --grid:rgba(60,30,10,.06); --wall:#B8A390; --wall-top:#D6C6B4; --chair:#CBB8A4; --zone:#E4D7C9; --zone-side:#BFAA95; --paper:#FFFAF2; --toast-act:#FFB27A; --bar:#C2410C; --av1:#FCE7D8; --av1f:#C2410C; --snow:#C9D6E3;}
+:root[data-skin="natal"]{--bg:#F4F2EC; --surface:#FFFFFF; --surface-2:#E8E5DC; --ink:#15201A; --muted:#58665E; --line:#D9D4C8; --accent:#B3261E; --on-accent:#FFFFFF; --occ:#F8DEDA; --floor:#E6EBE4; --grid:rgba(10,40,20,.055); --wall:#A7B4AA; --wall-top:#C8D2CA; --chair:#B9C5BC; --zone:#D7DED8; --zone-side:#AEBBB1; --paper:#FFFDF7; --toast-act:#FFB4AB; --bar:#1F7A3E; --av1:#F8DEDA; --av1f:#B3261E; --snow:#BFD0E0;}
+@media (prefers-color-scheme:dark){
+  :root[data-skin="brasa"]:not([data-theme="light"]){--bg:#15100D; --surface:#1F1814; --surface-2:#2A211B; --ink:#F4EAE2; --muted:#B4A295; --line:#3B2F27; --accent:#FF8A4C; --on-accent:#2A1206; --occ:#3B2417; --floor:#1E1712; --grid:rgba(255,255,255,.04); --wall:#3D3028; --wall-top:#54443A; --chair:#4B3B31; --zone:#2E241D; --zone-side:#120D0A; --paper:#221A15; --toast-act:#C2410C; --bar:#FF8A4C; --av1:#3B2417; --av1f:#FFB27A; --snow:#FFFFFF;}
+  :root[data-skin="natal"]:not([data-theme="light"]){--bg:#0F1512; --surface:#17201B; --surface-2:#202B25; --ink:#EAF1EC; --muted:#9AAAA1; --line:#2B3731; --accent:#FF6B5E; --on-accent:#2B0604; --occ:#3A1C19; --floor:#16201B; --grid:rgba(255,255,255,.045); --wall:#2C3A32; --wall-top:#3E4E45; --chair:#3A4A41; --zone:#22302A; --zone-side:#0C110E; --paper:#18211C; --toast-act:#B3261E; --bar:#4ADE80; --av1:#3A1C19; --av1f:#FF9A92; --snow:#FFFFFF;}
+}
+:root[data-skin="brasa"][data-theme="dark"]{--bg:#15100D; --surface:#1F1814; --surface-2:#2A211B; --ink:#F4EAE2; --muted:#B4A295; --line:#3B2F27; --accent:#FF8A4C; --on-accent:#2A1206; --occ:#3B2417; --floor:#1E1712; --grid:rgba(255,255,255,.04); --wall:#3D3028; --wall-top:#54443A; --chair:#4B3B31; --zone:#2E241D; --zone-side:#120D0A; --paper:#221A15; --toast-act:#C2410C; --bar:#FF8A4C; --av1:#3B2417; --av1f:#FFB27A; --snow:#FFFFFF;}
+:root[data-skin="natal"][data-theme="dark"]{--bg:#0F1512; --surface:#17201B; --surface-2:#202B25; --ink:#EAF1EC; --muted:#9AAAA1; --line:#2B3731; --accent:#FF6B5E; --on-accent:#2B0604; --occ:#3A1C19; --floor:#16201B; --grid:rgba(255,255,255,.045); --wall:#2C3A32; --wall-top:#3E4E45; --chair:#3A4A41; --zone:#22302A; --zone-side:#0C110E; --paper:#18211C; --toast-act:#B3261E; --bar:#4ADE80; --av1:#3A1C19; --av1f:#FF9A92; --snow:#FFFFFF;}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);font:400 15px/1.4 var(--f-body);padding-block:0;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));-webkit-tap-highlight-color:transparent}
 body.lock{overflow:hidden}
@@ -620,6 +629,25 @@ textarea.inp{padding:10px 12px;font:400 13px/1.5 var(--f-mono)}
 #toast{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(var(--lift) + env(safe-area-inset-bottom,0px));z-index:60;display:grid;gap:8px;width:min(480px,calc(100% - 32px));pointer-events:none}
 .t{pointer-events:auto;display:flex;align-items:center;justify-content:space-between;gap:12px;background:var(--ink);color:var(--bg);padding:12px 14px;border-radius:12px;font-weight:500;box-shadow:var(--shadow)}
 .t button{border:0;background:transparent;color:var(--toast-act);font-weight:700;min-height:36px;padding:0 4px}
+/* enfeites dos temas: só decoração, nunca atrapalham o toque */
+:root[data-skin="brasa"] .top::after{content:"";position:absolute;left:calc(-1 * max(16px,env(safe-area-inset-left,0px)));right:calc(-1 * max(16px,env(safe-area-inset-right,0px)));bottom:0;height:2px;background:linear-gradient(90deg,transparent,#FFB347 18%,#FF6A1A 50%,#E8380D 82%,transparent);pointer-events:none}
+:root[data-skin="brasa"] .login::before{content:"";position:fixed;left:0;right:0;bottom:0;height:55vh;pointer-events:none;z-index:-1;background:radial-gradient(70% 90% at 50% 115%,rgba(255,106,26,.26),rgba(255,106,26,0) 70%)}
+:root[data-skin="brasa"] .login::after{content:"";position:fixed;left:0;right:0;bottom:0;height:60vh;pointer-events:none;z-index:-1;opacity:.85;background-image:radial-gradient(2px 2px at 12% 70%,#FF8A3D 50%,transparent 51%),radial-gradient(1.6px 1.6px at 34% 85%,#FFB347 50%,transparent 51%),radial-gradient(2.2px 2.2px at 58% 62%,#FF6A1A 50%,transparent 51%),radial-gradient(1.6px 1.6px at 80% 78%,#FFB347 50%,transparent 51%),radial-gradient(2px 2px at 92% 66%,#FF8A3D 50%,transparent 51%),radial-gradient(1.4px 1.4px at 46% 94%,#FFD27A 50%,transparent 51%);background-size:100% 30vh;animation:fx-sparks 7s linear infinite}
+@keyframes fx-sparks{from{background-position:0 0}to{background-position:0 -30vh}}
+:root[data-skin="natal"] .top::after,:root[data-skin="natal"] .top::before{content:"";position:absolute;left:calc(-1 * max(16px,env(safe-area-inset-left,0px)));right:calc(-1 * max(16px,env(safe-area-inset-right,0px)));bottom:-12px;height:16px;pointer-events:none;background-repeat:repeat-x;background-size:56px 16px}
+:root[data-skin="natal"] .top::after{background-image:url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='56' height='16'><path d='M0 3Q14 10 28 3Q42 10 56 3' fill='none' stroke='%23395E45' stroke-width='1.3'/><circle cx='7' cy='9.8' r='5' fill='%23E53935' opacity='.22'/><rect x='5.6' y='4.8' width='2.8' height='2.4' rx='.6' fill='%23395E45'/><ellipse cx='7' cy='9.8' rx='2.5' ry='3.3' fill='%23E53935'/><circle cx='35' cy='9.8' r='5' fill='%2343A047' opacity='.22'/><rect x='33.6' y='4.8' width='2.8' height='2.4' rx='.6' fill='%23395E45'/><ellipse cx='35' cy='9.8' rx='2.5' ry='3.3' fill='%2343A047'/></svg>");animation:fx-blink 1.4s steps(1) infinite}
+:root[data-skin="natal"] .top::before{background-image:url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='56' height='16'><circle cx='21' cy='9.8' r='5' fill='%23F4C430' opacity='.22'/><rect x='19.6' y='4.8' width='2.8' height='2.4' rx='.6' fill='%23395E45'/><ellipse cx='21' cy='9.8' rx='2.5' ry='3.3' fill='%23F4C430'/><circle cx='49' cy='9.8' r='5' fill='%2342A5F5' opacity='.22'/><rect x='47.6' y='4.8' width='2.8' height='2.4' rx='.6' fill='%23395E45'/><ellipse cx='49' cy='9.8' rx='2.5' ry='3.3' fill='%2342A5F5'/></svg>");animation:fx-blink 1.4s steps(1) .7s infinite}
+@keyframes fx-blink{0%{opacity:1}50%{opacity:.35}}
+:root[data-skin="natal"] .login::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;background-image:radial-gradient(3px 3px at 8% 12%,var(--snow,#C9D6E3) 50%,transparent 52%),radial-gradient(2px 2px at 22% 64%,var(--snow,#C9D6E3) 50%,transparent 52%),radial-gradient(3.4px 3.4px at 37% 30%,var(--snow,#C9D6E3) 50%,transparent 52%),radial-gradient(2.2px 2.2px at 51% 82%,var(--snow,#C9D6E3) 50%,transparent 52%),radial-gradient(3px 3px at 66% 18%,var(--snow,#C9D6E3) 50%,transparent 52%),radial-gradient(2px 2px at 79% 55%,var(--snow,#C9D6E3) 50%,transparent 52%),radial-gradient(3.2px 3.2px at 91% 36%,var(--snow,#C9D6E3) 50%,transparent 52%),radial-gradient(2.4px 2.4px at 15% 92%,var(--snow,#C9D6E3) 50%,transparent 52%),radial-gradient(2px 2px at 45% 6%,var(--snow,#C9D6E3) 50%,transparent 52%),radial-gradient(2.8px 2.8px at 72% 74%,var(--snow,#C9D6E3) 50%,transparent 52%);background-size:100% 40vh;animation:fx-snow 12s linear infinite}
+@keyframes fx-snow{from{background-position:0 0}to{background-position:0 40vh}}
+.skins{display:grid;gap:8px;margin-top:10px}
+.skin{display:flex;align-items:center;gap:12px;width:100%;padding:10px;border-radius:14px;border:1px solid var(--line);background:var(--surface);color:var(--ink);text-align:left;cursor:pointer}
+.skin[aria-pressed="true"]{border-color:var(--accent);box-shadow:inset 0 0 0 2px var(--accent)}
+.skin svg{flex:none;width:72px;height:54px;border-radius:10px;border:1px solid var(--line)}
+.skin span{min-width:0}.skin b{display:block;font-weight:700}.skin small{display:block;margin-top:2px;color:var(--muted);font-size:13px;line-height:1.35}
+.thpick{position:relative;flex:none;display:inline-grid;cursor:pointer;border-radius:11px}
+.thpick .cam{position:absolute;right:-5px;bottom:-5px;display:grid;place-items:center;width:22px;height:22px;border-radius:50%;background:var(--accent);color:var(--on-accent);border:2px solid var(--surface)}
+.thpick .cam svg{width:12px;height:12px}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important;scroll-behavior:auto!important}}
 @media print{
   @page{margin:3mm}
@@ -750,6 +778,7 @@ const ICON={
   out:SVG('<path d="M14 4h4a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-4"/><path d="M9 16l-4-4 4-4"/><path d="M5 12h11"/>',16),
   pen:SVG('<path d="M4 20h4L19 9l-4-4L4 16z"/><path d="M13.5 6.5l4 4"/>',17),
   down:SVG('<path d="M12 4v11"/><path d="M7 10l5 5 5-5"/><path d="M5 20h14"/>',18),
+  cam:SVG('<path d="M4 8.5h3.2L9 6h6l1.8 2.5H20V19H4z"/><circle cx="12" cy="13.2" r="3.4"/>',14),
   bksp:SVG('<path d="M21 5H9l-6 7 6 7h12z"/><path d="M17.5 9.5l-5 5M12.5 9.5l5 5"/>',26)
 };
 const plural=(n,a,b)=>n+' '+(n===1?a:b);
@@ -804,6 +833,74 @@ function thumb(m,cls){
   if(m&&okImg(m.img))return '<span class="'+c+'"><img src="'+m.img+'" alt=""></span>';
   return '<span class="'+c+'" aria-hidden="true"><svg viewBox="0 0 64 64">'+IC[iconKey(m)]+'</svg></span>';
 }
+/* ---------- temas: animações dos botões (fogo no carvão, moto, trenó, brilho) ---------- */
+const SKINS={classico:'Clássico',brasa:'Espetaria',natal:'Natal'};
+const okSkin=s=>Object.prototype.hasOwnProperty.call(SKINS,s)?s:'classico';
+const FX_OF={brasa:{ok:'fogo',saiu:'moto'},natal:{ok:'brilho',saiu:'treno'}};
+const fxKind=(skin,act)=>(FX_OF[skin]||{})[act]||'';
+const fxRnd=(a,b)=>a+Math.random()*(b-a);
+let fxN=0;
+function fxEl(box,css,html){const d=document.createElement('div');d.style.cssText='position:absolute;'+css;if(html)d.innerHTML=html;box.appendChild(d);return d}
+const FX_FLAME='M12 3c1 3.5 5 5.5 5 10a5 5 0 0 1-10 0c0-2.2 1-3.6 2.2-4.8.3 1.6 1 2.6 2 3.1C11 9 11 6 12 3z';
+function fxFlame(w,h,c1,c2){const id='fxg'+(++fxN);return '<svg width="'+w.toFixed(1)+'" height="'+h.toFixed(1)+'" viewBox="6.4 2.4 11.2 16.2" preserveAspectRatio="none" style="display:block"><defs><linearGradient id="'+id+'" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="'+c1+'"/><stop offset="1" stop-color="'+c2+'"/></linearGradient></defs><path fill="url(#'+id+')" d="'+FX_FLAME+'"/></svg>'}
+const FX_STAR='<svg viewBox="0 0 10 10" width="100%" height="100%" style="display:block"><path fill="currentColor" d="M5 0l1.2 3.8L10 5 6.2 6.2 5 10 3.8 6.2 0 5l3.8-1.2z"/></svg>';
+const FX_MOTO='<svg viewBox="0 0 64 40" width="100%" height="100%" style="display:block;overflow:visible;filter:drop-shadow(0 0 1.4px #fff) drop-shadow(0 1px 1.5px rgba(0,0,0,.35))"><g stroke="#9AA3AF" stroke-width="2" stroke-linecap="round" opacity=".8"><path d="M1 15h8M3 22h9M1 29h7"/></g><circle cx="9.5" cy="34" r="2.6" fill="#CBBFB4" opacity=".75"/><circle cx="5" cy="31" r="1.8" fill="#CBBFB4" opacity=".55"/><rect x="14" y="9" width="15" height="12" rx="2.2" fill="#FFB020" stroke="#B86E00" stroke-width="1.2"/><path d="M21.5 11.6c.5 1.6 2.3 2.5 2.3 4.6a2.3 2.3 0 0 1-4.6 0c0-1 .5-1.7 1-2.2.2.7.5 1.2.9 1.4-.1-1.3-.1-2.7.4-3.8z" fill="#E8380D"/><path d="M15 28c0-5.6 4.8-7.6 10-7.6h8l3.4 6.8H18.6z" fill="#E8590C"/><rect x="27" y="26" width="17" height="4" rx="2" fill="#3A3F47"/><path d="M43 28l4.2-15.4h3.2L52 28z" fill="#E8590C"/><path d="M47.6 12.6l-3.4-3.2" stroke="#2F3542" stroke-width="2.2" stroke-linecap="round"/><circle cx="51.2" cy="15.2" r="1.7" fill="#FFE08A"/><path d="M30.5 21c0-6.4 3-9.6 6.8-9.6 3 0 4.2 2.6 3.4 5.4l-1.8 4.2z" fill="#2F3542"/><path d="M39 13.6l6.4-2.6" stroke="#2F3542" stroke-width="3" stroke-linecap="round"/><path d="M35.6 21l5.4 5.6" stroke="#2F3542" stroke-width="3.2" stroke-linecap="round"/><circle cx="39.4" cy="7.2" r="4.6" fill="#E8590C"/><path d="M40.6 5.4h3.6a4.6 4.6 0 0 1-1 3.8h-2.6z" fill="#1F2329"/><circle cx="21" cy="31" r="6.6" fill="#1F2329"/><circle cx="21" cy="31" r="2.4" fill="#C9CED6"/><circle cx="52" cy="31" r="6.6" fill="#1F2329"/><circle cx="52" cy="31" r="2.4" fill="#C9CED6"/></svg>';
+const FX_TRENO='<svg viewBox="0 0 70 40" width="100%" height="100%" style="display:block;overflow:visible;filter:drop-shadow(0 0 1.4px #fff) drop-shadow(0 1px 1.5px rgba(0,0,0,.3))"><rect x="24" y="7" width="11" height="11" rx="1.4" fill="#2E7D32"/><path d="M29.5 7v11M24 12.5h11" stroke="#F4D03F" stroke-width="2"/><rect x="35.5" y="10.5" width="9" height="7.5" rx="1.2" fill="#F4D03F"/><path d="M40 10.5v7.5M35.5 14.2h9" stroke="#C62828" stroke-width="1.8"/><path d="M27 7c-1.6-2.6 1-3.8 2.5 0 1.5-3.8 4.1-2.6 2.5 0" fill="none" stroke="#F4D03F" stroke-width="1.4"/><path d="M16 17.5c0-3.4 2.6-5 5-3.4l2.6 3.4h26.6c3.6 0 5.4 2.6 4.4 5.8l-1 3.4H21.4c-3.4 0-5.4-3.6-5.4-9.2z" fill="#C62828"/><path d="M23.6 21h29" stroke="#F4D03F" stroke-width="1.6" stroke-linecap="round"/><path d="M14 32.5h40.5c4.8 0 7.2-2.2 6.4-6" fill="none" stroke="#D4A017" stroke-width="2.6" stroke-linecap="round"/><path d="M26 26.6v5.9M47 26.6v5.9" stroke="#D4A017" stroke-width="2.2"/></svg>';
+const FXF={
+  fogo(box,W,H){
+    const D=1400;
+    fxEl(box,'inset:0;background:linear-gradient(to top,rgba(58,16,4,.94),rgba(140,38,8,.62) 55%,rgba(255,110,30,.12))').animate([{opacity:0},{opacity:1,offset:.22},{opacity:1,offset:.72},{opacity:0}],{duration:D,easing:'ease-out',fill:'both'});
+    const n=Math.max(5,Math.round(W/30)),cw=W/n;let coals='';
+    for(let i=0;i<n;i++){const x=i*cw+fxRnd(1,4),w=cw-fxRnd(3,7),h=fxRnd(8,12);coals+='<rect x="'+x.toFixed(1)+'" y="'+(16-h).toFixed(1)+'" width="'+w.toFixed(1)+'" height="'+h.toFixed(1)+'" rx="4" fill="#2A1009"/><rect x="'+(x+3).toFixed(1)+'" y="'+(17.5-h).toFixed(1)+'" width="'+Math.max(4,w-8).toFixed(1)+'" height="2.4" rx="1.2" fill="#FF7A2A"/>'}
+    fxEl(box,'left:0;right:0;bottom:-2px;height:16px','<svg width="'+W.toFixed(0)+'" height="16" style="display:block">'+coals+'</svg>').animate([{opacity:0,transform:'translateY(6px)'},{opacity:1,transform:'none',offset:.2},{opacity:1,offset:.75},{opacity:0}],{duration:D,easing:'ease-out',fill:'both'});
+    const k=Math.max(4,Math.round(W/44));
+    for(let i=0;i<k;i++){
+      const h=Math.min(H,64)*fxRnd(.78,1.15),w=h*.62,x=W*(i+.5)/k+fxRnd(-8,8);
+      const f=fxEl(box,'left:'+(x-w/2).toFixed(1)+'px;bottom:4px;width:'+w.toFixed(1)+'px;height:'+h.toFixed(1)+'px;transform-origin:50% 100%',fxFlame(w,h,'#FFD84D','#FF5A14'));
+      fxEl(f,'left:'+(w*.22).toFixed(1)+'px;bottom:0',fxFlame(w*.56,h*.55,'#FFF6C8','#FFB23D'));
+      f.animate([{transform:'scale(.25,.05)',opacity:0},{transform:'scale(1,1)',opacity:1,offset:.3},{transform:'scale(.92,.84)',offset:.45},{transform:'scale(1.04,1.1)',offset:.6},{transform:'scale(.96,.9)',opacity:1,offset:.76},{transform:'scale(.5,.25)',opacity:0}],{duration:D-200,delay:fxRnd(0,180),easing:'ease-in-out',fill:'both'});
+    }
+    for(let i=0;i<9;i++){
+      fxEl(box,'left:'+fxRnd(6,W-6).toFixed(1)+'px;bottom:8px;width:3px;height:3px;border-radius:50%;background:#FFD27A;box-shadow:0 0 4px #FF8A3D').animate([{transform:'translate(0,0)',opacity:0},{opacity:1,offset:.2},{transform:'translate('+fxRnd(-14,14).toFixed(1)+'px,'+(-Math.min(H,64)*fxRnd(.9,1.4)).toFixed(1)+'px)',opacity:0}],{duration:fxRnd(700,1100),delay:fxRnd(150,500),easing:'ease-out',fill:'both'});
+    }
+    return D;
+  },
+  moto(box,W,H){
+    const D=1250,h=Math.min(H-6,46),w=h*1.6;
+    const m=fxEl(box,'left:0;top:'+((H-h)/2).toFixed(1)+'px;width:'+w.toFixed(1)+'px;height:'+h.toFixed(1)+'px',FX_MOTO);
+    m.animate([{transform:'translateX('+(-w-12).toFixed(0)+'px)'},{transform:'translateX('+(W+12).toFixed(0)+'px)'}],{duration:D,easing:'cubic-bezier(.4,.1,.6,.9)',fill:'both'});
+    m.firstChild.animate([{transform:'translateY(0)'},{transform:'translateY(-1.6px)'},{transform:'translateY(0)'}],{duration:160,iterations:8});
+    return D;
+  },
+  treno(box,W,H){
+    const D=1400,h=Math.min(H-4,46),w=h*1.75;
+    const m=fxEl(box,'left:0;top:'+((H-h)/2).toFixed(1)+'px;width:'+w.toFixed(1)+'px;height:'+h.toFixed(1)+'px',FX_TRENO);
+    m.animate([{transform:'translate('+(-w-12).toFixed(0)+'px,5px)'},{transform:'translate('+((W-w)/2).toFixed(0)+'px,-4px)',offset:.5},{transform:'translate('+(W+12).toFixed(0)+'px,3px)'}],{duration:D,easing:'ease-in-out',fill:'both'});
+    for(let i=0;i<10;i++){const t=i/10;fxEl(box,'left:'+(t*W).toFixed(1)+'px;top:'+(H/2+fxRnd(-8,10)).toFixed(1)+'px;width:7px;height:7px;color:#F4D03F',FX_STAR).animate([{opacity:0,transform:'scale(.2)'},{opacity:1,transform:'scale(1)',offset:.3},{opacity:0,transform:'scale(.4) rotate(90deg)'}],{duration:700,delay:D*t*.9+120,fill:'both'})}
+    return D;
+  },
+  brilho(box,W,H){
+    const D=1000,cols=['#FFFFFF','#F4D03F','#E53935','#43A047'];
+    fxEl(box,'inset:0;background:radial-gradient(closest-side,rgba(255,255,255,.75),rgba(255,255,255,0))').animate([{opacity:0,transform:'scale(.6)'},{opacity:1,transform:'scale(1)',offset:.25},{opacity:0,transform:'scale(1.3)'}],{duration:700,easing:'ease-out',fill:'both'});
+    for(let i=0;i<16;i++){const a=i/16*Math.PI*2+fxRnd(-.2,.2),d=fxRnd(.35,.6)*Math.max(W/2,H),sz=fxRnd(7,12);
+      fxEl(box,'left:'+(W/2-sz/2).toFixed(1)+'px;top:'+(H/2-sz/2).toFixed(1)+'px;width:'+sz.toFixed(1)+'px;height:'+sz.toFixed(1)+'px;color:'+cols[i%4],FX_STAR).animate([{transform:'translate(0,0) scale(.3)',opacity:0},{opacity:1,offset:.2},{transform:'translate('+(Math.cos(a)*d).toFixed(1)+'px,'+(Math.sin(a)*d*.5).toFixed(1)+'px) scale(1) rotate(120deg)',opacity:0}],{duration:fxRnd(700,D),easing:'cubic-bezier(.2,.7,.3,1)',fill:'both'})}
+    return D;
+  }
+};
+/* toca a animação por cima do lugar do botão (camada própria: a tela pode se redesenhar por baixo sem cortar) */
+function playFx(kind,r,radius){
+  try{
+    if(!kind||!FXF[kind]||!r||r.width<24||r.height<16||typeof document.body.animate!=='function')return 0;
+    if(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches)return 0;
+    const box=document.createElement('div');box.className='fxbox';box.setAttribute('aria-hidden','true');
+    box.style.cssText='position:fixed;left:'+r.left+'px;top:'+r.top+'px;width:'+r.width+'px;height:'+r.height+'px;border-radius:'+(radius||'14px')+';overflow:hidden;pointer-events:none;z-index:9999';
+    document.body.appendChild(box);
+    const d=FXF[kind](box,r.width,r.height)||1000;
+    setTimeout(()=>box.remove(),d+300);
+    return d;
+  }catch(e){return 0}
+}
+const fxSnap=el=>el&&el.getBoundingClientRect?{r:el.getBoundingClientRect(),rad:getComputedStyle(el).borderRadius}:null;
 const thumbFor=(i,cls)=>{const m=state.menu[i.item];return thumb(m?Object.assign({id:i.item},m):{name:i.name,cat:i.cat},cls)};
 const shortName=n=>String(n||'').replace(/^espetinho de\s+/i,'').replace(/^espeto de\s+/i,'');
 
@@ -823,6 +920,8 @@ const ui={view:'boot',table:null,pane:'add',cat:'esp',mapView:['3d','plan','list
 const me={owner:false,write:true};
 const backend={mode:'boot',db:null,user:null,localOk:true};
 const IS_ARTIFACT=!!(window.claude&&typeof window.claude.use==='function');
+/* nome do app nas telas de entrada (o build do app instalado troca pelo que está em marca.json) */
+const MARCA={"nome": "Brasa Spetus", "rotulo": "Comandas"};
 const isCloud=()=>backend.mode==='cloud'||backend.mode==='fire';
 const sync={state:'ok'};
 let local={menu:{},orders:{},tables:{},staff:{},sales:{},voids:{},config:{},layout:{},stock:{},stocklog:{}};
@@ -1108,6 +1207,7 @@ function sendMesa(t){
   logStock('l'+oid,items,1);
   ui.drafts[k]={};saveDrafts();ui.pane='bill';ui.noteFor=null;
   toast(none?'Lançado na conta da mesa '+t+'.':'Enviado para '+sentToText(st)+'.');
+  return true;
 }
 function toggleBill(t){
   const id='t'+t,tb=state.tables[id];
@@ -1205,7 +1305,8 @@ function dlvText(o){
   L.push('','Total: '+brl(tot)+(fee?' (entrega '+brl(fee)+')':''),'Pagamento: '+payText(d,tot));
   return L.join('\n').replace(/ /g,' ');
 }
-function sendDelivery(){
+function sendDelivery(btn){
+  if(ui.dBusy)return;
   const f=ui.dform,items=draftItems('dlv');
   f.err='';
   if(!items.length)f.err='Escolha os itens do pedido.';
@@ -1219,10 +1320,11 @@ function sendDelivery(){
     dlv:{nome:f.nome.trim().slice(0,60),fone:f.fone.trim().slice(0,30),end:f.end.trim().slice(0,140),ref:f.ref.trim().slice(0,100),obs:f.obs.trim().slice(0,100),fee:dFee(),pay:f.pay,troco:f.pay==='din'?parseMoney(f.troco):0,status:'preparo'}});
   logStock('l'+oid,items,1);
   put('config','main',Object.assign({},state.config,{dlvDay:today,dlvN:code}));
-  ui.drafts.dlv={};saveDrafts();
-  ui.dform={nome:'',fone:'',end:'',ref:'',obs:'',fee:'',pay:'',troco:'',err:''};
-  go('delivery');
-  toast('Delivery #'+code+(none?' registrado.':' enviado para '+sentToText(st)+'.'));
+  const msg='Delivery #'+code+(none?' registrado.':' enviado para '+sentToText(st)+'.');
+  const finish=()=>{ui.dBusy=false;ui.drafts.dlv={};saveDrafts();ui.dform={nome:'',fone:'',end:'',ref:'',obs:'',fee:'',pay:'',troco:'',err:''};go('delivery');toast(msg)};
+  const d=fxOn('ok',btn);
+  if(d){ui.dBusy=true;render(true);setTimeout(finish,Math.min(d,1000))}else finish();
+  return true;
 }
 function prepTimes(os){const p={};os.forEach(o=>{const sa=o.stAt||{};Object.keys(sa).forEach(s=>{const sec=Math.round((sa[s]-(o.at||0))/1000);if(sec>0&&sec<4*3600)(p[s]=p[s]||[]).push(sec)})});return p}
 function finishDelivery(id){
@@ -1255,11 +1357,11 @@ function banner(){
   if(!me.write)return IS_ARTIFACT?'<p class="note warn">Este aparelho só pode ver. Para lançar pedidos, a conta Claude dele precisa de acesso de edição (veja Gerência › Ajustes › Acesso).</p>':'<p class="note warn">Este aparelho está sem permissão para lançar pedidos.</p>';
   return '';
 }
-function viewLoading(){return '<div class="login"><div class="lhead"><p class="eyebrow">Salão PDV</p><h1 class="brand">'+esc(state.config.name)+'</h1></div><div class="empty" role="status">Carregando…</div></div>'}
+function viewLoading(){return '<div class="login"><div class="lhead"><p class="eyebrow">'+esc(MARCA.rotulo)+'</p><h1 class="brand">'+esc(state.config.name)+'</h1></div><div class="empty" role="status">Carregando…</div></div>'}
 
 function viewSetup(){
   const can=backend.mode==='local'||me.owner;
-  if(!can)return '<div class="login"><div class="lhead"><p class="eyebrow">Salão PDV</p><h1 class="brand">'+esc(state.config.name)+'</h1></div><div class="empty">'+(IS_ARTIFACT?'O gerente ainda não configurou o sistema. Ele precisa abrir este link na conta dele primeiro.':'O dono ainda não terminou a configuração. Peça para ele abrir o app no celular dele.')+'</div></div>';
+  if(!can)return '<div class="login"><div class="lhead"><p class="eyebrow">'+esc(MARCA.rotulo)+'</p><h1 class="brand">'+esc(state.config.name)+'</h1></div><div class="empty">'+(IS_ARTIFACT?'O gerente ainda não configurou o sistema. Ele precisa abrir este link na conta dele primeiro.':'O dono ainda não terminou a configuração. Peça para ele abrir o app no celular dele.')+'</div></div>';
   const f=ui.setup||{name:'',biz:null,err:''};
   return '<div class="login"><div class="lhead"><p class="eyebrow">Primeiro acesso</p><h1 class="brand">Vamos começar</h1><p class="lead">Dê o nome do seu comércio e crie o seu login de gerente. Os garçons você cadastra depois, em Gerência › Equipe.</p></div>'+
    '<form class="card setup" id="setupForm"><div class="fld"><label for="sBiz">Nome do comércio</label><input id="sBiz" class="inp" maxlength="40" autocomplete="organization" value="'+esc(f.biz==null?state.config.name:f.biz)+'"></div>'+
@@ -1278,7 +1380,7 @@ function viewLogin(){
   const gar=rest.filter(s=>s.role==='garcom'),ger=rest.filter(s=>s.role==='gerente'),noGar=!act.some(s=>s.role==='garcom');
   const top=last?'<button class="last" data-act="pick" data-id="'+esc(last.id)+'">'+avHtml(last)+'<span class="last-t"><small>Continuar como</small><b>'+esc(last.name)+'</b><small>'+(ROLES[last.role]||'')+'</small></span>'+ICON.next+'</button>':'';
   const scr=STATIONS.map(x=>'<button class="scrbtn" data-act="screen" data-st="'+x+'">'+(x==='churras'?ICON.flame:ICON.pot)+'<span>'+esc(stName(x))+'</span></button>').join('');
-  return '<div class="login"><div class="lhead"><p class="eyebrow">Salão PDV</p><h1 class="brand">'+esc(state.config.name)+'</h1><p class="lead">'+(last?'Bom trabalho! Toque no seu nome e digite o PIN.':'Quem vai usar este aparelho? Toque no seu nome e digite o PIN.')+'</p></div>'+(backend.mode==='local'?'<p class="note">Modo demonstração: os dados ficam só neste aparelho.</p>':'')+top+
+  return '<div class="login"><div class="lhead"><p class="eyebrow">'+esc(MARCA.rotulo)+'</p><h1 class="brand">'+esc(state.config.name)+'</h1><p class="lead">'+(last?'Bom trabalho! Toque no seu nome e digite o PIN.':'Quem vai usar este aparelho? Toque no seu nome e digite o PIN.')+'</p></div>'+(backend.mode==='local'?'<p class="note">Modo demonstração: os dados ficam só neste aparelho.</p>':'')+top+
    (gar.length?'<h2 class="h2">'+(last?'Outros garçons':'Garçons')+'</h2><div class="who2">'+gar.map(tile).join('')+'</div>':noGar?'<h2 class="h2">Garçons</h2><div class="card emptyg"><p><b>Nenhum garçom cadastrado ainda.</b></p><p class="hint">Entre como gerente e cadastre cada garçom em Gerência › Equipe › Cadastrar garçom, com nome e PIN. Depois o nome dele aparece aqui.</p></div>':'')+
    (ger.length?'<h2 class="h2">Gerência</h2><div class="who2">'+ger.map(tile).join('')+'</div>':'')+
    '<h2 class="h2">Aparelho da churrasqueira ou da cozinha?</h2><div class="scrrow">'+scr+'</div><p class="hint" style="margin-top:10px">Escolha uma vez e deixe o aparelho aberto nessa tela. Não precisa de PIN.</p>'+loginExtras()+'</div>';
@@ -1464,14 +1566,14 @@ function viewDNew(){
    '<div class="seg mseg" role="group" aria-label="Parte do pedido"><button data-act="pane" data-v="add" aria-pressed="'+(ui.pane==='add')+'">Itens'+(dq?'<b>'+dq+'</b>':'')+'</button><button data-act="pane" data-v="bill" aria-pressed="'+(ui.pane==='bill')+'">Cliente e resumo</button></div>'+
    '<div class="cols" data-pane="'+ui.pane+'"><section class="p-add" aria-label="Cardápio">'+pickerHtml(k)+'</section>'+
    '<section class="p-bill" aria-label="Cliente e resumo"><div class="paper"><h2><span>Cliente</span></h2>'+
-   fld('dfNome','nome','Nome',' maxlength="60"')+fld('dfFone','fone','Telefone ou WhatsApp',' type="tel" inputmode="tel" maxlength="30"')+fld('dfEnd','end','Endereço',' maxlength="140" placeholder="Rua, número, bairro"')+fld('dfRef','ref','Complemento ou referência',' maxlength="100"')+fld('dfObs','obs','Observação para a cozinha',' maxlength="100"')+
+   fld('dfNome','nome','Nome',' maxlength="60"')+fld('dfFone','fone','Telefone ou WhatsApp',' type="tel" inputmode="tel" maxlength="30"')+fld('dfEnd','end','Endereço',' maxlength="140" placeholder="Rua, número, complemento e bairro"')+fld('dfObs','obs','Observação para a cozinha',' maxlength="100"')+
    fld('dfFee','fee','Taxa de entrega (R$)',' inputmode="decimal" placeholder="'+esc(((state.config.deliveryFee||0)/100).toFixed(2).replace('.',','))+'"')+
    '<div class="fld"><span class="lb" id="lbDPay">Pagamento</span><div class="meth" role="group" aria-labelledby="lbDPay">'+DLV_METHODS.map(m=>'<button class="chip" data-act="dpay" data-id="'+m+'" aria-pressed="'+(f.pay===m)+'">'+methodName(m)+'</button>').join('')+'</div></div>'+
    (f.pay==='din'?fld('dfTroco','troco','Troco para (R$)',' inputmode="decimal" placeholder="Ex.: 100"'):'')+
    draftBlock(k,'Itens do pedido')+(dq?'':'<p class="emptyline">Escolha os itens em "Itens".</p>')+
    '<div class="tots"><div><span>Itens</span><span id="dSub">'+brl(sub)+'</span></div><div><span>Entrega</span><span id="dFee">'+brl(fee)+'</span></div><div class="big"><span>Total</span><span id="dTot">'+brl(sub+fee)+'</span></div></div>'+
    (f.err?'<p class="err" role="alert">'+esc(f.err)+'</p>':'')+'</div></section></div>'+
-   '<div class="dock"><div class="dock-in"><div class="tot"><b id="dTot2">'+brl(sub+fee)+'</b><span>'+plural(dq,'item','itens')+'</span></div><div class="acts"><button class="btn pri big" data-act="dsend"'+(me.write?'':' disabled')+'>Enviar para preparo</button></div></div></div>';
+   '<div class="dock"><div class="dock-in"><div class="tot"><b id="dTot2">'+brl(sub+fee)+'</b><span>'+plural(dq,'item','itens')+'</span></div><div class="acts"><button class="btn pri big" data-act="dsend"'+(me.write&&!ui.dBusy?'':' disabled')+'>'+(ui.dBusy?'Enviado!':'Enviar para preparo')+'</button></div></div></div>';
 }
 
 function viewGerencia(){
@@ -1588,20 +1690,26 @@ function gCardapio(){
     const its=all.filter(m=>m.cat===c.id);if(!its.length)return '';
     return '<h2 class="h2">'+c.name+'</h2><div class="card" style="padding-block:0">'+its.map(m=>{
       const on=m.on!==false,id=esc(m.id);
-      return '<div class="mrow'+(on?'':' off')+'">'+thumb(m,'s40')+'<button class="edit" data-act="itemedit" data-id="'+id+'"><b>'+esc(m.name)+'</b><span>'+brl(m.cents)+' · '+esc(stText(itemStations(m)))+'</span></button><label class="swl"><span>'+(on?'Tem':'Acabou')+'</span><span class="sw"><input type="checkbox" data-act="toggle" data-id="'+id+'" aria-label="'+esc(m.name)+' disponível"'+(on?' checked':'')+'><span></span></span></label></div>';
+      return '<div class="mrow'+(on?'':' off')+'"><label class="thpick" title="Trocar a foto">'+thumb(m,'s40')+'<span class="cam">'+ICON.cam+'</span><input type="file" accept="image/*" data-photo="'+id+'" aria-label="Trocar a foto de '+esc(m.name)+'" hidden></label><button class="edit" data-act="itemedit" data-id="'+id+'"><b>'+esc(m.name)+'</b><span>'+brl(m.cents)+' · '+esc(stText(itemStations(m)))+'</span></button><label class="swl"><span>'+(on?'Tem':'Acabou')+'</span><span class="sw"><input type="checkbox" data-act="toggle" data-id="'+id+'" aria-label="'+esc(m.name)+' disponível"'+(on?' checked':'')+'><span></span></span></label></div>';
     }).join('')+'</div>';
   }).join('');
   const ads=addsList();
   const adHtml='<h2 class="h2">Adicionais</h2><div class="card" style="padding-block:0">'+(ads.length?ads.map((a,i)=>'<div class="mrow"><button class="edit" data-act="addedit" data-i="'+i+'"><b>+ '+esc(a.name)+'</b><span>'+brl(a.cents)+' · '+esc(a.cats&&a.cats.length?a.cats.map(c=>catOf(c).name).join(', '):'todos os itens')+'</span></button></div>').join(''):'<p class="hint" style="padding:12px 0">Nenhum adicional.</p>')+'</div><div class="row"><button class="btn" data-act="addnew">Novo adicional</button></div><p class="hint">O garçom escolhe os adicionais em "Adicionais e obs." no pedido, e o valor entra na conta.</p>';
   return '<div class="row" style="margin:0"><button class="btn pri" data-act="itemnew">Novo item</button>'+(all.length?'':'<button class="btn" data-act="seed">Carregar exemplo</button>')+'</div>'+
    (all.length?'':'<div class="empty" style="margin-top:14px">Cardápio vazio. Cadastre os itens ou carregue o exemplo para editar.</div>')+secs+
-   (all.length?'<p class="hint" style="margin-top:12px">Toque num item para trocar nome, preço, imagem ou a tela para onde ele vai. Desligue a chave quando um item acabar: ele some para os garçons até você ligar de novo.</p>':'')+adHtml;
+   (all.length?'<p class="hint" style="margin-top:12px">Toque na foto para trocar a imagem do item: ela aparece para os garçons, nas telas e no site de pedidos. Toque no nome para trocar nome, preço ou a tela para onde ele vai. Desligue a chave quando um item acabar: ele some para os garçons até você ligar de novo.</p>':'')+adHtml;
 }
 function gEquipe(){
   const list=staffList().sort((a,b)=>a.role===b.role?String(a.name).localeCompare(String(b.name),'pt-BR'):(a.role==='gerente'?-1:1));
   return gDevices('pend')+'<div class="row" style="margin:'+(backend.mode==='fire'&&me.owner&&Object.keys(state.devices).some(k=>!state.devices[k].ok&&k!==backend.uid)?'16px':'0')+' 0 0"><button class="btn pri" data-act="staffnew">Cadastrar garçom</button></div>'+
    '<h2 class="h2">Quem entra com PIN</h2><p class="hint" style="margin:-2px 0 8px">Para entrar como garçom neste aparelho: toque em Sair, no alto da tela, e escolha o nome dele.</p><div class="card" style="padding-block:0">'+list.map(s=>'<div class="mrow'+(s.on===false?' off':'')+'"><span class="av">'+esc(initial(s.name))+'</span><button class="edit" data-act="staffedit" data-id="'+esc(s.id)+'"><b>'+esc(s.name)+(s.id===session.id?' (você)':'')+'</b><span>'+(ROLES[s.role]||'')+(s.on===false?' · desativado':'')+'</span></button></div>').join('')+'</div>'+
    '<h2 class="h2">Telas de preparo</h2><div class="card"><p class="hint" style="padding-top:10px">Churrasqueiro e cozinheiras não precisam de login. No aparelho de cada posto, escolha na entrada a tela <b>'+esc(stName('churras'))+'</b> ou <b>'+esc(stName('coz'))+'</b> e deixe aberta. Ela avisa com som quando chega pedido e não deixa a tela apagar.</p></div>'+gDevices('rest');
+}
+const SKIN_PREV={classico: '<svg viewBox="0 0 72 54" aria-hidden="true"><rect width="72" height="54" fill="#F1F3F7"/><rect x="7" y="8" width="32" height="5" rx="2.5" fill="#121826"/><rect x="7" y="18" width="58" height="14" rx="3.5" fill="#FFFFFF" stroke="#D3D9E4"/><rect x="7" y="37" width="58" height="10" rx="5" fill="#2952CC"/></svg>', brasa: '<svg viewBox="0 0 72 54" aria-hidden="true"><rect width="72" height="54" fill="#F7F2EC"/><rect x="7" y="8" width="32" height="5" rx="2.5" fill="#1F1712"/><rect x="0" y="15.5" width="72" height="1.4" fill="#FF6A1A"/><rect x="7" y="20" width="58" height="12" rx="3.5" fill="#FFFDFA" stroke="#E4D8CB"/><rect x="7" y="37" width="58" height="10" rx="5" fill="#C2410C"/><path transform="translate(30 36.2) scale(.62)" fill="#FFD84D" d="M12 3c1 3.5 5 5.5 5 10a5 5 0 0 1-10 0c0-2.2 1-3.6 2.2-4.8.3 1.6 1 2.6 2 3.1C11 9 11 6 12 3z"/></svg>', natal: '<svg viewBox="0 0 72 54" aria-hidden="true"><rect width="72" height="54" fill="#F4F2EC"/><path d="M0 3Q9 8 18 3Q27 8 36 3Q45 8 54 3Q63 8 72 3" fill="none" stroke="#395E45" stroke-width="1"/><circle cx="9" cy="7.6" r="2" fill="#E53935"/><circle cx="27" cy="7.6" r="2" fill="#F4C430"/><circle cx="45" cy="7.6" r="2" fill="#43A047"/><circle cx="63" cy="7.6" r="2" fill="#42A5F5"/><rect x="7" y="14" width="32" height="5" rx="2.5" fill="#15201A"/><rect x="7" y="23" width="58" height="10" rx="3.5" fill="#FFFFFF" stroke="#D9D4C8"/><rect x="7" y="38" width="58" height="10" rx="5" fill="#B3261E"/><path transform="translate(33 39.2) scale(.8)" fill="#FFFFFF" d="M5 0l1.2 3.8L10 5 6.2 6.2 5 10 3.8 6.2 0 5l3.8-1.2z"/></svg>'};
+const SKIN_DESC={classico: 'Limpo e azul, como está hoje.', brasa: 'Cores de brasa. Fogo no carvão ao enviar pedido e a moto passando no botão quando sai para entrega.', natal: 'Vermelho e verde com luzinhas. Brilho ao enviar pedido e o trenó passando quando sai para entrega.'};
+function skinCard(){
+  const cur=skinNow();
+  return '<h2 class="h2">Tema</h2><div class="card"><p class="hint" style="padding-top:10px">Muda as cores do app em todos os aparelhos e do site de pedidos. Dá para trocar quando quiser.</p><div class="skins" role="group" aria-label="Tema">'+Object.keys(SKINS).map(k=>'<button class="skin" data-act="skin" data-v="'+k+'" aria-pressed="'+(cur===k)+'">'+SKIN_PREV[k]+'<span><b>'+SKINS[k]+'</b><small>'+SKIN_DESC[k]+'</small></span></button>').join('')+'</div><div class="row"><button class="btn" data-act="fxdemo">Ver as animações</button></div></div>';
 }
 function gAjustes(){
   const sn=state.config.stNames||{};
@@ -1610,6 +1718,7 @@ function gAjustes(){
    '<div class="fld"><label for="cfgFee">Taxa de entrega padrão (R$)</label><input id="cfgFee" class="inp" data-field="cfg-fee" inputmode="decimal" autocomplete="off" value="'+esc(((state.config.deliveryFee||0)/100).toFixed(2).replace('.',','))+'"></div>'+
    '<div class="fld"><label for="cfgSt1">Nome da tela 1</label><input id="cfgSt1" class="inp" data-field="cfg-st-churras" maxlength="20" autocomplete="off" value="'+esc(sn.churras||DEF_ST.churras)+'"></div>'+
    '<div class="fld"><label for="cfgSt2">Nome da tela 2</label><input id="cfgSt2" class="inp" data-field="cfg-st-coz" maxlength="20" autocomplete="off" value="'+esc(sn.coz||DEF_ST.coz)+'"></div></div>'+
+   skinCard()+
    (IS_ARTIFACT?'':'<h2 class="h2">Impressora</h2><div class="card"><p class="hint" style="padding-top:10px">Para imprimir a conta numa impressora térmica. No Android, instale o app da sua impressora (ou o RawBT) para ela aparecer na hora de imprimir.</p><div class="fld"><span class="lb">Largura do papel</span><div class="meth">'+['58','80'].map(w=>'<button class="chip" data-act="paper" data-v="'+w+'" aria-pressed="'+((state.config.paper||'58')===w)+'">'+w+' mm</button>').join('')+'</div></div></div>')+
    siteAjustes()+accessCardHtml()+
    '<h2 class="h2">Zerar dados</h2><div class="card"><p class="hint" style="padding-top:10px">Use depois dos testes para começar limpo. Não tem como desfazer.</p><div class="row"><button class="btn danger" data-act="wipe" data-v="sales">Apagar vendas e pedidos</button><button class="btn danger" data-act="wipe" data-v="all">Zerar tudo</button></div></div>';
@@ -1657,7 +1766,10 @@ function pubStockSoon(){
   if(want===pubSig||want===normLeft(state.stock.left))return;
   pubT=setTimeout(()=>{pubT=null;if(!Object.keys(stockBase()).length)return;const l=stockLeft(),w=normLeft(l);if(w===pubSig||w===normLeft(state.stock.left))return;pubSig=w;upd('stock',stockDay,{left:l})},1500);
 }
+const skinNow=()=>okSkin(state.config&&state.config.skin);
+function fxOn(act,el){const s=fxSnap(el);return s?playFx(fxKind(skinNow(),act),s.r,s.rad):0}
 function paintChrome(){
+  const sk=skinNow();if(document.documentElement.dataset.skin!==sk)document.documentElement.dataset.skin=sk;
   const app=$('#app'),r=session?role():null,tabs=r?tabsFor(r):[];
   app.dataset.view=ui.view;app.dataset.tabs=tabs.length?'1':'0';
   const nav=$('#tabs'),inn=$('#tabsIn');
@@ -1748,7 +1860,7 @@ function sheetItem(){
   const u=Array.isArray(it.uses)?it.uses:[];
   const opt=(sel,none)=>'<option value="">'+none+'</option>'+cand.map(m=>'<option value="'+esc(m.id)+'"'+(sel===m.id?' selected':'')+'>'+esc(m.name)+'</option>').join('');
   return '<div class="sh"><h2>'+(s.isNew?'Novo item':'Editar item')+'</h2><button class="x" data-act="sheetx" aria-label="Fechar">'+ICON.x+'</button></div>'+
-  '<div class="fld"><span class="lb">Imagem</span><div class="imgrow">'+thumb(it,'s64')+'<div class="imgbtns"><button class="btn sm" data-act="imgpick" type="button">'+(s.pick?'Fechar desenhos':'Escolher desenho')+'</button><label class="btn sm filebtn">Usar foto<input type="file" id="fImg" accept="image/*" hidden></label>'+((okImg(it.img)||it.icon)?'<button class="lnk" data-act="imgauto" type="button">Usar o automático</button>':'')+'</div></div>'+
+  '<div class="fld"><span class="lb">Foto ou desenho</span><div class="imgrow">'+thumb(it,'s64')+'<div class="imgbtns"><label class="btn sm filebtn">Tirar ou escolher foto<input type="file" id="fImg" accept="image/*" hidden></label><button class="btn sm" data-act="imgpick" type="button">'+(s.pick?'Fechar desenhos':'Escolher desenho')+'</button>'+((okImg(it.img)||it.icon)?'<button class="lnk" data-act="imgauto" type="button">Usar o automático</button>':'')+'</div></div><p class="hint">Aparece para os garçons, nas telas e no site de pedidos.</p>'+
   (s.pick?'<div class="icgrid">'+Object.keys(IC).map(k=>'<button type="button" data-act="imgset" data-v="'+k+'" aria-pressed="'+(!okImg(it.img)&&iconKey(it)===k)+'"><span class="th t-'+esc(it.cat)+'"><svg viewBox="0 0 64 64">'+IC[k]+'</svg></span>'+esc(IC_LABEL[k]||k)+'</button>').join('')+'</div>':'')+'</div>'+
   '<div class="fld"><label for="fName">Nome</label><input id="fName" class="inp" maxlength="50" autocomplete="off" placeholder="Ex.: Espetinho de picanha" value="'+esc(it.name)+'"></div>'+
   '<div class="fld"><label for="fPrice">Preço (R$)</label><input id="fPrice" class="inp" inputmode="decimal" autocomplete="off" placeholder="0,00" value="'+(it.cents?esc(moneyStr(it.cents)):'')+'"></div>'+
@@ -1961,7 +2073,7 @@ const A={
   cat:el=>{ui.cat=el.dataset.id;render(true)},
   decitem:el=>{decDraftItem(curDK(),el.dataset.id);render(true)},
   ddec:el=>{decDraft(curDK(),el.dataset.id);render(true)},
-  send:()=>{sendMesa(ui.table);render(true)},
+  send:el=>{if(sendMesa(ui.table))fxOn('ok',el);render(true)},
   bill:()=>{toggleBill(ui.table);render(true)},
   deliver:el=>{upd('orders',el.dataset.id,{delivered:true});render(true)},
   void:el=>{const vk=el.dataset.id+':'+el.dataset.i;if(ui.voidFor!==vk){ui.voidFor=vk;render(true);return}ui.voidFor=null;doVoid(el.dataset.id,+el.dataset.i);render(true)},
@@ -2006,9 +2118,10 @@ const A={
   dnew:()=>go('dnew'),
   dback:()=>go('delivery'),
   dpay:el=>{ui.dform.pay=el.dataset.id;ui.dform.err='';render(true)},
-  dsend:()=>sendDelivery(),
+  dsend:el=>sendDelivery(el),
   dcopy:el=>{const o=state.orders[el.dataset.id];if(o)copyText(dlvText(Object.assign({id:el.dataset.id},o)))},
-  dsaiu:el=>{const o=state.orders[el.dataset.id];upd('orders',el.dataset.id,{dlv:{status:'saiu',saiuAt:Date.now()}});if(o&&o.dlv&&o.dlv.online)upd('online',o.dlv.online,{status:'saiu',saiuAt:Date.now()});render(true)},
+  dsaiu:el=>{const id=el.dataset.id,s0=fxSnap(el),o=state.orders[id];upd('orders',id,{dlv:{status:'saiu',saiuAt:Date.now()}});if(o&&o.dlv&&o.dlv.online)upd('online',o.dlv.online,{status:'saiu',saiuAt:Date.now()});render(true);
+    const nb=[...document.querySelectorAll('[data-act="dfin"]')].find(b=>b.dataset.id===id),s1=fxSnap(nb)||s0;if(s1)playFx(fxKind(skinNow(),'saiu'),s1.r,s1.rad)},
   dfin:el=>{const k=el.dataset.id+':fin';if(ui.dConfirm!==k){ui.dConfirm=k;render(true);return}ui.dConfirm=null;finishDelivery(el.dataset.id);render(true)},
   dcancel:el=>{const k=el.dataset.id+':cancel';if(ui.dConfirm!==k){ui.dConfirm=k;render(true);return}ui.dConfirm=null;cancelDelivery(el.dataset.id);render(true)},
   sheetx:()=>{closeSheet();render(true)},
@@ -2105,10 +2218,11 @@ function readPhoto(file){
     const url=URL.createObjectURL(file),img=new Image();
     img.onload=()=>{
       try{
-        const S=176,c=document.createElement('canvas');c.width=S;c.height=S;
-        const g=c.getContext('2d'),w=img.naturalWidth,h=img.naturalHeight,s=Math.min(w,h);
-        g.fillStyle='#fff';g.fillRect(0,0,S,S);g.drawImage(img,(w-s)/2,(h-s)/2,s,s,0,0,S,S);URL.revokeObjectURL(url);
-        let q=.82,d=c.toDataURL('image/jpeg',q);while(d.length>45000&&q>.4){q-=.12;d=c.toDataURL('image/jpeg',q)}
+        // 480x360 (4:3) cortada no centro: fica boa nos cartões do site e nos quadradinhos do app
+        const W=480,H=360,c=document.createElement('canvas');c.width=W;c.height=H;
+        const g=c.getContext('2d'),w=img.naturalWidth,h=img.naturalHeight;let sw=w,sh=w*H/W;if(sh>h){sh=h;sw=h*W/H}
+        g.fillStyle='#fff';g.fillRect(0,0,W,H);g.imageSmoothingQuality='high';g.drawImage(img,(w-sw)/2,(h-sh)/2,sw,sh,0,0,W,H);URL.revokeObjectURL(url);
+        let q=.8,d=c.toDataURL('image/jpeg',q);while(d.length>62000&&q>.42){q-=.08;d=c.toDataURL('image/jpeg',q)}
         res(d);
       }catch(e){rej(e)}
     };
@@ -2266,6 +2380,12 @@ document.addEventListener('mouseover',e=>{const c=e.target&&e.target.closest?e.t
 document.addEventListener('toggle',e=>{const t=e.target;if(t&&t.classList&&t.classList.contains('dd'))ui.ddOpen=t.open},true);
 document.addEventListener('change',e=>{
   const t=e.target;
+  if(t.dataset&&t.dataset.photo){
+    const id=t.dataset.photo,f=t.files&&t.files[0];t.value='';
+    if(!f||!isMgr())return;
+    readPhoto(f).then(d=>{const m=state.menu[id];if(!m)return;upd('menu',id,{img:d,icon:''});render(true);toast('Foto trocada: '+m.name+'. Já aparece para os garçons e no site.')}).catch(()=>toast('Não consegui usar essa foto. Tente outra.'));
+    return;
+  }
   if(t.id==='fImg'&&ui.sheet&&ui.sheet.type==='item'){
     const f=t.files&&t.files[0];if(!f)return;readItemFields();
     readPhoto(f).then(d=>{if(ui.sheet&&ui.sheet.type==='item'){ui.sheet.item.img=d;ui.sheet.item.icon='';renderSheet()}}).catch(()=>toast('Não consegui usar essa foto. Tente outra.'));
@@ -2326,6 +2446,7 @@ function acceptOnline(id,auto){
   delete state.online[id];ui.rejFor=null;
   toast((auto?'Pedido do site aceito: ':'Aceito: ')+'delivery #'+code+' de '+firstName(o.nome)+'. Já foi para as telas.');
   render(true);
+  return oid;
 }
 function rejectOnline(id,motivo){
   const o=state.online[id];if(!o||!isMgr())return;
@@ -2380,7 +2501,11 @@ Object.assign(A,{
   sitepay:el=>{const p=siteCfg().pay.slice(),v=el.dataset.v,i=p.indexOf(v);if(i>=0){if(p.length===1){toast('Deixe pelo menos uma forma de pagamento.');return}p.splice(i,1)}else p.push(v);saveSite({pay:['din','pix','car'].filter(x=>p.includes(x))})},
   sitecopy:()=>copyText(siteUrl(),'siteBox','Link copiado. Mande para os clientes no WhatsApp.'),
   siteqr:()=>{ui.siteQr=!ui.siteQr;render(true);if(ui.siteQr&&!ui.siteQrImg)loadQr().then(q=>{const qr=q(0,'M');qr.addData(siteUrl());qr.make();ui.siteQrImg=qr.createDataURL(6,8);render(true)}).catch(()=>{ui.siteQr=false;render(true);toast('Não consegui gerar o QR code agora.')})},
-  oacc:el=>acceptOnline(el.dataset.id,false),
+  skin:el=>{const v=okSkin(el.dataset.v);if(v===skinNow())return;saveCfg({skin:v});toast('Tema '+SKINS[v]+' ligado em todos os aparelhos e no site.')},
+  fxdemo:el=>{const sk=skinNow();if(sk==='classico'){toast('O tema Clássico não tem animações. Escolha Espetaria ou Natal.');return}const s=fxSnap(el);const d=playFx(fxKind(sk,'ok'),s.r,s.rad);if(!d){toast('As animações estão desligadas neste aparelho (economia de movimento).');return}setTimeout(()=>{const e2=document.querySelector('[data-act="fxdemo"]'),s2=fxSnap(e2)||s;playFx(fxKind(sk,'saiu'),s2.r,s2.rad)},d+150)},
+  oacc:el=>{const s=fxSnap(el),oid=acceptOnline(el.dataset.id,false);if(!oid)return;
+    const b=[...document.querySelectorAll('.dcard [data-id]')].find(x=>x.dataset.id===oid),c=b&&b.closest('.dcard');
+    if(c){const r=c.getBoundingClientRect();playFx(fxKind(skinNow(),'ok'),{left:r.left,top:r.bottom-64,width:r.width,height:64},'0 0 14px 14px')}else if(s)playFx(fxKind(skinNow(),'ok'),s.r,s.rad)},
   orej:el=>{ui.rejFor=el.dataset.id;render(true)},
   orejx:()=>{ui.rejFor=null;render(true)},
   orejr:el=>rejectOnline(el.dataset.id,REJ[+el.dataset.i]||REJ[REJ.length-1])
@@ -2563,7 +2688,7 @@ function loadQr(){
 const dateBR=ms=>{const d=new Date(ms||Date.now());return pad(d.getDate())+'/'+pad(d.getMonth()+1)};
 
 /* telas de configuração e acesso */
-const accTop=t=>'<div class="lhead"><p class="eyebrow">Salão PDV</p><h1 class="brand">'+esc(t||'Salão PDV')+'</h1></div>';
+const accTop=t=>'<div class="lhead"><p class="eyebrow">'+esc(MARCA.rotulo)+'</p><h1 class="brand">'+esc(t||MARCA.nome)+'</h1></div>';
 function viewNoConfig(){
   const f=ui.cfgForm||(ui.cfgForm={err:'',inv:''});
   return '<div class="login">'+accTop('Configurar o app')+'<p class="lead" style="text-align:center">Os aparelhos do restaurante conversam por um banco de dados gratuito do Google (Firebase), criado com o seu Gmail. A equipe não precisa de conta.</p>'+installHtml()+
@@ -2585,7 +2710,7 @@ function viewFbError(){
 }
 function ownerFormHtml(claim){
   const f=ui.acc,creating=claim&&!f.signin;
-  return '<div class="login">'+accTop(ui.ownerLogin&&backend.access==='ok'?state.config.name:'Salão PDV')+'<form class="card setup" id="accForm"><h2 class="h2" style="margin-top:12px">'+(creating?'Primeiro acesso: crie a conta do dono':'Entrar como dono')+'</h2><p class="hint">'+(creating?'Esse e-mail e senha são só seus: é com eles que o app reconhece o celular do dono. Guarde bem.':'Use o e-mail e a senha que você criou na configuração.')+'</p>'+
+  return '<div class="login">'+accTop(ui.ownerLogin&&backend.access==='ok'?state.config.name:MARCA.nome)+'<form class="card setup" id="accForm"><h2 class="h2" style="margin-top:12px">'+(creating?'Primeiro acesso: crie a conta do dono':'Entrar como dono')+'</h2><p class="hint">'+(creating?'Esse e-mail e senha são só seus: é com eles que o app reconhece o celular do dono. Guarde bem.':'Use o e-mail e a senha que você criou na configuração.')+'</p>'+
    '<div class="fld"><label for="accEmail">E-mail</label><input id="accEmail" class="inp" type="email" autocomplete="username" value="'+esc(f.email)+'"></div>'+
    '<div class="fld"><label for="accPass">Senha</label><input id="accPass" class="inp" type="password" autocomplete="'+(creating?'new-password':'current-password')+'"></div>'+
    (creating?'<div class="fld"><label for="accPass2">Repita a senha</label><input id="accPass2" class="inp" type="password" autocomplete="new-password"></div>':'')+

@@ -1,6 +1,6 @@
 /* Salão PDV: guarda o app no aparelho para abrir rápido e funcionar sem internet. */
-const CACHE='salao-pdv-v2';
-const SHELL=['./','./index.html','./manifest.webmanifest','./icon-192.png','./icon-512.png','./icon-maskable-512.png','./apple-touch-icon.png'];
+const CACHE='salao-pdv-52ef6b69';
+const SHELL=["./", "./index.html", "./manifest.webmanifest?v=a448a9be", "./icon-192.png?v=a448a9be", "./icon-512.png?v=a448a9be", "./icon-maskable-512.png?v=a448a9be", "./apple-touch-icon.png?v=a448a9be"];
 const EXTERNAL=['www.gstatic.com','fonts.googleapis.com','fonts.gstatic.com','cdnjs.cloudflare.com'];
 
 self.addEventListener('install',e=>{
@@ -15,7 +15,7 @@ self.addEventListener('fetch',e=>{
   const url=new URL(req.url);
   if(url.origin===self.location.origin){
     // páginas e regras vêm da internet quando dá (para pegar versões novas) e do aparelho quando não dá
-    if(req.mode==='navigate'||/\.(html|rules)$/.test(url.pathname)){
+    if(req.mode==='navigate'||/\.(html|rules|webmanifest)$/.test(url.pathname)){
       const app=url.pathname.endsWith('/')||url.pathname.endsWith('/index.html'),key=app?'./index.html':req;
       e.respondWith(fetch(req).then(res=>{if(res.ok){const copy=res.clone();caches.open(CACHE).then(c=>c.put(key,copy))}return res}).catch(()=>caches.match(key).then(hit=>hit||(req.mode==='navigate'?caches.match('./index.html'):Response.error()))));
       return;
