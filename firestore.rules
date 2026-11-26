@@ -1,0 +1,79 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function signedIn() { return request.auth != null; }
+    function isOwner() {
+      return signedIn()
+        && exists(/databases/$(database)/documents/meta/owner)
+        && get(/databases/$(database)/documents/meta/owner).data.uid == request.auth.uid;
+    }
+    function isDevice() {
+      return signedIn()
+        && exists(/databases/$(database)/documents/devices/$(request.auth.uid))
+        && get(/databases/$(database)/documents/devices/$(request.auth.uid)).data.ok == true;
+    }
+    function isTeam() { return isOwner() || isDevice(); }
+    function siteOpen() {
+      return exists(/databases/$(database)/documents/config/main)
+        && get(/databases/$(database)/documents/config/main).data.get('site', {}).get('open', false) == true;
+    }
+    function okOrder(d) {
+      return d.keys().hasOnly(['uid','status','at','day','tipo','nome','fone','end','bairro','ref','obs','pay','troco','items','sub','fee','total'])
+        && d.uid == request.auth.uid
+        && d.status == 'novo'
+        && d.tipo in ['entrega','retirada']
+        && d.nome is string && d.nome.size() > 0 && d.nome.size() <= 60
+        && d.fone is string && d.fone.size() <= 30
+        && d.end is string && d.end.size() <= 140
+        && d.get('bairro', '') is string && d.get('bairro', '').size() <= 60
+        && d.get('ref', '') is string && d.get('ref', '').size() <= 100
+        && d.get('obs', '') is string && d.get('obs', '').size() <= 100
+        && d.pay in ['din', 'pix', 'car']
+        && d.get('troco', 0) is number && d.get('sub', 0) is number && d.get('fee', 0) is number && d.get('total', 0) is number
+        && d.items is list && d.items.size() > 0 && d.items.size() <= 40;
+    }
+
+    // Quem é o dono: criado uma única vez, pela conta de e-mail e senha do dono.
+    match /meta/owner {
+      allow read: if signedIn();
+      allow create: if signedIn()
+        && request.auth.token.firebase.sign_in_provider == 'password'
+        && request.resource.data.uid == request.auth.uid;
+      allow update, delete: if false;
+    }
+
+    // Aparelhos da equipe: cada um pede acesso e só o dono libera.
+    match /devices/{uid} {
+      allow read: if signedIn() && (request.auth.uid == uid || isOwner());
+      allow create: if signedIn() && request.auth.uid == uid && request.resource.data.ok == false;
+      allow update, delete: if isOwner();
+    }
+
+    // Cardápio e ajustes: qualquer pessoa vê (o site de pedidos usa), só o dono muda.
+    match /menu/{id}   { allow read: if true; allow write: if isOwner(); }
+    match /config/{id} { allow read: if true; allow write: if isOwner(); }
+
+    // Mapa e logins: a equipe lê, só o dono muda.
+    match /layout/{id} { allow read: if isTeam(); allow write: if isOwner(); }
+    match /staff/{id}  { allow read: if isTeam(); allow write: if isOwner(); }
+
+    // Pedidos e mesas: toda a equipe liberada lê e lança.
+    match /orders/{id} { allow read, write: if isTeam(); }
+    match /tables/{id} { allow read, write: if isTeam(); }
+
+    // Controle de espetos: todos veem o que resta (o site marca "esgotado"), a equipe dá baixa, só o dono define as quantidades.
+    match /stock/{id}    { allow read: if true; allow write: if isOwner(); }
+    match /stocklog/{id} { allow read, create: if isTeam(); allow update, delete: if isOwner(); }
+
+    // Pedidos do site: o cliente cria o pedido com o site aberto e acompanha só o dele; o dono aceita ou recusa.
+    match /online/{id} {
+      allow create: if signedIn() && siteOpen() && okOrder(request.resource.data);
+      allow read: if isTeam() || (signedIn() && resource.data.uid == request.auth.uid);
+      allow update, delete: if isOwner();
+    }
+
+    // Faturamento e cancelamentos: só o dono.
+    match /sales/{id}  { allow read, write: if isOwner(); }
+    match /voids/{id}  { allow read, write: if isOwner(); }
+  }
+}

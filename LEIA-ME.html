@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Salão PDV: como colocar no ar</title>
+<style>
+:root{--bg:#F1F3F7;--surface:#FFFFFF;--ink:#121826;--muted:#5A6478;--line:#D3D9E4;--accent:#2952CC;--soft:#E3EAFB;--warn:#A55A00;--warn-soft:#FCE8CC;--code:#EEF1F6;color-scheme:light}
+@media (prefers-color-scheme:dark){:root{--bg:#0E121A;--surface:#161C27;--ink:#E6EAF2;--muted:#949DB0;--line:#2A3242;--accent:#7C9BFF;--soft:#1C2744;--warn:#F5A524;--warn-soft:#33240D;--code:#1E2533;color-scheme:dark}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:760px;margin:0 auto;padding:32px max(16px,env(safe-area-inset-left,0px)) 60px max(16px,env(safe-area-inset-right,0px))}
+h1{font-size:clamp(28px,6vw,38px);line-height:1.15;letter-spacing:-.02em;margin:0 0 8px;text-wrap:balance}
+.lead{color:var(--muted);margin:0 0 24px;max-width:62ch}
+h2{display:flex;align-items:center;gap:12px;font-size:22px;line-height:1.25;margin:36px 0 10px;text-wrap:balance}
+h2 .n{flex:none;width:34px;height:34px;border-radius:50%;background:var(--accent);color:var(--surface);display:grid;place-items:center;font-size:16px;font-weight:700}
+h3{font-size:17px;margin:22px 0 6px}
+p,li{max-width:66ch}
+ol,ul{padding-left:22px}
+li{margin:6px 0}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin:12px 0}
+.tip{background:var(--soft);border-radius:12px;padding:12px 14px;margin:12px 0}
+.warn{background:var(--warn-soft);color:var(--warn);border-radius:12px;padding:12px 14px;margin:12px 0}
+code,kbd{font:500 .9em ui-monospace,Menlo,Consolas,monospace;background:var(--code);padding:1px 6px;border-radius:5px}
+pre{background:var(--code);border-radius:12px;padding:14px;overflow-x:auto;font:13px/1.5 ui-monospace,Menlo,Consolas,monospace;margin:10px 0}
+button{font:600 14px system-ui,sans-serif;min-height:40px;padding:0 14px;border-radius:10px;border:1px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer}
+.files{display:grid;gap:10px;margin:10px 0 0}
+.files>div{display:grid;gap:2px}
+.files>div>span:last-child{color:var(--muted);font-size:15px}
+a{color:var(--accent)}
+table{border-collapse:collapse;width:100%;font-size:15px}
+td,th{border-bottom:1px solid var(--line);padding:8px 6px;text-align:left;vertical-align:top}
+.tbl{overflow-x:auto}
+</style>
+</head>
+<body>
+<main>
+<h1>Salão PDV: como colocar o app no ar</h1>
+<p class="lead">Leva uns 15 minutos, uma vez só, num computador. Tudo é gratuito. Depois disso, a equipe só abre um link no celular e você libera cada aparelho.</p>
+
+<div class="warn"><b>Já usava uma versão anterior?</b> Esta versão traz o site de pedidos e o controle de espetos, que precisam de regras novas no banco. Arraste a pasta nova no Netlify (veja o passo 2) e depois cole as regras do passo 1.3 de novo na aba <b>Regras</b> do Firestore e clique em <b>Publicar</b>. Seus pedidos, cardápio e vendas continuam lá.</div>
+
+<div class="card">
+<b>O que tem nesta pasta</b>
+<div class="files">
+<div><span><code>index.html</code></span><span>o app</span></div>
+<div><span><code>manifest.webmanifest</code> e <code>sw.js</code></span><span>fazem o app instalar na tela inicial e abrir sem internet</span></div>
+<div><span><code>icon-*.png</code></span><span>ícones do app</span></div>
+<div><span><code>firestore.rules</code></span><span>regras de segurança do banco (as mesmas do botão "Copiar regras" no app)</span></div>
+<div><span><code>LEIA-ME.html</code></span><span>este passo a passo</span></div>
+</div>
+</div>
+
+<h2><span class="n">1</span>Criar o banco de dados no Firebase</h2>
+<p>O Firebase é do Google. É onde ficam pedidos, cardápio e faturamento, no seu nome.</p>
+<ol>
+<li>Entre em <a href="https://console.firebase.google.com" target="_blank" rel="noopener">console.firebase.google.com</a> com o seu Gmail e clique em <b>Criar um projeto</b>. Dê um nome (ex.: <i>espetinho</i>). O Google Analytics pode ficar desligado.</li>
+<li>No menu da esquerda, abra <b>Firestore</b> (fica em <i>Databases &amp; Storage</i>) e clique em <b>Criar banco de dados</b>. Escolha a edição <b>Standard</b>. No nome do banco, deixe <b>(default)</b>: o app procura o banco com esse nome. Escolha o local <b>southamerica-east1 (São Paulo)</b> e o <b>modo de produção</b>.</li>
+<li>Ainda no Firestore, abra a aba <b>Regras</b>, apague tudo o que estiver lá, cole as regras abaixo e clique em <b>Publicar</b>.
+<pre id="rules">carregando…</pre>
+<button type="button" id="copyRules">Copiar regras</button> <span id="copied" style="color:var(--muted)"></span>
+</li>
+<li>No menu, abra <b>Authentication</b>, clique em <b>Vamos começar</b> e, em <b>Método de login</b>, ative <b>Anônimo</b> e <b>E-mail/senha</b>.</li>
+<li>Clique na engrenagem ao lado de "Visão geral do projeto" e abra <b>Configurações do projeto</b>. Em <b>Seus apps</b>, clique no ícone <code>&lt;/&gt;</code> (Web), dê um nome e clique em <b>Registrar app</b>. Não precisa marcar Hosting.</li>
+<li>Aparece um bloco chamado <code>firebaseConfig</code>, com <code>apiKey</code>, <code>projectId</code>, <code>appId</code> e outros. <b>Copie esse bloco</b> e guarde: você vai colar no app no passo 3.</li>
+</ol>
+<div class="tip">O <code>firebaseConfig</code> não é senha: ele só diz qual banco o app usa. Quem protege os dados são as regras do item 3 e a liberação de aparelhos.</div>
+
+<h2><span class="n">2</span>Colocar o app no ar (Netlify)</h2>
+<ol>
+<li>Abra <a href="https://app.netlify.com/drop" target="_blank" rel="noopener">app.netlify.com/drop</a> e entre com a sua conta Google (é grátis).</li>
+<li>Arraste a pasta <b>salao-app</b> (ou o arquivo .zip dela) para a área indicada na página.</li>
+<li>Em alguns segundos aparece o endereço do app, algo como <code>https://nome-aleatorio.netlify.app</code>. Para trocar o nome, vá em <b>Project configuration › Change project name</b> (ex.: <code>espetinho-do-joao</code>).</li>
+</ol>
+<div class="tip">Para atualizar o app no futuro, entre no projeto no Netlify e arraste a pasta nova em <b>Deploys</b>. Os celulares pegam a versão nova sozinhos na próxima abertura. Se a versão nova trouxer regras novas, cole as regras de novo no Firestore e publique.</div>
+<p><b>Só com o celular (Android)?</b> O Netlify não aceita envio pelo celular. Use o GitHub Pages, que é gratuito: descompacte o zip, crie uma conta em github.com, crie um repositório público, toque em <b>uploading an existing file</b> e envie todos os arquivos desta pasta. Depois, em <b>Settings › Pages</b>, escolha o branch <b>main</b> e a pasta <b>/ (root)</b> e salve. Em um ou dois minutos aparece o endereço, no formato <code>https://seu-usuario.github.io/nome-do-repositorio/</code>. Nenhum arquivo do app tem senha ou dado seu, então o repositório pode ser público. Para atualizar, envie os arquivos novos do mesmo jeito.</p>
+
+<h2><span class="n">3</span>Primeiro acesso, no seu celular</h2>
+<ol>
+<li>Abra o endereço do app. Em <b>Sou o dono e vou configurar</b>, cole o <code>firebaseConfig</code> do passo 1 e toque em <b>Salvar e continuar</b>.</li>
+<li>Crie a <b>conta do dono</b> com um e-mail e uma senha só seus. É com ela que o app sabe que aquele celular é o do dono: faturamento, fechamento de conta, cardápio, equipe e mapa só abrem com ela.</li>
+<li>Crie o seu <b>PIN de gerente</b>. Pronto: você já está no salão.</li>
+<li>Instale o app na tela inicial (veja como no fim desta página).</li>
+</ol>
+
+<h2><span class="n">4</span>Aparelhos da equipe</h2>
+<ol>
+<li>No app, abra <b>Gerência › Equipe</b> e cadastre os garçons, cada um com nome e PIN.</li>
+<li>Na mesma tela, em <b>Convidar um aparelho</b>, mande o link pelo WhatsApp ou mostre o QR code.</li>
+<li>No aparelho da equipe: abra o link, instale na tela inicial, dê um nome (ex.: <i>Celular do João</i>, <i>Tablet da churrasqueira</i>) e toque em <b>Pedir acesso</b>. Aparece um código de 4 números.</li>
+<li>No seu celular, em <b>Gerência › Equipe</b>, confira o código e toque em <b>Liberar</b>. O aparelho abre sozinho.</li>
+<li>No tablet da churrasqueira e no da cozinha, escolha a tela do posto na entrada e deixe aberta. Toque uma vez na tela para ligar o aviso sonoro.</li>
+</ol>
+<div class="warn"><b>No iPhone:</b> o app instalado na tela inicial não enxerga o que foi aberto no Safari. Instale primeiro e, se o app pedir, cole o link de convite dentro dele.</div>
+<p>Perdeu um celular ou alguém saiu da equipe? Em <b>Gerência › Equipe</b>, toque em <b>Remover acesso</b> no aparelho. Para trocar o seu celular, abra o app no novo e toque em <b>Sou o dono</b>.</p>
+
+<h2><span class="n">5</span>Instalar na tela inicial</h2>
+<div class="tbl"><table>
+<tr><th>Android (Chrome)</th><td>Quando aparecer, toque em <b>Instalar o app neste aparelho</b>. Ou abra o menu <kbd>⋮</kbd> e escolha <b>Instalar app</b> ou <b>Adicionar à tela inicial</b>.</td></tr>
+<tr><th>iPhone (Safari)</th><td>Toque em <b>Compartilhar</b> e depois em <b>Adicionar à Tela de Início</b>.</td></tr>
+</table></div>
+
+<h2><span class="n">6</span>Site de pedidos (opcional)</h2>
+<p>Um cardápio online para os clientes pedirem sozinhos, como o Anota AI. O pedido cai na aba <b>Delivery</b> do seu celular, com aviso sonoro, e o cliente acompanha tudo pelo link.</p>
+<ol>
+<li>No seu celular (o do dono), abra a aba <b>Delivery</b>. No cartão <b>Site de pedidos</b>, ligue a chave para começar a receber pedidos. Desligue quando fechar o expediente.</li>
+<li>Toque em <b>Copiar link</b> ou <b>Mandar no WhatsApp</b>. Ponha o link no Instagram, no status e na mensagem automática do WhatsApp Business. Em <b>QR code</b>, dá para imprimir e colar no balcão ou na embalagem.</li>
+<li>Em <b>Gerência › Ajustes › Site de pedidos</b>, preencha o WhatsApp do restaurante, o tempo de entrega, o pedido mínimo, se aceita retirada e as formas de pagamento. A taxa de entrega é a mesma dos ajustes.</li>
+<li>Quando chegar pedido, toque em <b>Aceitar</b> (ele vai para a churrasqueira e a cozinha) ou em <b>Recusar</b>, escolhendo o motivo. O cliente vê na hora.</li>
+<li>Quando ficar pronto, toque em <b>Saiu para entrega</b> e depois em <b>Pago e entregue</b>, como num delivery normal. O cliente acompanha cada passo.</li>
+</ol>
+<div class="tip">O pagamento é na entrega ou na retirada: dinheiro (com troco), Pix ou cartão na maquininha. Os preços são conferidos com o cardápio na hora de aceitar, então ninguém consegue mudar o valor pelo celular dele. Os espetos que acabaram aparecem como esgotados no site enquanto o seu celular estiver com o app aberto.</div>
+
+<h3>Imprimir a conta (opcional)</h3>
+<p>No app instalado, a comanda e a tela de fechar conta têm o botão <b>Imprimir</b>. Funciona com impressora térmica de 58 ou 80 mm. No Android, instale o app da impressora (ou o <b>RawBT</b>) para ela aparecer na lista na hora de imprimir. A largura do papel fica em <b>Gerência › Ajustes › Impressora</b>.</p>
+
+<h3>Quanto custa</h3>
+<p>Nada, para um restaurante do seu tamanho. O plano gratuito do Firestore inclui 1 GiB de dados, 50 mil leituras, 20 mil gravações e 20 mil exclusões por dia (o contador zera por volta da meia-noite no horário do Pacífico). O Netlify também tem plano gratuito. Ninguém pede cartão de crédito para isso.</p>
+
+<h3>Se algo der errado</h3>
+<div class="tbl"><table>
+<tr><th>O site diz "Cardápio indisponível agora"</th><td>As regras do Firestore são de uma versão anterior. Cole as regras do passo 1.3 de novo e clique em Publicar.</td></tr>
+<tr><th>O site diz "Site em configuração"</th><td>O login <b>Anônimo</b> está desligado. Ative em Authentication › Método de login.</td></tr>
+<tr><th>Gerência › Estoque pede para publicar as regras novas</th><td>As regras do Firestore são de uma versão anterior. Cole as regras do passo 1.3 de novo e clique em Publicar.</td></tr>
+<tr><th>"O Firebase recusou o acesso"</th><td>As regras do passo 1.3 não foram publicadas. Cole de novo e clique em Publicar.</td></tr>
+<tr><th>"Esse tipo de login está desligado"</th><td>Ative <b>Anônimo</b> e <b>E-mail/senha</b> em Authentication › Método de login.</td></tr>
+<tr><th>"Não reconheci a configuração"</th><td>Cole o bloco inteiro do <code>firebaseConfig</code>, com as chaves <code>{ }</code>.</td></tr>
+<tr><th>Esqueci a senha do dono</th><td>Na tela de entrar como dono, toque em <b>Esqueci a senha</b>. O Firebase manda um e-mail para criar outra.</td></tr>
+<tr><th>Configurei o banco errado</th><td>Na tela de erro, toque em <b>Trocar a configuração</b> e cole o <code>firebaseConfig</code> certo.</td></tr>
+</table></div>
+
+<h3>Para usar em outros restaurantes</h3>
+<p>O mesmo endereço serve para vários estabelecimentos. Cada um cria o seu próprio projeto no Firebase (passo 1) e cola o seu <code>firebaseConfig</code> no primeiro acesso. Os dados de um nunca se misturam com os do outro.</p>
+</main>
+<script>
+fetch('firestore.rules').then(r=>r.ok?r.text():Promise.reject()).then(t=>{document.getElementById('rules').textContent=t}).catch(()=>{document.getElementById('rules').textContent='Abra o arquivo firestore.rules desta pasta e copie o conteúdo.'});
+document.getElementById('copyRules').addEventListener('click',async()=>{const t=document.getElementById('rules').textContent;try{await navigator.clipboard.writeText(t);document.getElementById('copied').textContent='Copiado.'}catch(e){const r=document.createRange();r.selectNodeContents(document.getElementById('rules'));const s=getSelection();s.removeAllRanges();s.addRange(r);document.getElementById('copied').textContent='Selecionado: copie com Ctrl+C.'}});
+</script>
+</body>
+</html>
