@@ -3,22 +3,23 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="description" content="Comandas, churrasqueira, cozinha e delivery do Brasa Spetus.">
-<meta name="theme-color" content="#F1F3F7" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#0E121A" media="(prefers-color-scheme: dark)">
-<link rel="manifest" href="manifest.webmanifest?v=a448a9be">
-<link rel="icon" type="image/png" href="icon-192.png?v=a448a9be">
-<link rel="apple-touch-icon" href="apple-touch-icon.png?v=a448a9be">
+<meta name="description" content="Comandas, churrasqueira, cozinha e delivery do Brasa Spet&#x27;us.">
+<meta name="theme-color" content="#0D0A08" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0D0A08" media="(prefers-color-scheme: dark)">
+<link rel="manifest" href="manifest.webmanifest?v=f6fc060c">
+<link rel="icon" type="image/png" href="icon-192.png?v=f6fc060c">
+<link rel="apple-touch-icon" href="apple-touch-icon.png?v=f6fc060c">
+<link rel="preload" as="image" href="logo.webp?v=f6fc060c">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-title" content="Brasa Spetus">
-<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Brasa Spet&#x27;us">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
 <style>:root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0;font:14px/1.4 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}img{max-width:100%}[hidden]{display:none!important}</style>
 </head>
 <body>
-<title>Brasa Spetus</title>
+<title>Brasa Spet&#x27;us</title>
 <meta name="claude:viewport-fit-sides" content="cover">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bitter:wght@700;800&family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
 <style>
 /* Layout: app de celular por perfil. Entrada com login por PIN; garçom vê o salão (mapa 3D, planta ou lista); telas fixas da churrasqueira e da cozinha; gerente com abas Salão, Delivery, Telas e Gerência. */
 :root{
@@ -28,7 +29,7 @@
   --dlv:#0E7490; --dlv-soft:#D3EEF4;
   --floor:#E3E7EE; --grid:rgba(18,24,38,.055); --wall:#A9B3C5; --wall-top:#CBD2DE; --chair:#BAC3D3; --zone:#D5DBE5; --zone-side:#AFB9C9; --ember:#E8590C;
   --paper:#FBFAF5; --toast-act:#9DB6FF;
-  --bar:#2952CC; --tint-esp:#FBE6D9; --tint-jan:#FAEFD3; --tint-por:#E7F0DC; --tint-beb:#DCEDF8;
+  --bar:#2952CC; --tint-esp:#FBE6D9; --tint-jan:#FAEFD3; --tint-por:#E7F0DC; --tint-beb:#DCEDF8; --tint-lan:#FBEAD2;
   --av1:#E3EAFB; --av1f:#2952CC; --av2:#DDF3E6; --av2f:#1D7A45; --av3:#FCE8CC; --av3f:#9A5200; --av4:#F3E1F7; --av4f:#8A2BA0; --av5:#FBE0DE; --av5f:#B3261E; --av6:#DCF1F4; --av6f:#0E6E7E;
   --shadow:0 1px 2px rgba(18,24,38,.07),0 6px 18px rgba(18,24,38,.08);
   --f-display:Sora,"Segoe UI",system-ui,sans-serif;
@@ -44,7 +45,7 @@
     --dlv:#38BDF8; --dlv-soft:#0F2A36;
     --floor:#1A2131; --grid:rgba(255,255,255,.045); --wall:#2B3548; --wall-top:#3D485F; --chair:#3A455B; --zone:#242D3F; --zone-side:#11161F; --ember:#FF8A3D;
     --paper:#1A202B; --toast-act:#2952CC;
-  --bar:#6A8BF5; --tint-esp:#3D3431; --tint-jan:#3A3626; --tint-por:#2C3427; --tint-beb:#22303B;
+  --bar:#6A8BF5; --tint-esp:#3D3431; --tint-jan:#3A3626; --tint-por:#2C3427; --tint-beb:#22303B; --tint-lan:#3A3024;
   --av1:#1C2744; --av1f:#9DB6FF; --av2:#173226; --av2f:#7BD7A0; --av3:#33240D; --av3f:#F5B35A; --av4:#2E1C36; --av4f:#DDA2F0; --av5:#3A1A19; --av5f:#FF9A92; --av6:#13303A; --av6f:#7FD3E0;
     --shadow:0 1px 2px rgba(0,0,0,.4),0 6px 18px rgba(0,0,0,.35);
     color-scheme:dark;
@@ -57,7 +58,7 @@
   --dlv:#38BDF8; --dlv-soft:#0F2A36;
   --floor:#1A2131; --grid:rgba(255,255,255,.045); --wall:#2B3548; --wall-top:#3D485F; --chair:#3A455B; --zone:#242D3F; --zone-side:#11161F; --ember:#FF8A3D;
   --paper:#1A202B; --toast-act:#2952CC;
-  --bar:#6A8BF5; --tint-esp:#3D3431; --tint-jan:#3A3626; --tint-por:#2C3427; --tint-beb:#22303B;
+  --bar:#6A8BF5; --tint-esp:#3D3431; --tint-jan:#3A3626; --tint-por:#2C3427; --tint-beb:#22303B; --tint-lan:#3A3024;
   --av1:#1C2744; --av1f:#9DB6FF; --av2:#173226; --av2f:#7BD7A0; --av3:#33240D; --av3f:#F5B35A; --av4:#2E1C36; --av4f:#DDA2F0; --av5:#3A1A19; --av5f:#FF9A92; --av6:#13303A; --av6f:#7FD3E0;
   --shadow:0 1px 2px rgba(0,0,0,.4),0 6px 18px rgba(0,0,0,.35);
   color-scheme:dark;
@@ -71,6 +72,8 @@
 }
 :root[data-skin="brasa"][data-theme="dark"]{--bg:#15100D; --surface:#1F1814; --surface-2:#2A211B; --ink:#F4EAE2; --muted:#B4A295; --line:#3B2F27; --accent:#FF8A4C; --on-accent:#2A1206; --occ:#3B2417; --floor:#1E1712; --grid:rgba(255,255,255,.04); --wall:#3D3028; --wall-top:#54443A; --chair:#4B3B31; --zone:#2E241D; --zone-side:#120D0A; --paper:#221A15; --toast-act:#C2410C; --bar:#FF8A4C; --av1:#3B2417; --av1f:#FFB27A; --snow:#FFFFFF;}
 :root[data-skin="natal"][data-theme="dark"]{--bg:#0F1512; --surface:#17201B; --surface-2:#202B25; --ink:#EAF1EC; --muted:#9AAAA1; --line:#2B3731; --accent:#FF6B5E; --on-accent:#2B0604; --occ:#3A1C19; --floor:#16201B; --grid:rgba(255,255,255,.045); --wall:#2C3A32; --wall-top:#3E4E45; --chair:#3A4A41; --zone:#22302A; --zone-side:#0C110E; --paper:#18211C; --toast-act:#B3261E; --bar:#4ADE80; --av1:#3A1C19; --av1f:#FF9A92; --snow:#FFFFFF;}
+/* tema da marca (logo preta, fogo e dourado): fica escuro mesmo com o celular no modo claro */
+:root[data-skin="noite"]{--bg:#0D0A08; --surface:#17120E; --surface-2:#221A14; --ink:#F5EBDD; --muted:#B9A893; --line:#352A20; --accent:#F2A93B; --on-accent:#1A1006; --occ:#3A2A12; --ok:#5FD38D; --ok-soft:#12291B; --warn:#FF9A3C; --warn-soft:#3A2210; --late:#FF6B5B; --late-soft:#3D1712; --dlv:#4FC3D9; --dlv-soft:#0F2C33; --floor:#16110D; --grid:rgba(255,214,160,.045); --wall:#3A2D22; --wall-top:#54412F; --chair:#4A3A2B; --zone:#251C15; --zone-side:#0A0705; --ember:#FF7A2E; --paper:#1B1511; --toast-act:#F7C66A; --bar:#F2A93B; --tint-esp:#3B2419; --tint-jan:#3A2D15; --tint-por:#28301D; --tint-beb:#1A2B33; --tint-lan:#3D2C14; --av1:#3A2A12; --av1f:#F7C66A; --av2:#173226; --av2f:#7BD7A0; --av3:#3A2410; --av3f:#FFB067; --av4:#2E1C36; --av4f:#DDA2F0; --av5:#3A1A19; --av5f:#FF9A92; --av6:#13303A; --av6f:#7FD3E0; --shadow:0 1px 2px rgba(0,0,0,.5),0 8px 22px rgba(0,0,0,.45); --snow:#FFFFFF; --f-brand:"Bitter",Georgia,"Times New Roman",serif; color-scheme:dark}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);font:400 15px/1.4 var(--f-body);padding-block:0;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));-webkit-tap-highlight-color:transparent}
 body.lock{overflow:hidden}
@@ -375,6 +378,14 @@ a.btn{display:inline-flex;align-items:center;justify-content:center;text-align:c
 .kc li{font-size:17px;font-weight:600;overflow-wrap:anywhere}
 .kc li .q{font:500 17px var(--f-mono);margin-right:8px}
 .kc li em{display:block;font-style:normal;font-size:14px;font-weight:600;color:var(--warn)}
+.kc-pack{padding:10px 12px;border-radius:10px;background:var(--surface-2);display:grid;gap:6px}
+.kc-pack>b{font:600 12px var(--f-mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.kc .kc-pack ul{gap:6px}
+.kc .kc-pack li{display:block;font-size:15.5px}
+.kc .kc-pack li .q{font-size:15px}
+.kc .kc-pack li small{display:block;font:600 12.5px var(--f-body);color:var(--muted)}
+.kc .kc-pack li.bev small{color:var(--warn)}
+.dc-bev{margin:8px 0 0;padding:8px 10px;border-radius:10px;background:var(--warn-soft);color:var(--warn);font-weight:600;font-size:14px}
 .kc-obs{margin:0;padding:8px 10px;border-radius:8px;background:var(--warn-soft);color:var(--warn);font-weight:600;font-size:14px}
 .kc.sm{padding:12px;gap:8px}
 .kc.sm .kc-h b{font-size:18px}
@@ -495,6 +506,7 @@ textarea.inp{padding:10px 12px;font:400 13px/1.5 var(--f-mono)}
 .th.t-jan{--th-bg:var(--tint-jan)}
 .th.t-por{--th-bg:var(--tint-por)}
 .th.t-beb{--th-bg:var(--tint-beb)}
+.th.t-lan{--th-bg:var(--tint-lan)}
 .th.s24{width:26px;height:26px;border-radius:50%}
 .th.s32{width:34px;height:34px;border-radius:9px}
 .th.s40{width:42px;height:42px;border-radius:11px}
@@ -640,6 +652,36 @@ textarea.inp{padding:10px 12px;font:400 13px/1.5 var(--f-mono)}
 @keyframes fx-blink{0%{opacity:1}50%{opacity:.35}}
 :root[data-skin="natal"] .login::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;background-image:radial-gradient(3px 3px at 8% 12%,var(--snow,#C9D6E3) 50%,transparent 52%),radial-gradient(2px 2px at 22% 64%,var(--snow,#C9D6E3) 50%,transparent 52%),radial-gradient(3.4px 3.4px at 37% 30%,var(--snow,#C9D6E3) 50%,transparent 52%),radial-gradient(2.2px 2.2px at 51% 82%,var(--snow,#C9D6E3) 50%,transparent 52%),radial-gradient(3px 3px at 66% 18%,var(--snow,#C9D6E3) 50%,transparent 52%),radial-gradient(2px 2px at 79% 55%,var(--snow,#C9D6E3) 50%,transparent 52%),radial-gradient(3.2px 3.2px at 91% 36%,var(--snow,#C9D6E3) 50%,transparent 52%),radial-gradient(2.4px 2.4px at 15% 92%,var(--snow,#C9D6E3) 50%,transparent 52%),radial-gradient(2px 2px at 45% 6%,var(--snow,#C9D6E3) 50%,transparent 52%),radial-gradient(2.8px 2.8px at 72% 74%,var(--snow,#C9D6E3) 50%,transparent 52%);background-size:100% 40vh;animation:fx-snow 12s linear infinite}
 @keyframes fx-snow{from{background-position:0 0}to{background-position:0 40vh}}
+/* logo da marca nas telas de entrada e no topo */
+.llogo{display:block;width:132px;height:132px;margin:0 auto 12px;object-fit:contain}
+.top.tlogo{justify-content:flex-start;align-items:center}
+.hlogo{flex:none;width:46px;height:46px;object-fit:contain}
+.tt{flex:1;min-width:0;display:grid;gap:5px}
+.tsub{display:flex;flex-wrap:wrap;align-items:center;gap:4px 8px;min-width:0}
+.tsub small{font:500 13px/1.3 var(--f-body);color:var(--muted)}
+.tsub .role{max-width:100%}
+.top.tlogo .tr{align-self:flex-start}
+.top.tlogo .brand{font-size:clamp(20px,5.4vw,25px)}
+/* horário do site (Ajustes) */
+.dias{display:flex;flex-wrap:wrap;gap:6px}
+.hrs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.hrs .fld{margin-top:10px}
+.sitec.wait{border-color:var(--warn);box-shadow:inset 4px 0 0 var(--warn)}
+.sitec.wait .sitec-t small{color:var(--warn);font-weight:600}
+.sitec-hr{margin:0;display:flex;flex-wrap:wrap;align-items:center;gap:4px 10px;font-size:13px;color:var(--muted)}
+.sitec-hr .lnk{min-height:32px;padding:0}
+/* tema da marca: letreiro dourado, botões em brasa, faíscas na entrada */
+:root[data-skin="noite"] .brand{font-family:var(--f-brand);font-weight:800;letter-spacing:0;color:#F2B54A;text-shadow:0 1px 0 #6B2A0A,0 2px 12px rgba(242,169,59,.16)}
+:root[data-skin="noite"] .t{background:#2A2019;color:var(--ink);border:1px solid #4A3826}
+:root[data-skin="noite"] .eyebrow{color:#D9A24A}
+:root[data-skin="noite"] .btn.pri{background:linear-gradient(180deg,#F8C056,#E8892E);color:#1A1006;box-shadow:inset 0 1px 0 rgba(255,255,255,.35),0 4px 14px rgba(232,137,46,.22)}
+:root[data-skin="noite"] .chip[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--on-accent)}
+:root[data-skin="noite"] .tabs{background:#120E0B;border-top-color:#3A2C1E}
+:root[data-skin="noite"] .tab[aria-current="page"]{color:#F2B54A}
+:root[data-skin="noite"] .top::after{content:"";position:absolute;left:calc(-1 * max(16px,env(safe-area-inset-left,0px)));right:calc(-1 * max(16px,env(safe-area-inset-right,0px)));bottom:0;height:2px;background:linear-gradient(90deg,transparent,#FFC15A 15%,#FF7A1A 50%,#D8340C 85%,transparent);pointer-events:none}
+:root[data-skin="noite"] .login::before{content:"";position:fixed;left:0;right:0;bottom:0;height:60vh;pointer-events:none;z-index:-1;background:radial-gradient(75% 90% at 50% 118%,rgba(230,90,20,.42),rgba(230,90,20,0) 70%)}
+:root[data-skin="noite"] .login::after{content:"";position:fixed;left:0;right:0;bottom:0;height:60vh;pointer-events:none;z-index:-1;opacity:.9;background-image:radial-gradient(2px 2px at 12% 70%,#FF8A3D 50%,transparent 51%),radial-gradient(1.6px 1.6px at 34% 85%,#FFB347 50%,transparent 51%),radial-gradient(2.2px 2.2px at 58% 62%,#FF6A1A 50%,transparent 51%),radial-gradient(1.6px 1.6px at 80% 78%,#FFB347 50%,transparent 51%),radial-gradient(2px 2px at 92% 66%,#FF8A3D 50%,transparent 51%),radial-gradient(1.4px 1.4px at 46% 94%,#FFD27A 50%,transparent 51%);background-size:100% 30vh;animation:fx-sparks 7s linear infinite}
+:root[data-skin="noite"] .llogo{filter:drop-shadow(0 0 26px rgba(255,120,30,.22))}
 .skins{display:grid;gap:8px;margin-top:10px}
 .skin{display:flex;align-items:center;gap:12px;width:100%;padding:10px;border-radius:14px;border:1px solid var(--line);background:var(--surface);color:var(--ink);text-align:left;cursor:pointer}
 .skin[aria-pressed="true"]{border-color:var(--accent);box-shadow:inset 0 0 0 2px var(--accent)}
@@ -738,7 +780,7 @@ const normDeg=d=>(((Math.round(+d||0))%360)+360)%360;
 /*PURE-END*/
 
 const $=(s,r)=>(r||document).querySelector(s);
-const CATS=[{id:'esp',name:'Espetinhos',st:['churras']},{id:'jan',name:'Jantinhas',st:['churras','coz']},{id:'por',name:'Porções e acompanhamentos',st:['coz']},{id:'beb',name:'Bebidas',st:[]}];
+const CATS=[{id:'esp',name:'Espetinhos',st:['churras']},{id:'jan',name:'Jantinhas',st:['churras','coz']},{id:'lan',name:'Lanches',st:['churras','coz']},{id:'por',name:'Porções e acompanhamentos',st:['coz']},{id:'beb',name:'Bebidas',st:[]}];
 const catOf=id=>CATS.find(c=>c.id===id)||{id:id,name:'Outros',st:['coz']};
 const STATIONS=['churras','coz'];
 const DEF_ST={churras:'Churrasqueira',coz:'Cozinha'};
@@ -822,10 +864,12 @@ const IC={};
   IC.longneck='<rect x="28" y="5" width="8" height="5" rx="1.2" fill="#C9A227"/><path d="M29 10h6v10c0 2 6 4 6 9v24c0 2-1 3-3 3H26c-2 0-3-1-3-3V29c0-5 6-7 6-9z" fill="#7A4518"/><rect x="23" y="34" width="18" height="12" rx="1" fill="#F1E3C4"/><path d="M27 40h10" stroke="#B9874A" stroke-width="1.8" stroke-linecap="round"/><rect x="26.5" y="12" width="2" height="30" fill="#FFFFFF" opacity=".18"/>';
   IC.garrafa='<rect x="28" y="3" width="8" height="5" rx="1.2" fill="#C9A227"/><path d="M29 8h6v9c0 3 8 5 8 11v28c0 3-2 5-5 5H26c-3 0-5-2-5-5V28c0-6 8-8 8-11z" fill="#6A3B16"/><rect x="21" y="32" width="22" height="15" rx="1" fill="#EAD8B0"/><path d="M25 38h14M27 42h10" stroke="#B9874A" stroke-width="1.8" stroke-linecap="round"/><rect x="25" y="20" width="2.4" height="34" fill="#FFFFFF" opacity=".16"/>';
   IC.copo='<path d="M19 14h26l-3.5 40h-19z" fill="#E3F1F8" stroke="#B5D3E3" stroke-width="1.5"/><path d="M20.4 26h23.2l-2.5 28H22.9z" fill="#F0B64A" opacity=".9"/><rect x="24" y="28" width="7" height="7" rx="1.5" fill="#FFFFFF" opacity=".85" transform="rotate(-12 27.5 31.5)"/><rect x="33" y="31" width="7" height="7" rx="1.5" fill="#FFFFFF" opacity=".8" transform="rotate(10 36.5 34.5)"/>';
+  IC.hamburguer='<path d="M11 49.5h42v1c0 3.6-2.9 6.5-6.5 6.5h-29c-3.6 0-6.5-2.9-6.5-6.5z" fill="#D58C3A"/><rect x="10" y="41.5" width="44" height="8" rx="4" fill="#6B3418"/><path d="M17 46.5h6M29 46.5h6M41 46.5h5" stroke="#8E4A26" stroke-width="1.6" stroke-linecap="round"/><path d="M12 40.2h40l-3.6 3.4-3-2.4-3.8 3.8-3.4-3.3-4.4 4.1-3.9-3.7-3.9 3.5-3.4-3.1-3.8 3z" fill="#F2C94C"/><rect x="11" y="37" width="42" height="3.6" rx="1.5" fill="#D9433B"/><path d="M9 35c2.2-1.8 4.4 1.6 6.6 0s4.4 1.6 6.6 0 4.4 1.6 6.6 0 4.4 1.6 6.6 0 4.4 1.6 6.6 0 4.4 1.6 6.6 0 2.2 1.6 4.4 0V38.2H9z" fill="#5E9A35"/><path d="M11 31c0-11.6 9.4-19 21-19s21 7.4 21 19c0 1.4-1.1 2.5-2.5 2.5h-37C12.1 33.5 11 32.4 11 31z" fill="#E09A45"/><path d="M17.5 24.5c2.4-5 8-8.6 15-8.6" stroke="#F4C682" stroke-width="2.6" fill="none" stroke-linecap="round" opacity=".85"/><ellipse cx="25" cy="20.5" rx="1.7" ry="1" fill="#FFF3D6" transform="rotate(-25 25 20.5)"/><ellipse cx="32" cy="17.5" rx="1.7" ry="1" fill="#FFF3D6" transform="rotate(0 32 17.5)"/><ellipse cx="39.5" cy="20.5" rx="1.7" ry="1" fill="#FFF3D6" transform="rotate(25 39.5 20.5)"/><ellipse cx="28.5" cy="26" rx="1.7" ry="1" fill="#FFF3D6" transform="rotate(-10 28.5 26)"/><ellipse cx="36" cy="26" rx="1.7" ry="1" fill="#FFF3D6" transform="rotate(12 36 26)"/><ellipse cx="44" cy="26.5" rx="1.7" ry="1" fill="#FFF3D6" transform="rotate(30 44 26.5)"/><ellipse cx="20.5" cy="27" rx="1.7" ry="1" fill="#FFF3D6" transform="rotate(-35 20.5 27)"/>';
+  IC.churraspao='<path d="M6 40c0-2.8 2.2-5 5-5h42c2.8 0 5 2.2 5 5 0 7.2-5.8 13-13 13H19C11.8 53 6 47.2 6 40z" fill="#D58C3A"/><path d="M10 37.4h44" stroke="#F1D3A0" stroke-width="2.6" stroke-linecap="round"/><rect x="9.9" y="27.9" width="9.2" height="9.2" rx="2.4" fill="#8E3B1F" transform="rotate(-8 14.5 32.5)"/><rect x="11.3" y="29.1" width="4.4" height="2" rx="1" fill="#B65A38" opacity=".8" transform="rotate(-8 14.5 32.5)"/><rect x="18.9" y="26.9" width="9.2" height="9.2" rx="2.4" fill="#7A3119" transform="rotate(10 23.5 31.5)"/><rect x="20.3" y="28.1" width="4.4" height="2" rx="1" fill="#B65A38" opacity=".8" transform="rotate(10 23.5 31.5)"/><rect x="27.9" y="27.9" width="9.2" height="9.2" rx="2.4" fill="#8E3B1F" transform="rotate(-4 32.5 32.5)"/><rect x="29.3" y="29.1" width="4.4" height="2" rx="1" fill="#B65A38" opacity=".8" transform="rotate(-4 32.5 32.5)"/><rect x="36.9" y="26.9" width="9.2" height="9.2" rx="2.4" fill="#7A3119" transform="rotate(12 41.5 31.5)"/><rect x="38.3" y="28.1" width="4.4" height="2" rx="1" fill="#B65A38" opacity=".8" transform="rotate(12 41.5 31.5)"/><rect x="45.4" y="27.9" width="9.2" height="9.2" rx="2.4" fill="#8E3B1F" transform="rotate(-10 50 32.5)"/><rect x="46.8" y="29.1" width="4.4" height="2" rx="1" fill="#B65A38" opacity=".8" transform="rotate(-10 50 32.5)"/><rect x="18.5" y="28.2" width="3.4" height="3.4" rx="1" fill="#D9433B" transform="rotate(15 20.2 29.9)"/><rect x="27.5" y="28.6" width="3.4" height="3.4" rx="1" fill="#4E9A3B" transform="rotate(-10 29.2 30.3)"/><rect x="36.5" y="28.2" width="3.4" height="3.4" rx="1" fill="#FFFFFF" transform="rotate(5 38.2 29.9)"/><rect x="45" y="28.8" width="3.4" height="3.4" rx="1" fill="#D9433B" transform="rotate(-15 46.7 30.5)"/><path d="M9 25c0-7.2 10.3-12 23-12s23 4.8 23 12c0 1.7-1.3 3-3 3H12c-1.7 0-3-1.3-3-3z" fill="#E7A957"/><path d="M19.5 17.6l3.4 4.4M28.5 15.6l3.4 4.4M37.5 15.9l3.4 4.4M45.8 18.2l2.6 3.4" stroke="#B9782C" stroke-width="2" stroke-linecap="round"/><path d="M14 22.5c2-3.4 6-5.6 10.4-6.4" stroke="#F6CF8F" stroke-width="2.2" stroke-linecap="round" fill="none" opacity=".8"/>';
 })();
-const IC_LABEL={carne:'Carne',frango:'Frango',coracao:'Coração',linguica:'Linguiça',queijo:'Queijo coalho',medalhao:'Medalhão',kafta:'Kafta',pao:'Pão de alho',espeto:'Espeto misto',jantinha:'Jantinha de carne',jantfrango:'Jantinha de frango',jantmista:'Jantinha mista',prato:'Prato',mandioca:'Mandioca',farofa:'Farofa',vinagrete:'Vinagrete',arroz:'Arroz',lata:'Lata',suco:'Suco',agua:'Água',longneck:'Long neck',garrafa:'Garrafa 600',copo:'Copo'};
-const AUTO_IC=[[/farofa/,'farofa'],[/vinagrete/,'vinagrete'],[/arroz/,'arroz'],[/mandioca|aipim|macaxeira|batata/,'mandioca'],[/medalh|bacon/,'medalhao'],[/cora[cç][aã]o/,'coracao'],[/lingui[cç]a/,'linguica'],[/queijo|coalho/,'queijo'],[/kafta|kofta/,'kafta'],[/p[aã]o/,'pao'],[/frango|galinha|asa|coxa/,'frango'],[/refri|coca|guaran|lata|soda/,'lata'],[/suco/,'suco'],[/[aá]gua/,'agua'],[/600|litr|garrafa/,'garrafa'],[/cerveja|long|chopp|chope/,'longneck'],[/carne|picanha|alcatra|fraldinha|contra|boi|cupim/,'carne']];
-function autoIcon(name,cat){const n=String(name||'').toLowerCase();if(cat==='jan')return /mist/.test(n)?'jantmista':/frango|galinha/.test(n)?'jantfrango':'jantinha';for(const x of AUTO_IC)if(x[0].test(n))return x[1];return {esp:'espeto',jan:'jantinha',por:'mandioca',beb:'copo'}[cat]||'prato'}
+const IC_LABEL={carne:'Carne',frango:'Frango',coracao:'Coração',linguica:'Linguiça',queijo:'Queijo coalho',medalhao:'Medalhão',kafta:'Kafta',pao:'Pão de alho',espeto:'Espeto misto',jantinha:'Jantinha de carne',jantfrango:'Jantinha de frango',jantmista:'Jantinha mista',prato:'Prato',mandioca:'Mandioca',farofa:'Farofa',vinagrete:'Vinagrete',arroz:'Arroz',lata:'Lata',suco:'Suco',agua:'Água',longneck:'Long neck',garrafa:'Garrafa 600',copo:'Copo',hamburguer:'Hambúrguer',churraspao:'Churraspão'};
+const AUTO_IC=[[/churras?p[aã]o|churrasco no p[aã]o/,'churraspao'],[/hamb[uú]rg|burg(er|uer)|\bx[\s-]?(salada|bacon|tudo|egg|burg)/,'hamburguer'],[/farofa/,'farofa'],[/vinagrete/,'vinagrete'],[/arroz/,'arroz'],[/mandioca|aipim|macaxeira|batata/,'mandioca'],[/medalh|bacon/,'medalhao'],[/cora[cç][aã]o/,'coracao'],[/lingui[cç]a/,'linguica'],[/queijo|coalho/,'queijo'],[/kafta|kofta/,'kafta'],[/p[aã]o/,'pao'],[/frango|galinha|asa|coxa/,'frango'],[/refri|coca|guaran|lata|soda/,'lata'],[/suco/,'suco'],[/[aá]gua/,'agua'],[/600|litr|garrafa/,'garrafa'],[/cerveja|long|chopp|chope/,'longneck'],[/carne|picanha|alcatra|fraldinha|contra|boi|cupim/,'carne']];
+function autoIcon(name,cat){const n=String(name||'').toLowerCase();if(cat==='jan')return /mist/.test(n)?'jantmista':/frango|galinha/.test(n)?'jantfrango':'jantinha';for(const x of AUTO_IC)if(x[0].test(n))return x[1];return {esp:'espeto',jan:'jantinha',por:'mandioca',beb:'copo',lan:'hamburguer'}[cat]||'prato'}
 const iconKey=m=>(m&&m.icon&&IC[m.icon])?m.icon:autoIcon(m&&m.name,m&&m.cat);
 const okImg=s=>typeof s==='string'&&/^data:image\/(jpeg|png|webp);base64,[A-Za-z0-9+/=]+$/.test(s);
 function thumb(m,cls){
@@ -834,9 +878,9 @@ function thumb(m,cls){
   return '<span class="'+c+'" aria-hidden="true"><svg viewBox="0 0 64 64">'+IC[iconKey(m)]+'</svg></span>';
 }
 /* ---------- temas: animações dos botões (fogo no carvão, moto, trenó, brilho) ---------- */
-const SKINS={classico:'Clássico',brasa:'Espetaria',natal:'Natal'};
+const SKINS={classico:'Clássico',brasa:'Espetaria',natal:'Natal',noite:'Noite'};
 const okSkin=s=>Object.prototype.hasOwnProperty.call(SKINS,s)?s:'classico';
-const FX_OF={brasa:{ok:'fogo',saiu:'moto'},natal:{ok:'brilho',saiu:'treno'}};
+const FX_OF={brasa:{ok:'fogo',saiu:'moto'},natal:{ok:'brilho',saiu:'treno'},noite:{ok:'fogo',saiu:'moto'}};
 const fxKind=(skin,act)=>(FX_OF[skin]||{})[act]||'';
 const fxRnd=(a,b)=>a+Math.random()*(b-a);
 let fxN=0;
@@ -901,6 +945,51 @@ function playFx(kind,r,radius){
   }catch(e){return 0}
 }
 const fxSnap=el=>el&&el.getBoundingClientRect?{r:el.getBoundingClientRect(),rad:getComputedStyle(el).borderRadius}:null;
+/* ---------- horário de funcionamento (fuso de Brasília, America/Sao_Paulo) ---------- */
+const DIAS_N=['domingo','segunda','terça','quarta','quinta','sexta','sábado'],DIAS_C=['Dom','Seg','Ter','Qua','Qui','Sex','Sáb'],SEMANA=[1,2,3,4,5,6,0];
+const hrMin=s=>{const m=/^(\d{1,2}):(\d{2})$/.exec(String(s||''));return m&&+m[1]<24&&+m[2]<60?(+m[1])*60+(+m[2]):null};
+function hrNorm(h){
+  if(!h||typeof h!=='object')return null;
+  if(h.a!=null&&h.f!=null&&Array.isArray(h.dias))return h;
+  const ds=(Array.isArray(h.dias)?h.dias:[]).map(Number),a=hrMin(h.abre),f=hrMin(h.fecha);
+  if(a==null||f==null)return null;
+  return {dias:SEMANA.filter(d=>ds.includes(d)),abre:h.abre,fecha:h.fecha,a:a,f:f,auto:h.auto!==false};
+}
+let hrFmtr=null;
+const hrNow=t=>{const ms=t||Date.now();
+  try{hrFmtr=hrFmtr||new Intl.DateTimeFormat('en-US',{timeZone:'America/Sao_Paulo',weekday:'short',hour:'2-digit',minute:'2-digit',hourCycle:'h23'});
+    const p=hrFmtr.formatToParts(new Date(ms)),g=k=>(p.find(x=>x.type===k)||{}).value,dow=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'].indexOf(g('weekday'));
+    if(dow>=0)return {dow:dow,min:((+g('hour'))%24)*60+(+g('minute'))}}catch(e){}
+  const d=new Date(ms-3*3600e3);return {dow:d.getUTCDay(),min:d.getUTCHours()*60+d.getUTCMinutes()}};
+/* aberto agora? fecha depois da meia-noite também vale (abre 18h, fecha 2h) */
+function inHours(h,t){
+  h=hrNorm(h);if(!h||!h.dias.length)return false;
+  const n=hrNow(t),ontem=(n.dow+6)%7;
+  if(h.a===h.f)return h.dias.includes(n.dow);
+  if(h.a<h.f)return h.dias.includes(n.dow)&&n.min>=h.a&&n.min<h.f;
+  return (h.dias.includes(n.dow)&&n.min>=h.a)||(h.dias.includes(ontem)&&n.min<h.f);
+}
+const hrFmt=s=>{const m=hrMin(s);if(m==null)return '';const mm=m%60;return Math.floor(m/60)+'h'+(mm?String(mm).padStart(2,'0'):'')};
+function nextOpen(h,t){
+  h=hrNorm(h);if(!h||!h.dias.length)return '';
+  const n=hrNow(t);
+  for(let k=0;k<=7;k++){const d=(n.dow+k)%7;if(!h.dias.includes(d)||(k===0&&n.min>=h.a))continue;return (k===0?'hoje':k===1?'amanhã':DIAS_N[d])+' às '+hrFmt(h.abre)}
+  return '';
+}
+function diasTxt(ds){
+  const on=SEMANA.map(d=>ds.includes(d)),n=on.filter(Boolean).length,cap=s=>s.charAt(0).toUpperCase()+s.slice(1);
+  if(!n)return '';if(n===7)return 'Todos os dias';
+  const runs=[];
+  for(let i=0;i<7;i++)if(on[i]&&!on[(i+6)%7]){let j=i;while(on[(j+1)%7]&&(j+1)%7!==i)j++;runs.push([i,j%7])}
+  if(runs.length===1&&n>=3)return cap(DIAS_N[SEMANA[runs[0][0]]])+' a '+DIAS_N[SEMANA[runs[0][1]]];
+  const nm=SEMANA.filter((d,i)=>on[i]).map(d=>DIAS_N[d]);
+  return cap(nm.length>1?nm.slice(0,-1).join(', ')+' e '+nm[nm.length-1]:nm[0]);
+}
+const horasTxt=h=>{h=hrNorm(h);return h&&h.dias.length?diasTxt(h.dias)+', das '+hrFmt(h.abre)+' às '+hrFmt(h.fecha):''};
+const instaUser=v=>String(v||'').trim().replace(/^https?:\/\/(www\.)?instagram\.com\//i,'').replace(/^@+/,'').replace(/[/?#].*$/,'').replace(/[^A-Za-z0-9._]/g,'').slice(0,30);
+/* barra do celular com a cor do tema */
+function skinMeta(){try{const c=getComputedStyle(document.documentElement).getPropertyValue('--bg').trim();if(c)document.querySelectorAll('meta[name="theme-color"]').forEach(m=>m.setAttribute('content',c))}catch(e){}}
+try{matchMedia('(prefers-color-scheme: dark)').addEventListener('change',skinMeta)}catch(e){}
 const thumbFor=(i,cls)=>{const m=state.menu[i.item];return thumb(m?Object.assign({id:i.item},m):{name:i.name,cat:i.cat},cls)};
 const shortName=n=>String(n||'').replace(/^espetinho de\s+/i,'').replace(/^espeto de\s+/i,'');
 
@@ -921,7 +1010,10 @@ const me={owner:false,write:true};
 const backend={mode:'boot',db:null,user:null,localOk:true};
 const IS_ARTIFACT=!!(window.claude&&typeof window.claude.use==='function');
 /* nome do app nas telas de entrada (o build do app instalado troca pelo que está em marca.json) */
-const MARCA={"nome": "Brasa Spetus", "rotulo": "Comandas"};
+const MARCA={"nome": "Brasa Spet'us", "rotulo": "Comandas", "logo": "logo.webp?v=f6fc060c", "tema": "noite", "temaNome": "Brasa Spet'us", "site": {"horas": {"dias": [1, 2, 3, 4, 5, 6], "abre": "18:30", "fecha": "23:00", "auto": true}, "local": "Área Especial, estacionamento do CRAS, Riacho Fundo I", "fone": "(61) 99875-6633", "insta": "brasa_spetus", "sobre": "Espetinhos, jantinha, hambúrguer e churraspão"}, "v": 1};
+const llogo=()=>MARCA.logo?'<img class="llogo" src="'+esc(MARCA.logo)+'" alt="" width="132" height="132" decoding="async">':'';
+const skinLabel=k=>k==='noite'&&MARCA.temaNome?MARCA.temaNome:SKINS[k];
+const skinOrder=()=>{const ks=Object.keys(SKINS);return MARCA.tema&&ks.includes(MARCA.tema)?[MARCA.tema].concat(ks.filter(k=>k!==MARCA.tema)):ks};
 const isCloud=()=>backend.mode==='cloud'||backend.mode==='fire';
 const sync={state:'ok'};
 let local={menu:{},orders:{},tables:{},staff:{},sales:{},voids:{},config:{},layout:{},stock:{},stocklog:{}};
@@ -1106,9 +1198,41 @@ async function tryLogin(){
 let actx=null,wl=null;
 function unlockAudio(){try{if(!actx){const C=window.AudioContext||window.webkitAudioContext;if(C)actx=new C()}if(actx&&actx.state==='suspended')actx.resume()}catch(e){}}
 const audioOk=()=>!!(actx&&actx.state==='running');
-function beep(n){
-  if(!ui.sound||!audioOk())return;
-  try{let t=actx.currentTime;for(let i=0;i<n;i++){const o=actx.createOscillator(),g=actx.createGain();o.type='sine';o.frequency.value=n>1?1046:880;g.gain.setValueAtTime(0.0001,t);g.gain.exponentialRampToValueAtTime(0.35,t+0.02);g.gain.exponentialRampToValueAtTime(0.0001,t+0.24);o.connect(g);g.connect(actx.destination);o.start(t);o.stop(t+0.26);t+=0.3}}catch(e){}
+/* ---------- toques de pedido: campainha de balcão, ding-dong e alarme (som gerado no aparelho, alto e limpo) ---------- */
+let sndOut=null;
+function sndBus(){if(!actx)return null;if(!sndOut){try{const c=actx.createDynamicsCompressor();c.threshold.value=-16;c.knee.value=4;c.ratio.value=8;c.attack.value=0.002;c.release.value=0.2;const g=actx.createGain();g.gain.value=1;c.connect(g);g.connect(actx.destination);sndOut=c}catch(e){sndOut=actx.destination}}return sndOut}
+function tone(t,f,dur,vol,type,parts){const out=sndBus();(parts||[[1,1,1]]).forEach(p=>{const o=actx.createOscillator(),g=actx.createGain();o.type=type||'sine';o.frequency.setValueAtTime(f*p[0],t);g.gain.setValueAtTime(0.0001,t);g.gain.exponentialRampToValueAtTime(Math.max(0.0002,vol*p[1]),t+0.005);g.gain.exponentialRampToValueAtTime(0.0001,t+dur/(p[2]||1));o.connect(g);g.connect(out);o.start(t);o.stop(t+dur+0.05)})}
+const BELL=[[1,1,1],[2,0.55,1.6],[2.76,0.4,2.2],[5.4,0.22,3],[8.9,0.1,4]];
+const TOQUES={
+  campainha:t=>{tone(t,1760,1.4,0.9,'sine',BELL);tone(t+0.3,1760,1.6,0.9,'sine',BELL)},
+  dingdong:t=>{tone(t,1318.5,1.1,0.85,'sine',BELL);tone(t+0.42,1046.5,1.5,0.85,'sine',BELL)},
+  alarme:t=>{for(let i=0;i<6;i++)tone(t+i*0.16,i%2?2093:2637,0.13,0.55,'square')},
+  pronto:t=>{tone(t,2093,0.9,0.7,'sine',BELL)}
+};
+const TOQUE_NOMES=[['campainha','Campainha'],['dingdong','Ding-dong'],['alarme','Alarme forte']];
+const toqueNow=()=>TOQUES[state.config&&state.config.toque]&&state.config.toque!=='pronto'?state.config.toque:'campainha';
+function playToque(kind,times){if(!ui.sound||!audioOk())return;try{const fn=TOQUES[kind]||TOQUES.campainha,gap=kind==='alarme'?1.1:kind==='pronto'?0.6:1.1;let t=actx.currentTime+0.02;for(let i=0;i<(times||1);i++){fn(t);t+=gap}}catch(e){}}
+function beep(n){playToque(n>=2?toqueNow():'pronto',1)}
+/* notificação do sistema quando o app está minimizado (só no app instalado, com permissão) */
+function sysNotify(title,body){
+  try{
+    if(IS_ARTIFACT||!('Notification' in window)||Notification.permission!=='granted'||!document.hidden)return;
+    const opt={body:body||'',tag:'pedido',renotify:true,icon:'icon-192.png',badge:'icon-192.png',vibrate:[250,120,250]};
+    if(navigator.serviceWorker&&navigator.serviceWorker.controller)navigator.serviceWorker.ready.then(r=>r.showNotification(title,opt)).catch(()=>{});
+    else new Notification(title,opt);
+  }catch(e){}
+}
+/* pedido novo: toca, vibra, avisa e repete a cada 20 s até alguém tocar na tela (ou o pedido sair da fila) */
+let alertT=null;
+const alertPending=()=>{const r=role();if(r==='tela')return tickets(session.st,'tudo').length>0;return Object.keys(state.online||{}).length>0};
+function alertNew(title,body){
+  playToque(toqueNow(),1);
+  try{if(navigator.vibrate)navigator.vibrate([250,120,250,120,400])}catch(e){}
+  sysNotify(title,body);
+  ui.alertAt=Date.now();clearInterval(alertT);alertT=null;
+  if(state.config.repetir===false)return;
+  let n=0;
+  alertT=setInterval(()=>{n++;if(n>6||(ui.ackAt||0)>ui.alertAt||!alertPending()){clearInterval(alertT);alertT=null;return}playToque(toqueNow(),1);try{if(navigator.vibrate)navigator.vibrate([250,120,250])}catch(e){}sysNotify(title,body)},20000);
 }
 async function keepAwake(on){
   try{
@@ -1124,11 +1248,19 @@ function salaoGroups(){const by={};orderList().forEach(o=>{if(isDlv(o))return;(b
 const salaoOrdersOf=t=>salaoGroups()[t]||[];
 const sumOrders=os=>os.reduce((s,o)=>s+orderTotal(o),0);
 const qtyOrders=os=>os.reduce((s,o)=>s+orderQty(o),0);
+/* cardápio do delivery: o item pode sair do site, ter preço próprio no delivery e uma descrição para o cliente */
+const dPrice=m=>(m&&+m.dcents>0)?+m.dcents:((m&&+m.cents)||0);
+const onSite=m=>!!m&&m.site!==false;
+const onSalao=m=>!!m&&m.salao!==false;
 const menuList=()=>Object.keys(state.menu).map(id=>Object.assign({id:id},state.menu[id])).filter(m=>CATS.some(c=>c.id===m.cat)).sort((a,b)=>((a.ord==null?1e9:a.ord)-(b.ord==null?1e9:b.ord))||String(a.name).localeCompare(String(b.name),'pt-BR'));
 const methodName=id=>(METHODS.find(m=>m.id===id)||{name:'—'}).name;
 const itemSt=i=>Array.isArray(i.st)?i.st.filter(s=>STATIONS.includes(s)):catOf(i.cat).st;
 const itemStations=m=>Array.isArray(m.st)?m.st.filter(s=>STATIONS.includes(s)):catOf(m.cat).st.slice();
 function stationsOf(items){const st={};items.forEach(i=>itemSt(i).forEach(s=>{st[s]='novo'}));return st}
+/* delivery: a tela que monta o pacote recebe todo pedido, com a lista completa (inclusive bebidas da geladeira) */
+const packerSt=()=>STATIONS.includes(state.config&&state.config.packer)?state.config.packer:'coz';
+function dlvStations(items){const st=stationsOf(items);if(items.length&&!st[packerSt()])st[packerSt()]='novo';return st}
+const noStItems=o=>(o.items||[]).filter(i=>!itemSt(i).length);
 const stText=list=>list.length?list.map(stName).join(' + '):'Sem tela (só entra na conta)';
 let _defL=null;
 function layoutNow(){const L=state.layout;if(L&&Array.isArray(L.tables)&&L.tables.length)return {tables:L.tables,zones:Array.isArray(L.zones)?L.zones:[]};return _defL||(_defL=defaultLayout())}
@@ -1179,7 +1311,8 @@ function addDraft(k,itemId){
   const st=itemStock(Object.assign({id:itemId},it),k);
   if(st.tracked&&st.after<1){toast(st.out?'Acabou: '+it.name+'.':'Não dá para pôr mais: '+it.name+' está acabando.');return}
   const d=draftOf(k),x=dkey(itemId,'',[]);
-  if(d[x])d[x].qty++;else d[x]={item:itemId,name:it.name,base:it.cents,cents:it.cents,cat:it.cat,st:itemStations(it),adds:[],qty:1,note:'',at:Date.now()};
+  const pr=k==='dlv'?dPrice(it):it.cents;
+  if(d[x])d[x].qty++;else d[x]={item:itemId,name:it.name,base:pr,cents:pr,cat:it.cat,st:itemStations(it),adds:[],qty:1,note:'',at:Date.now()};
   saveDrafts();
 }
 function decDraftItem(k,itemId){const ls=draftList(k).filter(l=>l.item===itemId);if(!ls.length)return;decDraft(k,(ls.find(l=>!l.note&&!(l.adds&&l.adds.length))||ls[ls.length-1]).k)}
@@ -1263,7 +1396,7 @@ function checkTransitions(){
   });
   Object.keys(seen).forEach(id=>{if(!state.orders[id])delete seen[id]});
   seenInit=true;
-  if(fresh){beep(2);toast(fresh===1?'Pedido novo chegou.':fresh+' pedidos novos chegaram.')}
+  if(fresh){alertNew(fresh===1?'Pedido novo na '+stName(session.st):fresh+' pedidos novos na '+stName(session.st),'Toque para abrir a tela.');toast(fresh===1?'Pedido novo chegou.':fresh+' pedidos novos chegaram.')}
   if(ready.length){beep(1);const x=ready[0];toast((isDlv(x.o)?'Delivery #'+x.o.code:'Mesa '+x.o.table)+': '+stName(x.s).toLowerCase()+' pronta'+(ready.length>1?' (+'+(ready.length-1)+')':'')+'.')}
 }
 
@@ -1272,14 +1405,16 @@ function tickets(st,origin){return orderList().filter(o=>(o.st||{})[st]==='novo'
 const itemsFor=(o,st)=>(o.items||[]).filter(i=>itemSt(i).includes(st));
 function ticketHtml(o,st,compact){
   const late=mins(o.at)>=LATE_MIN,dlv=isDlv(o),its=itemsFor(o,st),others=Object.keys(o.st||{}).filter(s=>s!==st);
+  const pack=dlv&&st===packerSt()?(o.items||[]).filter(i=>!itemSt(i).includes(st)):[];
+  const packHtml=pack.length?'<div class="kc-pack"><b>'+(its.length?'Junto no pacote':'Montar o pacote')+'</b><ul>'+pack.map(i=>{const from=itemSt(i);return '<li'+(from.length?'':' class="bev"')+'><span class="q">'+i.qty+'×</span>'+esc(i.name)+(i.adds&&i.adds.length?' '+esc(addsText(i.adds)):'')+(i.note?' ('+esc(i.note)+')':'')+'<small>'+(from.length?'vem da '+esc(from.map(x=>stName(x)).join(' e ')):'pegar na geladeira')+'</small></li>'}).join('')+'</ul></div>':'';
   const title=dlv?'Delivery #'+(o.code||'?'):'Mesa '+o.table;
   const who=dlv?esc(firstName(o.dlv&&o.dlv.nome)||'Cliente'):esc(nameOf(o.by));
   return '<article class="kc'+(late?' late':'')+(dlv?' dlv':'')+(Date.now()-(o.at||0)<60000?' fresh':'')+(compact?' sm':'')+'">'+
    '<div class="kc-h"><b>'+title+'</b><span>'+hm(o.at)+' · '+ago(o.at)+'</span></div>'+
    '<div class="kc-w">'+(dlv?'<span class="badge dlv">Delivery</span>':'')+'<span>'+who+'</span>'+others.map(s=>'<span class="badge'+(o.st[s]==='pronto'?' ok':'')+'">'+esc(stName(s))+': '+(o.st[s]==='pronto'?'pronto':'preparando')+'</span>').join('')+'</div>'+
-   '<ul>'+its.map(i=>'<li>'+thumbFor(i,compact?'s32':'s40')+'<span class="kt"><span class="q">'+i.qty+'×</span>'+esc(i.name)+(i.adds&&i.adds.length?'<em class="ad">'+esc(addsText(i.adds))+'</em>':'')+(i.note?'<em>'+esc(i.note)+'</em>':'')+'</span></li>').join('')+'</ul>'+
+   (its.length?'<ul>'+its.map(i=>'<li>'+thumbFor(i,compact?'s32':'s40')+'<span class="kt"><span class="q">'+i.qty+'×</span>'+esc(i.name)+(i.adds&&i.adds.length?'<em class="ad">'+esc(addsText(i.adds))+'</em>':'')+(i.note?'<em>'+esc(i.note)+'</em>':'')+'</span></li>').join('')+'</ul>':'')+packHtml+
    (dlv&&o.dlv&&o.dlv.obs?'<p class="kc-obs">Obs.: '+esc(o.dlv.obs)+'</p>':'')+
-   '<button class="btn okb'+(compact?' sm':'')+'" data-act="ready" data-id="'+esc(o.id)+'" data-st="'+st+'"'+(me.write?'':' disabled')+'>Pronto</button></article>';
+   '<button class="btn okb'+(compact?' sm':'')+'" data-act="ready" data-id="'+esc(o.id)+'" data-st="'+st+'"'+(me.write?'':' disabled')+'>'+(pack.length?'Pacote pronto':'Pronto')+'</button></article>';
 }
 function originTabs(st,cls){
   const c={tudo:tickets(st,'tudo').length,salao:tickets(st,'salao').length,delivery:tickets(st,'delivery').length};
@@ -1315,7 +1450,7 @@ function sendDelivery(btn){
   else if(!f.pay)f.err='Escolha a forma de pagamento.';
   else f.err=stockProblem(items);
   if(f.err){ui.pane='bill';render(true);return}
-  const code=nextDlvCode(),st=stationsOf(items),none=!Object.keys(st).length,today=dayKey(Date.now()),oid='o'+rid();
+  const code=nextDlvCode(),st=dlvStations(items),none=!Object.keys(st).length,today=dayKey(Date.now()),oid='o'+rid();
   put('orders',oid,{kind:'delivery',code:code,table:null,items:items,by:session.id||'',at:Date.now(),st:st,delivered:none,
     dlv:{nome:f.nome.trim().slice(0,60),fone:f.fone.trim().slice(0,30),end:f.end.trim().slice(0,140),ref:f.ref.trim().slice(0,100),obs:f.obs.trim().slice(0,100),fee:dFee(),pay:f.pay,troco:f.pay==='din'?parseMoney(f.troco):0,status:'preparo'}});
   logStock('l'+oid,items,1);
@@ -1348,6 +1483,7 @@ function head(sub){
   const s=session&&session.kind==='staff'?state.staff[session.id]:null;
   const who=session&&session.kind==='screen'?'Tela · '+stName(session.st):(s?s.name+' · '+ROLES[s.role]:'');
   const nm=isMgr()?'<button class="brandbtn" data-act="editname" aria-label="Trocar o nome do comércio">'+esc(state.config.name)+ICON.pen+'</button>':esc(state.config.name);
+  if(MARCA.logo)return '<header class="top tlogo"><img class="hlogo" src="'+esc(MARCA.logo)+'" alt="" width="46" height="46" decoding="async"><div class="tt"><h1 class="brand">'+nm+'</h1><div class="tsub">'+(who?'<span class="role'+(isMgr()?' mgr':'')+'">'+esc(who)+'</span>':'')+(sub?'<small>'+sub+'</small>':'')+'</div></div><div class="tr"><button class="out" data-act="logout" aria-label="Sair e trocar de usuário">'+ICON.out+'Sair</button>'+syncHtml()+'</div></header>';
   return '<header class="top"><h1 class="brand">'+nm+(sub?'<small>'+sub+'</small>':'')+'</h1><div class="tr"><div class="me"><span class="role'+(isMgr()?' mgr':'')+'">'+esc(who)+'</span><button class="out" data-act="logout" aria-label="Sair e trocar de usuário">'+ICON.out+'Sair</button></div>'+syncHtml()+'</div></header>';
 }
 function banner(){
@@ -1357,13 +1493,13 @@ function banner(){
   if(!me.write)return IS_ARTIFACT?'<p class="note warn">Este aparelho só pode ver. Para lançar pedidos, a conta Claude dele precisa de acesso de edição (veja Gerência › Ajustes › Acesso).</p>':'<p class="note warn">Este aparelho está sem permissão para lançar pedidos.</p>';
   return '';
 }
-function viewLoading(){return '<div class="login"><div class="lhead"><p class="eyebrow">'+esc(MARCA.rotulo)+'</p><h1 class="brand">'+esc(state.config.name)+'</h1></div><div class="empty" role="status">Carregando…</div></div>'}
+function viewLoading(){return '<div class="login"><div class="lhead">'+llogo()+'<p class="eyebrow">'+esc(MARCA.rotulo)+'</p><h1 class="brand">'+esc(state.config.name)+'</h1></div><div class="empty" role="status">Carregando…</div></div>'}
 
 function viewSetup(){
   const can=backend.mode==='local'||me.owner;
-  if(!can)return '<div class="login"><div class="lhead"><p class="eyebrow">'+esc(MARCA.rotulo)+'</p><h1 class="brand">'+esc(state.config.name)+'</h1></div><div class="empty">'+(IS_ARTIFACT?'O gerente ainda não configurou o sistema. Ele precisa abrir este link na conta dele primeiro.':'O dono ainda não terminou a configuração. Peça para ele abrir o app no celular dele.')+'</div></div>';
+  if(!can)return '<div class="login"><div class="lhead">'+llogo()+'<p class="eyebrow">'+esc(MARCA.rotulo)+'</p><h1 class="brand">'+esc(state.config.name)+'</h1></div><div class="empty">'+(IS_ARTIFACT?'O gerente ainda não configurou o sistema. Ele precisa abrir este link na conta dele primeiro.':'O dono ainda não terminou a configuração. Peça para ele abrir o app no celular dele.')+'</div></div>';
   const f=ui.setup||{name:'',biz:null,err:''};
-  return '<div class="login"><div class="lhead"><p class="eyebrow">Primeiro acesso</p><h1 class="brand">Vamos começar</h1><p class="lead">Dê o nome do seu comércio e crie o seu login de gerente. Os garçons você cadastra depois, em Gerência › Equipe.</p></div>'+
+  return '<div class="login"><div class="lhead">'+llogo()+'<p class="eyebrow">Primeiro acesso</p><h1 class="brand">Vamos começar</h1><p class="lead">Dê o nome do seu comércio e crie o seu login de gerente. Os garçons você cadastra depois, em Gerência › Equipe.</p></div>'+
    '<form class="card setup" id="setupForm"><div class="fld"><label for="sBiz">Nome do comércio</label><input id="sBiz" class="inp" maxlength="40" autocomplete="organization" value="'+esc(f.biz==null?state.config.name:f.biz)+'"></div>'+
    '<div class="fld"><label for="sName">Seu nome</label><input id="sName" class="inp" maxlength="30" autocomplete="off" value="'+esc(f.name)+'"></div>'+
    '<div class="fld"><label for="sPin1">PIN de gerente (4 a 6 números)</label><input id="sPin1" class="inp pin" type="password" inputmode="numeric" maxlength="6" autocomplete="new-password"></div>'+
@@ -1380,7 +1516,7 @@ function viewLogin(){
   const gar=rest.filter(s=>s.role==='garcom'),ger=rest.filter(s=>s.role==='gerente'),noGar=!act.some(s=>s.role==='garcom');
   const top=last?'<button class="last" data-act="pick" data-id="'+esc(last.id)+'">'+avHtml(last)+'<span class="last-t"><small>Continuar como</small><b>'+esc(last.name)+'</b><small>'+(ROLES[last.role]||'')+'</small></span>'+ICON.next+'</button>':'';
   const scr=STATIONS.map(x=>'<button class="scrbtn" data-act="screen" data-st="'+x+'">'+(x==='churras'?ICON.flame:ICON.pot)+'<span>'+esc(stName(x))+'</span></button>').join('');
-  return '<div class="login"><div class="lhead"><p class="eyebrow">'+esc(MARCA.rotulo)+'</p><h1 class="brand">'+esc(state.config.name)+'</h1><p class="lead">'+(last?'Bom trabalho! Toque no seu nome e digite o PIN.':'Quem vai usar este aparelho? Toque no seu nome e digite o PIN.')+'</p></div>'+(backend.mode==='local'?'<p class="note">Modo demonstração: os dados ficam só neste aparelho.</p>':'')+top+
+  return '<div class="login"><div class="lhead">'+llogo()+'<p class="eyebrow">'+esc(MARCA.rotulo)+'</p><h1 class="brand">'+esc(state.config.name)+'</h1><p class="lead">'+(last?'Bom trabalho! Toque no seu nome e digite o PIN.':'Quem vai usar este aparelho? Toque no seu nome e digite o PIN.')+'</p></div>'+(backend.mode==='local'?'<p class="note">Modo demonstração: os dados ficam só neste aparelho.</p>':'')+top+
    (gar.length?'<h2 class="h2">'+(last?'Outros garçons':'Garçons')+'</h2><div class="who2">'+gar.map(tile).join('')+'</div>':noGar?'<h2 class="h2">Garçons</h2><div class="card emptyg"><p><b>Nenhum garçom cadastrado ainda.</b></p><p class="hint">Entre como gerente e cadastre cada garçom em Gerência › Equipe › Cadastrar garçom, com nome e PIN. Depois o nome dele aparece aqui.</p></div>':'')+
    (ger.length?'<h2 class="h2">Gerência</h2><div class="who2">'+ger.map(tile).join('')+'</div>':'')+
    '<h2 class="h2">Aparelho da churrasqueira ou da cozinha?</h2><div class="scrrow">'+scr+'</div><p class="hint" style="margin-top:10px">Escolha uma vez e deixe o aparelho aberto nessa tela. Não precisa de PIN.</p>'+loginExtras()+'</div>';
@@ -1448,10 +1584,10 @@ function viewSalao(){
 }
 
 function pickerHtml(k){
-  const all=menuList(),items=all.filter(m=>m.cat===ui.cat),qty={};
+  const dl=k==='dlv',all=menuList().filter(m=>dl?onSite(m):onSalao(m)),items=all.filter(m=>m.cat===ui.cat),qty={};
   draftList(k).forEach(l=>{qty[l.item]=(qty[l.item]||0)+l.qty});
   const can=me.write;
-  const chips=CATS.map(c=>'<button class="chip" data-act="cat" data-id="'+c.id+'" aria-pressed="'+(ui.cat===c.id)+'">'+c.name+'</button>').join('');
+  const chips=CATS.filter(c=>c.id===ui.cat||all.some(m=>m.cat===c.id)).map(c=>'<button class="chip" data-act="cat" data-id="'+c.id+'" aria-pressed="'+(ui.cat===c.id)+'">'+c.name+'</button>').join('');
   let list;
   if(!all.length)list='<div class="empty"><span>O cardápio ainda está vazio.</span>'+(isMgr()?'<button class="btn pri" data-act="seed">Carregar cardápio de exemplo</button>':'<span>Peça ao gerente para cadastrar os itens.</span>')+'</div>';
   else if(!items.length)list='<p class="emptyline">Nenhum item nesta categoria.</p>';
@@ -1459,7 +1595,7 @@ function pickerHtml(k){
     const q=qty[m.id]||0,sk=itemStock(m,k),out=m.on===false||sk.out,id=esc(m.id),nm=esc(m.name),noMore=out||!can||(sk.tracked&&sk.after<1);
     const badge=out?'<span class="it-badge out">Acabou</span>':sk.low?'<span class="it-badge low">'+(sk.after<=0?'Sem mais':'Restam '+sk.after)+'</span>':'';
     const bar=q?'<div class="it-bar"><div class="step"><button data-act="decitem" data-id="'+id+'" aria-label="Tirar um '+nm+'">−</button><b>'+q+'</b><button data-act="add" data-id="'+id+'" aria-label="Adicionar um '+nm+'"'+(noMore?' disabled':'')+'>+</button></div></div>':(out||!can?'':'<div class="it-bar"><button class="it-plus" data-act="add" data-id="'+id+'" aria-label="Adicionar '+nm+'"'+(noMore?' disabled':'')+'>+ Adicionar</button></div>');
-    return '<div class="it'+(out?' out':'')+(q?' has':'')+'">'+(q?'<span class="it-q">'+q+'</span>':'')+badge+'<button class="it-main" data-act="add" data-id="'+id+'"'+(noMore?' disabled':'')+' aria-label="Adicionar '+nm+'">'+thumb(m,'big')+'<span class="it-tx"><span class="it-n">'+nm+'</span><span class="it-p">'+brl(m.cents)+'</span></span></button>'+bar+'</div>';
+    return '<div class="it'+(out?' out':'')+(q?' has':'')+'">'+(q?'<span class="it-q">'+q+'</span>':'')+badge+'<button class="it-main" data-act="add" data-id="'+id+'"'+(noMore?' disabled':'')+' aria-label="Adicionar '+nm+'">'+thumb(m,'big')+'<span class="it-tx"><span class="it-n">'+nm+'</span><span class="it-p">'+brl(dl?dPrice(m):m.cents)+'</span></span></button>'+bar+'</div>';
   }).join('')+'</div>';
   return '<div class="chips" data-keep>'+chips+'</div>'+list;
 }
@@ -1546,6 +1682,7 @@ function dlvCard(o){
   return '<article class="dcard ph-'+ph+'"><div class="dc-h"><b>#'+(o.code||'?')+' · '+esc(d.nome||'Cliente')+(d.site?' <span class="badge site">Site</span>':'')+'</b><span>'+hm(o.at)+' · '+ago(o.at)+'</span></div>'+
    '<p class="dc-addr">'+esc(d.end||'')+(d.ref?'<small>'+esc(d.ref)+'</small>':'')+'</p>'+(d.fone?'<p class="dc-fone">'+esc(d.fone)+'</p>':'')+
    '<p class="dc-items">'+items+'</p>'+(d.obs?'<p class="hint">Obs.: '+esc(d.obs)+'</p>':'')+
+   (ph!=='saiu'&&noStItems(o).length?'<p class="dc-bev">Conferir no pacote: '+noStItems(o).map(i=>i.qty+'× '+esc(i.name)).join(', ')+'</p>':'')+
    '<div class="dc-f"><span>'+esc(payText(d,tot))+'</span><b>'+brl(tot)+'</b></div>'+(stb&&ph!=='saiu'?'<div class="dc-st">'+stb+'</div>':'')+
    (ph==='saiu'?'<p class="hint">'+(d.ret?'Cliente avisado às ':'Saiu às ')+hm(d.saiuAt||Date.now())+'</p>':'')+'<div class="row">'+acts+'</div></article>';
 }
@@ -1555,7 +1692,7 @@ function viewDelivery(){
   const done=today?Object.keys(state.sales).map(id=>Object.assign({id:id},state.sales[id])).filter(s=>s.kind==='delivery').sort((a,b)=>b.closedAt-a.closedAt):[];
   const sec=(title,list)=>list.length?'<h2 class="h2">'+title+' ('+list.length+')</h2><div class="dsec">'+list.map(dlvCard).join('')+'</div>':'';
   const empty=!ds.length&&!Object.keys(state.online).length?'<div class="empty"><b style="color:var(--ink)">Nenhum delivery em andamento.</b><div class="steps3"><div><b>1. Lance o pedido</b>Cliente, endereço e itens. Vai direto para as telas, na aba Delivery.</div><div><b>2. Mande para o motoboy</b>Quando ficar pronto, copie o texto e envie no WhatsApp.</div><div><b>3. Marque como pago</b>O valor entra no faturamento do dia.</div></div></div>':'';
-  return head('Pedidos de entrega')+banner()+siteCard()+onlineSec()+'<div class="row" style="margin:0 0 4px"><button class="btn pri big" data-act="dnew">Novo delivery</button></div>'+
+  return head('Pedidos de entrega')+banner()+siteCard()+onlineSec()+'<div class="row" style="margin:0 0 4px"><button class="btn pri big" data-act="dnew">Novo delivery</button>'+(isMgr()?'<button class="btn big" data-act="dmenu">Cardápio do delivery</button>':'')+'</div>'+
    sec('Pronto para sair',g.pronto)+sec('Em preparo',g.preparo)+sec('Saiu para entrega',g.saiu)+empty+
    (done.length?'<h2 class="h2">Concluídos hoje ('+done.length+')</h2><div class="card"><ul class="list">'+done.slice(0,8).map(s=>'<li><span>#'+s.code+' · '+esc(s.cliente||'Cliente')+'<small>'+hm(s.closedAt)+' · '+methodName(s.method)+'</small></span><b>'+brl(s.total)+'</b></li>').join('')+'</ul></div>':'');
 }
@@ -1685,17 +1822,31 @@ function gEstoque(){
    '<p class="hint" style="margin-top:12px">Deixe em branco o que não quiser controlar. A contagem recomeça todo dia às 5h.</p>';
 }
 function gCardapio(){
-  const all=menuList();
+  const all=menuList(),cm=ui.cmode==='dlv'?'dlv':'salao';
+  const seg='<div class="seg" role="group" aria-label="Qual cardápio"><button data-act="cmode" data-v="salao" aria-pressed="'+(cm==='salao')+'">Salão</button><button data-act="cmode" data-v="dlv" aria-pressed="'+(cm==='dlv')+'">Delivery</button></div>';
+  if(cm==='dlv'){
+    const n=all.filter(onSite).length;
+    const secsD=CATS.map(c=>{
+      const its=all.filter(m=>m.cat===c.id);if(!its.length)return '';
+      return '<h2 class="h2">'+c.name+'</h2><div class="card" style="padding-block:0">'+its.map(m=>{
+        const on=onSite(m),id=esc(m.id);
+        return '<div class="mrow'+(on?'':' off')+'"><label class="thpick" title="Trocar a foto">'+thumb(m,'s40')+'<span class="cam">'+ICON.cam+'</span><input type="file" accept="image/*" data-photo="'+id+'" aria-label="Trocar a foto de '+esc(m.name)+'" hidden></label><button class="edit" data-act="itemedit" data-id="'+id+'"><b>'+esc(m.name)+'</b><span>'+brl(dPrice(m))+(+m.dcents>0?' no delivery':' · igual ao salão')+(m.desc?' · '+esc(m.desc):'')+'</span></button><label class="swl"><span>'+(on?'No site':'Fora')+'</span><span class="sw"><input type="checkbox" data-act="sitetoggle" data-id="'+id+'" aria-label="'+esc(m.name)+' no delivery"'+(on?' checked':'')+'><span></span></span></label></div>';
+      }).join('')+'</div>';
+    }).join('');
+    return seg+'<p class="hint" style="margin:0 0 8px">'+n+' de '+all.length+' itens no delivery. Desligue o que não vai no delivery. Toque no nome para mudar o preço do delivery e a descrição que aparece no site.</p>'+
+     (all.length?secsD:'<div class="empty" style="margin-top:14px">Cardápio vazio. Cadastre os itens no Salão primeiro.</div>')+
+     '<p class="hint" style="margin-top:12px">Vale para o site de pedidos e para os pedidos de delivery lançados aqui no app. Quando um item acaba, use a chave Tem/Acabou na aba Salão: ela vale para os dois.</p>';
+  }
   const secs=CATS.map(c=>{
     const its=all.filter(m=>m.cat===c.id);if(!its.length)return '';
     return '<h2 class="h2">'+c.name+'</h2><div class="card" style="padding-block:0">'+its.map(m=>{
       const on=m.on!==false,id=esc(m.id);
-      return '<div class="mrow'+(on?'':' off')+'"><label class="thpick" title="Trocar a foto">'+thumb(m,'s40')+'<span class="cam">'+ICON.cam+'</span><input type="file" accept="image/*" data-photo="'+id+'" aria-label="Trocar a foto de '+esc(m.name)+'" hidden></label><button class="edit" data-act="itemedit" data-id="'+id+'"><b>'+esc(m.name)+'</b><span>'+brl(m.cents)+' · '+esc(stText(itemStations(m)))+'</span></button><label class="swl"><span>'+(on?'Tem':'Acabou')+'</span><span class="sw"><input type="checkbox" data-act="toggle" data-id="'+id+'" aria-label="'+esc(m.name)+' disponível"'+(on?' checked':'')+'><span></span></span></label></div>';
+      return '<div class="mrow'+(on?'':' off')+'"><label class="thpick" title="Trocar a foto">'+thumb(m,'s40')+'<span class="cam">'+ICON.cam+'</span><input type="file" accept="image/*" data-photo="'+id+'" aria-label="Trocar a foto de '+esc(m.name)+'" hidden></label><button class="edit" data-act="itemedit" data-id="'+id+'"><b>'+esc(m.name)+'</b><span>'+brl(m.cents)+' · '+esc(stText(itemStations(m)))+(m.salao===false?' · só delivery':'')+(m.site===false?' · só salão':'')+'</span></button><label class="swl"><span>'+(on?'Tem':'Acabou')+'</span><span class="sw"><input type="checkbox" data-act="toggle" data-id="'+id+'" aria-label="'+esc(m.name)+' disponível"'+(on?' checked':'')+'><span></span></span></label></div>';
     }).join('')+'</div>';
   }).join('');
   const ads=addsList();
   const adHtml='<h2 class="h2">Adicionais</h2><div class="card" style="padding-block:0">'+(ads.length?ads.map((a,i)=>'<div class="mrow"><button class="edit" data-act="addedit" data-i="'+i+'"><b>+ '+esc(a.name)+'</b><span>'+brl(a.cents)+' · '+esc(a.cats&&a.cats.length?a.cats.map(c=>catOf(c).name).join(', '):'todos os itens')+'</span></button></div>').join(''):'<p class="hint" style="padding:12px 0">Nenhum adicional.</p>')+'</div><div class="row"><button class="btn" data-act="addnew">Novo adicional</button></div><p class="hint">O garçom escolhe os adicionais em "Adicionais e obs." no pedido, e o valor entra na conta.</p>';
-  return '<div class="row" style="margin:0"><button class="btn pri" data-act="itemnew">Novo item</button>'+(all.length?'':'<button class="btn" data-act="seed">Carregar exemplo</button>')+'</div>'+
+  return seg+'<div class="row" style="margin:0"><button class="btn pri" data-act="itemnew">Novo item</button>'+(all.length?'':'<button class="btn" data-act="seed">Carregar exemplo</button>')+'</div>'+
    (all.length?'':'<div class="empty" style="margin-top:14px">Cardápio vazio. Cadastre os itens ou carregue o exemplo para editar.</div>')+secs+
    (all.length?'<p class="hint" style="margin-top:12px">Toque na foto para trocar a imagem do item: ela aparece para os garçons, nas telas e no site de pedidos. Toque no nome para trocar nome, preço ou a tela para onde ele vai. Desligue a chave quando um item acabar: ele some para os garçons até você ligar de novo.</p>':'')+adHtml;
 }
@@ -1705,11 +1856,19 @@ function gEquipe(){
    '<h2 class="h2">Quem entra com PIN</h2><p class="hint" style="margin:-2px 0 8px">Para entrar como garçom neste aparelho: toque em Sair, no alto da tela, e escolha o nome dele.</p><div class="card" style="padding-block:0">'+list.map(s=>'<div class="mrow'+(s.on===false?' off':'')+'"><span class="av">'+esc(initial(s.name))+'</span><button class="edit" data-act="staffedit" data-id="'+esc(s.id)+'"><b>'+esc(s.name)+(s.id===session.id?' (você)':'')+'</b><span>'+(ROLES[s.role]||'')+(s.on===false?' · desativado':'')+'</span></button></div>').join('')+'</div>'+
    '<h2 class="h2">Telas de preparo</h2><div class="card"><p class="hint" style="padding-top:10px">Churrasqueiro e cozinheiras não precisam de login. No aparelho de cada posto, escolha na entrada a tela <b>'+esc(stName('churras'))+'</b> ou <b>'+esc(stName('coz'))+'</b> e deixe aberta. Ela avisa com som quando chega pedido e não deixa a tela apagar.</p></div>'+gDevices('rest');
 }
-const SKIN_PREV={classico: '<svg viewBox="0 0 72 54" aria-hidden="true"><rect width="72" height="54" fill="#F1F3F7"/><rect x="7" y="8" width="32" height="5" rx="2.5" fill="#121826"/><rect x="7" y="18" width="58" height="14" rx="3.5" fill="#FFFFFF" stroke="#D3D9E4"/><rect x="7" y="37" width="58" height="10" rx="5" fill="#2952CC"/></svg>', brasa: '<svg viewBox="0 0 72 54" aria-hidden="true"><rect width="72" height="54" fill="#F7F2EC"/><rect x="7" y="8" width="32" height="5" rx="2.5" fill="#1F1712"/><rect x="0" y="15.5" width="72" height="1.4" fill="#FF6A1A"/><rect x="7" y="20" width="58" height="12" rx="3.5" fill="#FFFDFA" stroke="#E4D8CB"/><rect x="7" y="37" width="58" height="10" rx="5" fill="#C2410C"/><path transform="translate(30 36.2) scale(.62)" fill="#FFD84D" d="M12 3c1 3.5 5 5.5 5 10a5 5 0 0 1-10 0c0-2.2 1-3.6 2.2-4.8.3 1.6 1 2.6 2 3.1C11 9 11 6 12 3z"/></svg>', natal: '<svg viewBox="0 0 72 54" aria-hidden="true"><rect width="72" height="54" fill="#F4F2EC"/><path d="M0 3Q9 8 18 3Q27 8 36 3Q45 8 54 3Q63 8 72 3" fill="none" stroke="#395E45" stroke-width="1"/><circle cx="9" cy="7.6" r="2" fill="#E53935"/><circle cx="27" cy="7.6" r="2" fill="#F4C430"/><circle cx="45" cy="7.6" r="2" fill="#43A047"/><circle cx="63" cy="7.6" r="2" fill="#42A5F5"/><rect x="7" y="14" width="32" height="5" rx="2.5" fill="#15201A"/><rect x="7" y="23" width="58" height="10" rx="3.5" fill="#FFFFFF" stroke="#D9D4C8"/><rect x="7" y="38" width="58" height="10" rx="5" fill="#B3261E"/><path transform="translate(33 39.2) scale(.8)" fill="#FFFFFF" d="M5 0l1.2 3.8L10 5 6.2 6.2 5 10 3.8 6.2 0 5l3.8-1.2z"/></svg>'};
-const SKIN_DESC={classico: 'Limpo e azul, como está hoje.', brasa: 'Cores de brasa. Fogo no carvão ao enviar pedido e a moto passando no botão quando sai para entrega.', natal: 'Vermelho e verde com luzinhas. Brilho ao enviar pedido e o trenó passando quando sai para entrega.'};
+const SKIN_PREV={noite: '<svg viewBox="0 0 72 54" aria-hidden="true"><rect width="72" height="54" fill="#0D0A08"/><circle cx="12.5" cy="10.5" r="6" fill="#1B140F" stroke="#C9741F" stroke-width="1.2"/><path d="M12.5 6.3c.8 1.6 2.5 2.7 2.5 4.8a2.5 2.5 0 0 1-5 0c0-1.2.5-1.9 1.1-2.5.1.8.5 1.3 1 1.6-.1-1.4-.2-2.5.4-3.9z" fill="#FF8A2B"/><rect x="22" y="8" width="26" height="5" rx="2.5" fill="#F2B54A"/><rect x="0" y="18.5" width="72" height="1.4" fill="#FF6A1A"/><rect x="7" y="24" width="58" height="10" rx="3.5" fill="#17120E" stroke="#352A20"/><rect x="7" y="38" width="58" height="10" rx="5" fill="#F2A93B"/></svg>', classico: '<svg viewBox="0 0 72 54" aria-hidden="true"><rect width="72" height="54" fill="#F1F3F7"/><rect x="7" y="8" width="32" height="5" rx="2.5" fill="#121826"/><rect x="7" y="18" width="58" height="14" rx="3.5" fill="#FFFFFF" stroke="#D3D9E4"/><rect x="7" y="37" width="58" height="10" rx="5" fill="#2952CC"/></svg>', brasa: '<svg viewBox="0 0 72 54" aria-hidden="true"><rect width="72" height="54" fill="#F7F2EC"/><rect x="7" y="8" width="32" height="5" rx="2.5" fill="#1F1712"/><rect x="0" y="15.5" width="72" height="1.4" fill="#FF6A1A"/><rect x="7" y="20" width="58" height="12" rx="3.5" fill="#FFFDFA" stroke="#E4D8CB"/><rect x="7" y="37" width="58" height="10" rx="5" fill="#C2410C"/><path transform="translate(30 36.2) scale(.62)" fill="#FFD84D" d="M12 3c1 3.5 5 5.5 5 10a5 5 0 0 1-10 0c0-2.2 1-3.6 2.2-4.8.3 1.6 1 2.6 2 3.1C11 9 11 6 12 3z"/></svg>', natal: '<svg viewBox="0 0 72 54" aria-hidden="true"><rect width="72" height="54" fill="#F4F2EC"/><path d="M0 3Q9 8 18 3Q27 8 36 3Q45 8 54 3Q63 8 72 3" fill="none" stroke="#395E45" stroke-width="1"/><circle cx="9" cy="7.6" r="2" fill="#E53935"/><circle cx="27" cy="7.6" r="2" fill="#F4C430"/><circle cx="45" cy="7.6" r="2" fill="#43A047"/><circle cx="63" cy="7.6" r="2" fill="#42A5F5"/><rect x="7" y="14" width="32" height="5" rx="2.5" fill="#15201A"/><rect x="7" y="23" width="58" height="10" rx="3.5" fill="#FFFFFF" stroke="#D9D4C8"/><rect x="7" y="38" width="58" height="10" rx="5" fill="#B3261E"/><path transform="translate(33 39.2) scale(.8)" fill="#FFFFFF" d="M5 0l1.2 3.8L10 5 6.2 6.2 5 10 3.8 6.2 0 5l3.8-1.2z"/></svg>'};
+const SKIN_DESC={noite: 'Com a cara da logo: preto, fogo e dourado. Fogo no carvão ao enviar pedido e a moto passando quando sai para entrega.', classico: 'Limpo e azul, o visual original do app.', brasa: 'Cores de brasa. Fogo no carvão ao enviar pedido e a moto passando no botão quando sai para entrega.', natal: 'Vermelho e verde com luzinhas. Brilho ao enviar pedido e o trenó passando quando sai para entrega.'};
 function skinCard(){
   const cur=skinNow();
-  return '<h2 class="h2">Tema</h2><div class="card"><p class="hint" style="padding-top:10px">Muda as cores do app em todos os aparelhos e do site de pedidos. Dá para trocar quando quiser.</p><div class="skins" role="group" aria-label="Tema">'+Object.keys(SKINS).map(k=>'<button class="skin" data-act="skin" data-v="'+k+'" aria-pressed="'+(cur===k)+'">'+SKIN_PREV[k]+'<span><b>'+SKINS[k]+'</b><small>'+SKIN_DESC[k]+'</small></span></button>').join('')+'</div><div class="row"><button class="btn" data-act="fxdemo">Ver as animações</button></div></div>';
+  return '<h2 class="h2">Tema</h2><div class="card"><p class="hint" style="padding-top:10px">Muda as cores do app em todos os aparelhos e do site de pedidos. Dá para trocar quando quiser.</p><div class="skins" role="group" aria-label="Tema">'+skinOrder().map(k=>'<button class="skin" data-act="skin" data-v="'+k+'" aria-pressed="'+(cur===k)+'">'+SKIN_PREV[k]+'<span><b>'+esc(skinLabel(k))+'</b><small>'+SKIN_DESC[k]+'</small></span></button>').join('')+'</div><div class="row"><button class="btn" data-act="fxdemo">Ver as animações</button></div></div>';
+}
+function avisosCard(){
+  const tq=toqueNow(),rep=state.config.repetir!==false,np=(!IS_ARTIFACT&&'Notification' in window)?Notification.permission:'na';
+  return '<h2 class="h2">Avisos de pedido</h2><div class="card"><div class="fld"><span class="lb">Toque de pedido novo</span><div class="meth">'+TOQUE_NOMES.map(x=>'<button class="chip" data-act="toque" data-v="'+x[0]+'" aria-pressed="'+(tq===x[0])+'">'+x[1]+'</button>').join('')+'</div><p class="hint">Vale para as telas da churrasqueira e da cozinha e para os pedidos do site.</p></div>'+
+   '<div class="row"><button class="btn" data-act="toquetest">Ouvir o toque</button></div>'+
+   '<label class="chkrow"><span>Repetir a cada 20 segundos até alguém tocar na tela</span><span class="sw"><input type="checkbox" data-act="repetir"'+(rep?' checked':'')+'><span></span></span></label>'+
+   (np==='na'?'':'<div class="fld"><span class="lb">Notificação neste celular</span>'+(np==='granted'?'<p class="hint">Ligada: com o app minimizado, chega notificação de pedido novo.</p>':np==='denied'?'<p class="hint">Bloqueada. Para ligar: Configurações do celular › Apps › Brasa Spetus › Notificações.</p>':'<div class="row" style="margin-top:4px"><button class="btn" data-act="notifon">Ativar notificações</button></div><p class="hint">Com o app minimizado, o celular avisa quando chegar pedido.</p>')+'</div>')+
+   '<p class="hint">O toque sai pelo volume de mídia: deixe ele alto nos aparelhos da cozinha e da churrasqueira.</p></div>';
 }
 function gAjustes(){
   const sn=state.config.stNames||{};
@@ -1717,8 +1876,9 @@ function gAjustes(){
    '<div class="fld"><label for="cfgPct">Taxa de serviço (%)</label><input id="cfgPct" class="inp" data-field="cfg-pct" inputmode="decimal" autocomplete="off" value="'+esc(String(pct()).replace('.',','))+'"><p class="hint">Aparece já marcada ao fechar a conta. Use 0 para não oferecer.</p></div>'+
    '<div class="fld"><label for="cfgFee">Taxa de entrega padrão (R$)</label><input id="cfgFee" class="inp" data-field="cfg-fee" inputmode="decimal" autocomplete="off" value="'+esc(((state.config.deliveryFee||0)/100).toFixed(2).replace('.',','))+'"></div>'+
    '<div class="fld"><label for="cfgSt1">Nome da tela 1</label><input id="cfgSt1" class="inp" data-field="cfg-st-churras" maxlength="20" autocomplete="off" value="'+esc(sn.churras||DEF_ST.churras)+'"></div>'+
-   '<div class="fld"><label for="cfgSt2">Nome da tela 2</label><input id="cfgSt2" class="inp" data-field="cfg-st-coz" maxlength="20" autocomplete="off" value="'+esc(sn.coz||DEF_ST.coz)+'"></div></div>'+
-   skinCard()+
+   '<div class="fld"><label for="cfgSt2">Nome da tela 2</label><input id="cfgSt2" class="inp" data-field="cfg-st-coz" maxlength="20" autocomplete="off" value="'+esc(sn.coz||DEF_ST.coz)+'"></div>'+
+   '<div class="fld"><span class="lb">Quem monta o pacote do delivery</span><div class="meth">'+STATIONS.map(x=>'<button class="chip" data-act="packer" data-v="'+x+'" aria-pressed="'+(packerSt()===x)+'">'+esc(stName(x))+'</button>').join('')+'</div><p class="hint">Essa tela recebe todo pedido de delivery com a lista completa, inclusive as bebidas da geladeira, e só marca pronto quando o pacote estiver montado.</p></div></div>'+
+   skinCard()+avisosCard()+
    (IS_ARTIFACT?'':'<h2 class="h2">Impressora</h2><div class="card"><p class="hint" style="padding-top:10px">Para imprimir a conta numa impressora térmica. No Android, instale o app da sua impressora (ou o RawBT) para ela aparecer na hora de imprimir.</p><div class="fld"><span class="lb">Largura do papel</span><div class="meth">'+['58','80'].map(w=>'<button class="chip" data-act="paper" data-v="'+w+'" aria-pressed="'+((state.config.paper||'58')===w)+'">'+w+' mm</button>').join('')+'</div></div></div>')+
    siteAjustes()+accessCardHtml()+
    '<h2 class="h2">Zerar dados</h2><div class="card"><p class="hint" style="padding-top:10px">Use depois dos testes para começar limpo. Não tem como desfazer.</p><div class="row"><button class="btn danger" data-act="wipe" data-v="sales">Apagar vendas e pedidos</button><button class="btn danger" data-act="wipe" data-v="all">Zerar tudo</button></div></div>';
@@ -1733,6 +1893,7 @@ function render(force){
   if(!force&&(drag||(ae&&/^(INPUT|TEXTAREA|SELECT)$/.test(ae.tagName)&&view.contains(ae)))){state.pend=true;paintChrome();return}
   state.pend=false;
   validateSession();
+  marcaMigra();
   if(isReady()&&session&&role())checkTransitions();
   let html;
   if(backend.mode==='nocfg'){ui.view='login';html=viewNoConfig()}
@@ -1766,10 +1927,10 @@ function pubStockSoon(){
   if(want===pubSig||want===normLeft(state.stock.left))return;
   pubT=setTimeout(()=>{pubT=null;if(!Object.keys(stockBase()).length)return;const l=stockLeft(),w=normLeft(l);if(w===pubSig||w===normLeft(state.stock.left))return;pubSig=w;upd('stock',stockDay,{left:l})},1500);
 }
-const skinNow=()=>okSkin(state.config&&state.config.skin);
+const skinNow=()=>okSkin((state.config&&state.config.skin)||MARCA.tema);
 function fxOn(act,el){const s=fxSnap(el);return s?playFx(fxKind(skinNow(),act),s.r,s.rad):0}
 function paintChrome(){
-  const sk=skinNow();if(document.documentElement.dataset.skin!==sk)document.documentElement.dataset.skin=sk;
+  const sk=skinNow();if(document.documentElement.dataset.skin!==sk){document.documentElement.dataset.skin=sk;skinMeta()}
   const app=$('#app'),r=session?role():null,tabs=r?tabsFor(r):[];
   app.dataset.view=ui.view;app.dataset.tabs=tabs.length?'1':'0';
   const nav=$('#tabs'),inn=$('#tabsIn');
@@ -1867,7 +2028,12 @@ function sheetItem(){
   '<div class="fld"><label for="fCat">Categoria</label><select id="fCat" class="inp">'+CATS.map(c=>'<option value="'+c.id+'"'+(c.id===it.cat?' selected':'')+'>'+c.name+'</option>').join('')+'</select></div>'+
   '<div class="fld"><span class="lb">Vai para a tela</span>'+STATIONS.map(x=>'<label class="chk"><input type="checkbox" id="fSt_'+x+'"'+(st.includes(x)?' checked':'')+'> '+esc(stName(x))+'</label>').join('')+'<p class="hint">Sem nenhuma marcada, o item só entra na conta (ex.: bebida da geladeira).</p></div>'+
   '<div class="fld"><label for="fUse1">Baixa no controle de espetos</label><select id="fUse1" class="inp">'+opt(u[0]||'','Este próprio item')+'</select><select id="fUse2" class="inp" aria-label="Segundo espeto que este item gasta"'+(u[0]?'':' hidden')+'>'+opt(u[1]||'','Sem segundo espeto')+'</select><p class="hint">Ex.: a jantinha de carne gasta 1 espetinho de carne.</p></div>'+
-  '<label class="chkrow"><span>Disponível</span><span class="sw"><input type="checkbox" id="fOn"'+(it.on!==false?' checked':'')+'><span></span></span></label>'+
+  '<div class="fld"><span class="lb">Onde aparece</span>'+
+   '<label class="chkrow"><span>Para os garçons (salão)</span><span class="sw"><input type="checkbox" id="fSalao"'+(it.salao!==false?' checked':'')+'><span></span></span></label>'+
+   '<label class="chkrow"><span>No delivery (site e pedidos por telefone)</span><span class="sw"><input type="checkbox" id="fSite"'+(it.site!==false?' checked':'')+'><span></span></span></label></div>'+
+  '<div class="fld"><label for="fDPrice">Preço no delivery (R$)</label><input id="fDPrice" class="inp" inputmode="decimal" autocomplete="off" placeholder="'+(it.cents?'Igual ao salão ('+esc(moneyStr(it.cents))+')':'Igual ao salão')+'" value="'+(+it.dcents>0?esc(moneyStr(it.dcents)):'')+'"><p class="hint">Em branco, o delivery cobra o mesmo preço do salão.</p></div>'+
+  '<div class="fld"><label for="fDesc">Descrição no site</label><input id="fDesc" class="inp" maxlength="120" autocomplete="off" placeholder="Ex.: acompanha farofa e vinagrete" value="'+esc(it.desc||'')+'"><p class="hint">Aparece para o cliente no site de pedidos.</p></div>'+
+  '<label class="chkrow"><span>Disponível (tem hoje)</span><span class="sw"><input type="checkbox" id="fOn"'+(it.on!==false?' checked':'')+'><span></span></span></label>'+
   (s.err?'<p class="err" role="alert">'+esc(s.err)+'</p>':'')+
   '<div class="row end">'+(s.isNew?'':'<button class="btn danger" data-act="itemdel">'+(s.confirmDel?'Confirmar exclusão':'Excluir')+'</button>')+'<button class="btn pri" data-act="itemsave">Salvar</button></div>';
 }
@@ -1876,7 +2042,8 @@ function readItemFields(){
   if(!s||s.type!=='item'||!g('fName'))return;
   s.touched=true;
   const u1=g('fUse1')?g('fUse1').value:'',u2=g('fUse2')&&u1?g('fUse2').value:'';
-  s.item=Object.assign({},s.item,{name:g('fName').value,cents:parseMoney(g('fPrice').value),cat:g('fCat').value,on:g('fOn').checked,st:STATIONS.filter(x=>g('fSt_'+x)&&g('fSt_'+x).checked),uses:[u1,u2].filter((v,i,a)=>v&&a.indexOf(v)===i)});
+  const dv=g('fDPrice')?g('fDPrice').value.trim():'';
+  s.item=Object.assign({},s.item,{salao:g('fSalao')?g('fSalao').checked:true,site:g('fSite')?g('fSite').checked:true,dcents:dv?parseMoney(dv):0,desc:g('fDesc')?g('fDesc').value:'',name:g('fName').value,cents:parseMoney(g('fPrice').value),cat:g('fCat').value,on:g('fOn').checked,st:STATIONS.filter(x=>g('fSt_'+x)&&g('fSt_'+x).checked),uses:[u1,u2].filter((v,i,a)=>v&&a.indexOf(v)===i)});
 }
 function sheetName(){return '<div class="sh"><h2>Nome do comércio</h2><button class="x" data-act="sheetx" aria-label="Fechar">'+ICON.x+'</button></div><div class="fld"><label for="nmInp">Nome</label><input id="nmInp" class="inp" maxlength="40" autocomplete="organization" value="'+esc(state.config.name)+'"></div><div class="row"><button class="btn pri big" data-act="namesave">Salvar nome</button></div>'}
 function sheetMove(){
@@ -2088,8 +2255,8 @@ const A={
     toast((isDlv(o)?'Delivery #'+o.code:'Mesa '+o.table)+' pronto.',{label:'Desfazer',fn:()=>{if(state.orders[id]){const q={};q[st]='novo';upd('orders',id,{st:q});render(true)}},ms:6000});
   },
   unready:el=>{const id=el.dataset.id,st=el.dataset.st;if(!state.orders[id])return;const q={};q[st]='novo';upd('orders',id,{st:q,delivered:false});render(true)},
-  sound:()=>{ui.sound=!ui.sound;lsSet(LS.sound,ui.sound?'1':'0');if(ui.sound){unlockAudio();setTimeout(()=>{beep(1);render(true)},120)}render(true)},
-  unlockaudio:()=>{unlockAudio();setTimeout(()=>{beep(1);render(true)},150)},
+  sound:()=>{ui.sound=!ui.sound;lsSet(LS.sound,ui.sound?'1':'0');if(ui.sound){unlockAudio();setTimeout(()=>{playToque(toqueNow(),1);render(true)},120)}render(true)},
+  unlockaudio:()=>{unlockAudio();setTimeout(()=>{playToque(toqueNow(),1);render(true)},150)},
   mapview:el=>{ui.mapView=el.dataset.v;lsSet(LS.view,ui.mapView);render(true)},
   mapedit:()=>{if(!isMgr())return;ui.mapEdit=true;ui.layoutDraft=cloneL(layoutNow());ui.mapSel=null;render(true)},
   mapcancel:()=>{ui.mapEdit=false;ui.layoutDraft=null;ui.mapSel=null;render(true)},
@@ -2130,6 +2297,9 @@ const A={
   daynext:()=>{if(state.day<dayKey(Date.now())){state.day=shiftDay(state.day,1);watchDay();render(true)}},
   reopen:el=>reopenSale(el.dataset.id),
   seed:()=>seedMenu(),
+  cmode:el=>{ui.cmode=el.dataset.v==='dlv'?'dlv':'salao';render(true)},
+  sitetoggle:el=>{const m=state.menu[el.dataset.id];if(m&&isMgr()){put('menu',el.dataset.id,Object.assign({},m,{site:el.checked}));render(true)}},
+  dmenu:()=>{if(!isMgr())return;ui.gsub='cardapio';ui.cmode='dlv';go('gerencia')},
   toggle:el=>{const m=state.menu[el.dataset.id];if(m&&isMgr()){put('menu',el.dataset.id,Object.assign({},m,{on:el.checked}));render(true)}},
   itemdel:()=>{readItemFields();const s=ui.sheet;if(!s.confirmDel){s.confirmDel=true;renderSheet();return}del('menu',s.item.id);closeSheet();render(true);toast('Item excluído.')},
   staffnew:()=>openSheet({type:'staff',isNew:true,p:{name:'',role:'garcom',on:true},err:''}),
@@ -2145,7 +2315,7 @@ const A={
     render(true);toast('Login excluído.');
   }
 };
-document.addEventListener('click',e=>{unlockAudio();touchSession();const el=e.target.closest('[data-act]');if(!el||el.disabled)return;const f=A[el.dataset.act];if(f)f(el,e)});
+document.addEventListener('click',e=>{unlockAudio();touchSession();ui.ackAt=Date.now();const el=e.target.closest('[data-act]');if(!el||el.disabled)return;const f=A[el.dataset.act];if(f)f(el,e)});
 document.addEventListener('submit',async e=>{
   e.preventDefault();
   if(e.target.id==='setupForm'){
@@ -2335,9 +2505,10 @@ Object.assign(A,{
     readItemFields();const s=ui.sheet,it=s.item,name=String(it.name||'').trim();
     if(!name){s.err='Digite o nome do item.';renderSheet();return}
     if(!(it.cents>0)){s.err='Informe o preço.';renderSheet();return}
+    if(it.salao===false&&it.site===false){s.err='O item precisa aparecer no salão, no delivery ou nos dois.';renderSheet();return}
     const id=s.isNew?'i'+rid():it.id;
     const ord=s.isNew?menuList().reduce((m,x)=>Math.max(m,x.ord==null?0:x.ord),-1)+1:(state.menu[id]||{}).ord;
-    put('menu',id,{name:name.slice(0,50),cents:it.cents,cat:it.cat,on:it.on!==false,ord:ord==null?999:ord,st:it.st||[],uses:(it.uses||[]).filter(u=>u&&u!==id),icon:IC[it.icon]?it.icon:'',img:okImg(it.img)?it.img:''});
+    put('menu',id,{name:name.slice(0,50),cents:it.cents,cat:it.cat,on:it.on!==false,ord:ord==null?999:ord,st:it.st||[],uses:(it.uses||[]).filter(u=>u&&u!==id),icon:IC[it.icon]?it.icon:'',img:okImg(it.img)?it.img:'',salao:it.salao!==false,site:it.site!==false,dcents:(+it.dcents>0&&+it.dcents!==it.cents)?Math.round(+it.dcents):0,desc:String(it.desc||'').trim().slice(0,120)});
     closeSheet();render(true);toast('Item salvo.');
   },
   addnew:()=>{if(isMgr())openSheet({type:'add',isNew:true,a:{name:'',cents:0,cats:['esp','jan']},err:''})},
@@ -2395,8 +2566,20 @@ document.addEventListener('change',e=>{
 });
 setInterval(()=>{if(stockDay&&stockDay!==dayKey(Date.now())&&isReady()&&(isCloud()||backend.mode==='local'))watchStock()},60000);
 /* ---------- site de pedidos: o cliente pede pelo link e o pedido cai aqui ---------- */
-const SITE_DEF={open:false,auto:false,fone:'',tempo:'',min:0,aviso:'',retirada:true,local:'',pay:['din','pix','car']};
-const siteCfg=()=>Object.assign({},SITE_DEF,state.config.site||{});
+const SITE_DEF={open:false,auto:false,fone:'',tempo:'',min:0,aviso:'',retirada:true,local:'',insta:'',sobre:'',pay:['din','pix','car']};
+const siteCfg=()=>Object.assign({},SITE_DEF,MARCA.site||{},state.config.site||{});
+var marcaFeito=false;
+function marcaMigra(){
+  if(marcaFeito||!MARCA.v||backend.mode!=='fire'||!me.owner||!state.loaded.config)return;
+  const c=state.config;marcaFeito=true;if((+c.marcaV||0)>=MARCA.v)return;
+  const d=MARCA.site||{},cur=Object.assign({},SITE_DEF,c.site||{}),site=Object.assign({},cur);
+  ['fone','local','insta','sobre'].forEach(k=>{if(d[k]&&!String(cur[k]||'').trim())site[k]=d[k]});
+  if(d.horas&&!(c.site&&c.site.horas))site.horas=d.horas;
+  const patch={site:site,marcaV:MARCA.v},nk=s=>String(s||'').toLowerCase().normalize('NFD').replace(/[^a-z]/g,'');
+  if(MARCA.tema&&SKINS[MARCA.tema])patch.skin=MARCA.tema;
+  if(c.name&&c.name!==MARCA.nome&&nk(c.name)===nk(MARCA.nome))patch.name=MARCA.nome;
+  put('config','main',Object.assign({},c,patch));
+}
 function siteUrl(){const c=backend.cfg||{},o={};['apiKey','authDomain','projectId','appId'].forEach(k=>{if(c[k])o[k]=c[k]});return location.href.split('#')[0].split('?')[0].replace(/[^/]*$/,'')+'pedir.html#c='+b64e(JSON.stringify(o))}
 function saveSite(patch){if(!isMgr())return;saveCfg({site:Object.assign({},siteCfg(),patch)})}
 function waNum(v){let d=String(v||'').replace(/\D/g,'').replace(/^0+/,'');if(d.length===10||d.length===11)d='55'+d;return d.length>=12&&d.length<=13?d:''}
@@ -2410,8 +2593,8 @@ function onlineCalc(o){
     if(m.on===false)miss.push(m.name+' (acabou)');
     const want=Array.isArray(i.adds)?i.adds.map(a=>a&&a.id):[];
     const ad=addsFor(m.cat).filter(a=>want.includes(a.id)).map(a=>({id:a.id,name:a.name,cents:a.cents}));
-    const it={item:i.item,name:m.name,cents:m.cents+ad.reduce((t,a)=>t+a.cents,0),qty:Math.max(1,Math.min(50,parseInt(i.qty,10)||1)),note:String(i.note||'').slice(0,60),cat:m.cat||'',st:itemStations(m).slice()};
-    if(ad.length){it.adds=ad;it.base=m.cents}
+    const it={item:i.item,name:m.name,cents:dPrice(m)+ad.reduce((t,a)=>t+a.cents,0),qty:Math.max(1,Math.min(50,parseInt(i.qty,10)||1)),note:String(i.note||'').slice(0,60),cat:m.cat||'',st:itemStations(m).slice()};
+    if(ad.length){it.adds=ad;it.base=dPrice(m)}
     items.push(it);
   });
   const ret=o.tipo==='retirada',sub=items.reduce((t,i)=>t+i.cents*i.qty,0),fee=ret?0:(state.config.deliveryFee||0);
@@ -2423,7 +2606,7 @@ function onOnline(m){
   if(!onlineSeen)onlineSeen=new Set();Object.keys(m).forEach(k=>onlineSeen.add(k));
   state.online=m;
   if(fresh.length){
-    beep(3);try{if(navigator.vibrate)navigator.vibrate([200,100,200])}catch(e){}
+    {const o0=m[fresh[0]];alertNew(fresh.length>1?fresh.length+' pedidos novos pelo site':'Novo pedido pelo site',firstName(o0.nome)+' · '+brl(onlineCalc(o0).total))}
     if(!siteCfg().auto){const o=m[fresh[0]];toast('Novo pedido pelo site: '+firstName(o.nome)+' · '+brl(onlineCalc(o).total)+'.',{label:'Ver',fn:()=>go('delivery'),ms:8000})}
   }
   if(siteCfg().auto&&me.owner)fresh.forEach(id=>acceptOnline(id,true));
@@ -2437,7 +2620,7 @@ function acceptOnline(id,auto){
   if(!c.items.length||c.miss.length){if(!auto)toast(c.miss.length?'Não dá para aceitar: '+c.miss.join(', ')+'. Recuse e avise o cliente.':'Esse pedido não tem itens.');return}
   const prob=stockProblem(c.items);if(prob){if(!auto)toast(prob.replace(' Ajuste o pedido.','')+' Recuse ou fale com o cliente.');return}
   ui.accepting[id]=1;
-  const st=stationsOf(c.items),none=!Object.keys(st).length,code=nextDlvCode(),oid='o'+rid(),today=dayKey(Date.now());
+  const st=dlvStations(c.items),none=!Object.keys(st).length,code=nextDlvCode(),oid='o'+rid(),today=dayKey(Date.now());
   put('orders',oid,{kind:'delivery',code:code,table:null,items:c.items,by:(session&&session.id)||'',at:Date.now(),st:st,delivered:none,
     dlv:{nome:String(o.nome||'Cliente').slice(0,60),fone:String(o.fone||'').slice(0,30),end:c.ret?'Retirada no local':(String(o.end||'').slice(0,140)+(o.bairro?' – '+String(o.bairro).slice(0,60):'')),ref:String(o.ref||'').slice(0,100),obs:String(o.obs||'').slice(0,100),fee:c.fee,pay:['din','pix','car','onl'].includes(o.pay)?o.pay:'din',troco:o.pay==='din'?Math.max(0,parseInt(o.troco,10)||0):0,status:'preparo',online:id,site:true,ret:c.ret}});
   logStock('l'+oid,c.items,1);
@@ -2456,7 +2639,9 @@ function rejectOnline(id,motivo){
 function siteCard(){
   if(backend.mode!=='fire'||!me.owner)return '';
   const sc=siteCfg(),url=siteUrl(),wa='https://wa.me/?text='+encodeURIComponent('Faça seu pedido no '+state.config.name+': '+url);
-  return '<section class="sitec'+(sc.open?' on':'')+'"><div class="sitec-h"><div class="sitec-t"><b>Site de pedidos</b><small>'+(sc.open?'Aberto: os clientes podem pedir agora.':'Fechado: o site avisa que não está recebendo pedidos.')+'</small></div><label class="sw"><input type="checkbox" data-act="siteopen" aria-label="Receber pedidos pelo site"'+(sc.open?' checked':'')+'><span></span></label></div>'+
+  const h=hrNorm(sc.horas),fora=!!(sc.open&&h&&h.auto&&!inHours(h));
+  return '<section class="sitec'+(sc.open?(fora?' wait':' on'):'')+'"><div class="sitec-h"><div class="sitec-t"><b>Site de pedidos</b><small>'+(!sc.open?'Fechado: o site avisa que não está recebendo pedidos.':fora?'Ligado, fora do horário: abre sozinho '+esc(nextOpen(h))+'.':'Aberto: os clientes podem pedir agora'+(h&&h.auto?' (até '+hrFmt(h.fecha)+')':'')+'.')+'</small></div><label class="sw"><input type="checkbox" data-act="siteopen" aria-label="Receber pedidos pelo site"'+(sc.open?' checked':'')+'><span></span></label></div>'+
+   (h&&h.dias.length?'<p class="sitec-hr"><span>'+esc(horasTxt(h))+(h.auto?'':' · abre e fecha na chave')+'</span><button class="lnk" data-act="sitehr">Mudar horário</button></p>':'')+
    (backend.siteDenied?'<p class="note warn" style="margin:0">Para o site funcionar, publique as regras novas do Firestore. <button class="lnk" data-act="copyrules" style="min-height:0;padding:0">Copiar regras</button></p><textarea id="rulesBox" class="inp" rows="4" readonly hidden aria-label="Regras do Firestore"></textarea>':'')+
    '<div class="sitec-a"><button class="btn sm" data-act="sitecopy">Copiar link</button><a class="btn sm" href="'+esc(wa)+'" target="_blank" rel="noopener">Mandar no WhatsApp</a><button class="btn sm" data-act="siteqr" aria-expanded="'+!!ui.siteQr+'">QR code</button><a class="btn sm" href="'+esc(url)+'" target="_blank" rel="noopener">Ver o site</a></div>'+
    (ui.siteQr?'<div class="sitec-qr">'+(ui.siteQrImg?'<img src="'+ui.siteQrImg+'" alt="QR code do site de pedidos" width="200" height="200"><span class="hint">Imprima e cole no balcão ou na embalagem.</span>':'<span class="hint">Gerando o QR code…</span>')+'</div>':'')+
@@ -2482,27 +2667,41 @@ function onlineCard(o){
 }
 function siteAjustes(){
   if(backend.mode!=='fire')return '<h2 class="h2">Site de pedidos</h2><div class="card"><p class="hint" style="padding-top:10px">O site para os clientes pedirem online funciona no app instalado (no Netlify). '+(IS_ARTIFACT?'Pelo link do Claude, o público não consegue abrir.':'No modo demonstração ele fica desligado.')+'</p></div>';
-  const sc=siteCfg();
+  const sc=siteCfg(),hz=Object.assign({dias:[],abre:'',fecha:'',auto:false},sc.horas||{});hz.dias=(hz.dias||[]).map(Number);hz.auto=!!sc.horas&&hz.auto!==false;
   return '<h2 class="h2">Site de pedidos</h2><div class="card">'+
    '<label class="chkrow"><span>Aceitar pedidos sozinho<small class="hint" style="display:block;margin:2px 0 0">O pedido vai direto para as telas. Precisa do app aberto no seu celular.</small></span><span class="sw"><input type="checkbox" data-act="siteauto"'+(sc.auto?' checked':'')+'><span></span></span></label>'+
    '<label class="chkrow"><span>Cliente pode retirar no local</span><span class="sw"><input type="checkbox" data-act="siteret"'+(sc.retirada?' checked':'')+'><span></span></span></label>'+
+   '<div class="fld"><span class="lb">Horário de funcionamento</span><div class="dias" role="group" aria-label="Dias em que abre">'+SEMANA.map(d=>'<button class="chip sm" data-act="sitedia" data-v="'+d+'" aria-pressed="'+hz.dias.includes(d)+'">'+DIAS_C[d]+'</button>').join('')+'</div>'+
+   '<div class="hrs"><div class="fld"><label for="sAbre">Abre às</label><input id="sAbre" class="inp" type="time" data-field="site-abre" value="'+esc(hz.abre)+'"></div><div class="fld"><label for="sFecha">Fecha às</label><input id="sFecha" class="inp" type="time" data-field="site-fecha" value="'+esc(hz.fecha)+'"></div></div>'+
+   '<p class="hint">'+(horasTxt(sc.horas)?esc(horasTxt(sc.horas))+'. ':'')+'Aparece no site de pedidos.</p></div>'+
+   '<label class="chkrow"><span>Abrir e fechar o site sozinho no horário<small class="hint" style="display:block;margin:2px 0 0">Deixe a chave do site ligada na aba Delivery: ele só recebe pedidos dentro do horário.</small></span><span class="sw"><input type="checkbox" data-act="sitehauto"'+(hz.auto?' checked':'')+'><span></span></span></label>'+
    '<div class="fld"><label for="sFone">WhatsApp do restaurante</label><input id="sFone" class="inp" data-field="site-fone" type="tel" inputmode="tel" maxlength="20" autocomplete="off" placeholder="(00) 00000-0000" value="'+esc(sc.fone)+'"><p class="hint">Aparece no site para o cliente falar com vocês.</p></div>'+
+   '<div class="fld"><label for="sInsta">Instagram</label><input id="sInsta" class="inp" data-field="site-insta" maxlength="60" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="@seu_perfil" value="'+(instaUser(sc.insta)?'@'+esc(instaUser(sc.insta)):'')+'"></div>'+
    '<div class="fld"><label for="sTempo">Tempo de entrega</label><input id="sTempo" class="inp" data-field="site-tempo" maxlength="20" autocomplete="off" placeholder="Ex.: 40 a 60 min" value="'+esc(sc.tempo)+'"></div>'+
    '<div class="fld"><label for="sMin">Pedido mínimo (R$)</label><input id="sMin" class="inp" data-field="site-min" inputmode="decimal" autocomplete="off" placeholder="0,00" value="'+(sc.min?esc(moneyStr(sc.min)):'')+'"></div>'+
-   '<div class="fld"><label for="sLocal">Endereço para retirada</label><input id="sLocal" class="inp" data-field="site-local" maxlength="100" autocomplete="off" placeholder="Rua, número, bairro" value="'+esc(sc.local)+'"></div>'+
-   '<div class="fld"><label for="sAviso">Aviso quando o site estiver fechado</label><input id="sAviso" class="inp" data-field="site-aviso" maxlength="120" autocomplete="off" placeholder="Ex.: Abrimos de terça a domingo, das 18h às 23h." value="'+esc(sc.aviso)+'"></div>'+
+   '<div class="fld"><label for="sLocal">Endereço do restaurante</label><input id="sLocal" class="inp" data-field="site-local" maxlength="100" autocomplete="off" placeholder="Rua, número, bairro" value="'+esc(sc.local)+'"><p class="hint">Aparece no site com o botão Ver no mapa. É também onde o cliente retira.</p></div>'+
+   '<div class="fld"><label for="sSobre">Frase de apresentação</label><input id="sSobre" class="inp" data-field="site-sobre" maxlength="90" autocomplete="off" placeholder="Ex.: Espetinhos, jantinha e hambúrguer" value="'+esc(sc.sobre||'')+'"><p class="hint">Aparece embaixo da logo, no topo do site.</p></div>'+
+   '<div class="fld"><label for="sAviso">Aviso quando o site estiver fechado</label><input id="sAviso" class="inp" data-field="site-aviso" maxlength="120" autocomplete="off" placeholder="Ex.: Hoje não abrimos. Voltamos amanhã!" value="'+esc(sc.aviso)+'"></div>'+
    '<div class="fld"><span class="lb">Pagamento aceito no site</span><div class="meth">'+['din','pix','car'].map(x=>'<button class="chip" data-act="sitepay" data-v="'+x+'" aria-pressed="'+sc.pay.includes(x)+'">'+methodName(x)+'</button>').join('')+'</div></div>'+
    '<p class="hint">A taxa de entrega é a mesma lá de cima. Para abrir e fechar o site, use a aba Delivery.</p></div>';
 }
 Object.assign(A,{
-  siteopen:el=>{saveSite({open:!!el.checked});toast(el.checked?'Site aberto: os clientes já podem pedir.':'Site fechado.')},
+  siteopen:el=>{saveSite({open:!!el.checked});const h=hrNorm(siteCfg().horas);toast(!el.checked?'Site fechado.':h&&h.auto&&!inHours(h)?'Site ligado. Agora está fora do horário: ele abre sozinho '+nextOpen(h)+'.':'Site aberto: os clientes já podem pedir.')},
   siteauto:el=>saveSite({auto:!!el.checked}),
+  sitedia:el=>{const h0=Object.assign({dias:[],abre:'18:00',fecha:'23:00',auto:true},siteCfg().horas||{}),d=+el.dataset.v,was=(h0.dias||[]).map(Number),ds=was.filter(x=>x!==d);if(ds.length===was.length)ds.push(d);else if(!ds.length){toast('Deixe pelo menos um dia aberto.');return}saveSite({horas:Object.assign({},h0,{dias:SEMANA.filter(x=>ds.includes(x))})})},
+  sitehauto:el=>{const h0=Object.assign({dias:[1,2,3,4,5,6],abre:'18:00',fecha:'23:00'},siteCfg().horas||{});saveSite({horas:Object.assign({},h0,{auto:!!el.checked})});toast(el.checked?'O site abre e fecha sozinho no horário.':'Agora o site abre e fecha só pela chave da aba Delivery.')},
+  sitehr:()=>{ui.gsub='ajustes';go('gerencia');setTimeout(()=>{const e=document.getElementById('sAbre');if(e)e.scrollIntoView({block:'center'})},80)},
   siteret:el=>saveSite({retirada:!!el.checked}),
   sitepay:el=>{const p=siteCfg().pay.slice(),v=el.dataset.v,i=p.indexOf(v);if(i>=0){if(p.length===1){toast('Deixe pelo menos uma forma de pagamento.');return}p.splice(i,1)}else p.push(v);saveSite({pay:['din','pix','car'].filter(x=>p.includes(x))})},
   sitecopy:()=>copyText(siteUrl(),'siteBox','Link copiado. Mande para os clientes no WhatsApp.'),
   siteqr:()=>{ui.siteQr=!ui.siteQr;render(true);if(ui.siteQr&&!ui.siteQrImg)loadQr().then(q=>{const qr=q(0,'M');qr.addData(siteUrl());qr.make();ui.siteQrImg=qr.createDataURL(6,8);render(true)}).catch(()=>{ui.siteQr=false;render(true);toast('Não consegui gerar o QR code agora.')})},
-  skin:el=>{const v=okSkin(el.dataset.v);if(v===skinNow())return;saveCfg({skin:v});toast('Tema '+SKINS[v]+' ligado em todos os aparelhos e no site.')},
-  fxdemo:el=>{const sk=skinNow();if(sk==='classico'){toast('O tema Clássico não tem animações. Escolha Espetaria ou Natal.');return}const s=fxSnap(el);const d=playFx(fxKind(sk,'ok'),s.r,s.rad);if(!d){toast('As animações estão desligadas neste aparelho (economia de movimento).');return}setTimeout(()=>{const e2=document.querySelector('[data-act="fxdemo"]'),s2=fxSnap(e2)||s;playFx(fxKind(sk,'saiu'),s2.r,s2.rad)},d+150)},
+  toque:el=>{const v=el.dataset.v;if(!TOQUE_NOMES.some(x=>x[0]===v))return;if(v!==toqueNow())saveCfg({toque:v});unlockAudio();if(!ui.sound){ui.sound=true;lsSet(LS.sound,'1')}setTimeout(()=>playToque(v,1),90)},
+  toquetest:()=>{unlockAudio();if(!ui.sound){ui.sound=true;lsSet(LS.sound,'1')}setTimeout(()=>playToque(toqueNow(),1),90)},
+  repetir:el=>{saveCfg({repetir:!!el.checked})},
+  notifon:()=>{try{Notification.requestPermission().then(()=>render(true))}catch(e){toast('Este celular não permite notificações do app.')}},
+  packer:el=>{const v=el.dataset.v;if(!STATIONS.includes(v)||v===packerSt())return;saveCfg({packer:v});toast('O pacote do delivery agora é montado na '+stName(v)+'.')},
+  skin:el=>{const v=okSkin(el.dataset.v);if(v===skinNow())return;saveCfg({skin:v});toast('Tema '+skinLabel(v)+' ligado em todos os aparelhos e no site.')},
+  fxdemo:el=>{const sk=skinNow();if(sk==='classico'){toast('O tema Clássico não tem animações. Escolha outro tema para ver.');return}const s=fxSnap(el);const d=playFx(fxKind(sk,'ok'),s.r,s.rad);if(!d){toast('As animações estão desligadas neste aparelho (economia de movimento).');return}setTimeout(()=>{const e2=document.querySelector('[data-act="fxdemo"]'),s2=fxSnap(e2)||s;playFx(fxKind(sk,'saiu'),s2.r,s2.rad)},d+150)},
   oacc:el=>{const s=fxSnap(el),oid=acceptOnline(el.dataset.id,false);if(!oid)return;
     const b=[...document.querySelectorAll('.dcard [data-id]')].find(x=>x.dataset.id===oid),c=b&&b.closest('.dcard');
     if(c){const r=c.getBoundingClientRect();playFx(fxKind(skinNow(),'ok'),{left:r.left,top:r.bottom-64,width:r.width,height:64},'0 0 14px 14px')}else if(s)playFx(fxKind(skinNow(),'ok'),s.r,s.rad)},
@@ -2510,7 +2709,7 @@ Object.assign(A,{
   orejx:()=>{ui.rejFor=null;render(true)},
   orejr:el=>rejectOnline(el.dataset.id,REJ[+el.dataset.i]||REJ[REJ.length-1])
 });
-document.addEventListener('change',e=>{const f=e.target.dataset&&e.target.dataset.field;if(!f||f.indexOf('site-')!==0)return;const k=f.slice(5),v=e.target.value.trim(),patch={};if(k==='min')patch.min=parseMoney(v);else patch[k]=v.slice(0,k==='aviso'?120:100);saveSite(patch)});
+document.addEventListener('change',e=>{const f=e.target.dataset&&e.target.dataset.field;if(!f||f.indexOf('site-')!==0)return;const k=f.slice(5),v=e.target.value.trim(),patch={};if(k==='min')patch.min=parseMoney(v);else if(k==='abre'||k==='fecha'){if(hrMin(v)==null){toast('Escolha um horário válido.');render(true);return}patch.horas=Object.assign({dias:[1,2,3,4,5,6],abre:'18:00',fecha:'23:00',auto:true},siteCfg().horas||{},{[k]:v})}else if(k==='insta')patch.insta=instaUser(v);else patch[k]=v.slice(0,k==='aviso'?120:k==='sobre'?90:100);saveSite(patch)});
 /* ---------- app fora do Claude: Firebase, convite e aparelhos ---------- */
 const FB_V='10.12.2';
 const RULES="rules_version = '2';\nservice cloud.firestore {\n  match /databases/{database}/documents {\n    function signedIn() { return request.auth != null; }\n    function isOwner() {\n      return signedIn()\n        && exists(/databases/$(database)/documents/meta/owner)\n        && get(/databases/$(database)/documents/meta/owner).data.uid == request.auth.uid;\n    }\n    function isDevice() {\n      return signedIn()\n        && exists(/databases/$(database)/documents/devices/$(request.auth.uid))\n        && get(/databases/$(database)/documents/devices/$(request.auth.uid)).data.ok == true;\n    }\n    function isTeam() { return isOwner() || isDevice(); }\n    function siteOpen() {\n      return exists(/databases/$(database)/documents/config/main)\n        && get(/databases/$(database)/documents/config/main).data.get('site', {}).get('open', false) == true;\n    }\n    function okOrder(d) {\n      return d.keys().hasOnly(['uid','status','at','day','tipo','nome','fone','end','bairro','ref','obs','pay','troco','items','sub','fee','total'])\n        && d.uid == request.auth.uid\n        && d.status == 'novo'\n        && d.tipo in ['entrega','retirada']\n        && d.nome is string && d.nome.size() > 0 && d.nome.size() <= 60\n        && d.fone is string && d.fone.size() <= 30\n        && d.end is string && d.end.size() <= 140\n        && d.get('bairro', '') is string && d.get('bairro', '').size() <= 60\n        && d.get('ref', '') is string && d.get('ref', '').size() <= 100\n        && d.get('obs', '') is string && d.get('obs', '').size() <= 100\n        && d.pay in ['din', 'pix', 'car']\n        && d.get('troco', 0) is number && d.get('sub', 0) is number && d.get('fee', 0) is number && d.get('total', 0) is number\n        && d.items is list && d.items.size() > 0 && d.items.size() <= 40;\n    }\n\n    // Quem é o dono: criado uma única vez, pela conta de e-mail e senha do dono.\n    match /meta/owner {\n      allow read: if signedIn();\n      allow create: if signedIn()\n        && request.auth.token.firebase.sign_in_provider == 'password'\n        && request.resource.data.uid == request.auth.uid;\n      allow update, delete: if false;\n    }\n\n    // Aparelhos da equipe: cada um pede acesso e só o dono libera.\n    match /devices/{uid} {\n      allow read: if signedIn() && (request.auth.uid == uid || isOwner());\n      allow create: if signedIn() && request.auth.uid == uid && request.resource.data.ok == false;\n      allow update, delete: if isOwner();\n    }\n\n    // Cardápio e ajustes: qualquer pessoa vê (o site de pedidos usa), só o dono muda.\n    match /menu/{id}   { allow read: if true; allow write: if isOwner(); }\n    match /config/{id} { allow read: if true; allow write: if isOwner(); }\n\n    // Mapa e logins: a equipe lê, só o dono muda.\n    match /layout/{id} { allow read: if isTeam(); allow write: if isOwner(); }\n    match /staff/{id}  { allow read: if isTeam(); allow write: if isOwner(); }\n\n    // Pedidos e mesas: toda a equipe liberada lê e lança.\n    match /orders/{id} { allow read, write: if isTeam(); }\n    match /tables/{id} { allow read, write: if isTeam(); }\n\n    // Controle de espetos: todos veem o que resta (o site marca \"esgotado\"), a equipe dá baixa, só o dono define as quantidades.\n    match /stock/{id}    { allow read: if true; allow write: if isOwner(); }\n    match /stocklog/{id} { allow read, create: if isTeam(); allow update, delete: if isOwner(); }\n\n    // Pedidos do site: o cliente cria o pedido com o site aberto e acompanha só o dele; o dono aceita ou recusa.\n    match /online/{id} {\n      allow create: if signedIn() && siteOpen() && okOrder(request.resource.data);\n      allow read: if isTeam() || (signedIn() && resource.data.uid == request.auth.uid);\n      allow update, delete: if isOwner();\n    }\n\n    // Faturamento e cancelamentos: só o dono.\n    match /sales/{id}  { allow read, write: if isOwner(); }\n    match /voids/{id}  { allow read, write: if isOwner(); }\n  }\n}\n";
@@ -2688,7 +2887,7 @@ function loadQr(){
 const dateBR=ms=>{const d=new Date(ms||Date.now());return pad(d.getDate())+'/'+pad(d.getMonth()+1)};
 
 /* telas de configuração e acesso */
-const accTop=t=>'<div class="lhead"><p class="eyebrow">'+esc(MARCA.rotulo)+'</p><h1 class="brand">'+esc(t||MARCA.nome)+'</h1></div>';
+const accTop=t=>'<div class="lhead">'+llogo()+'<p class="eyebrow">'+esc(MARCA.rotulo)+'</p><h1 class="brand">'+esc(t||MARCA.nome)+'</h1></div>';
 function viewNoConfig(){
   const f=ui.cfgForm||(ui.cfgForm={err:'',inv:''});
   return '<div class="login">'+accTop('Configurar o app')+'<p class="lead" style="text-align:center">Os aparelhos do restaurante conversam por um banco de dados gratuito do Google (Firebase), criado com o seu Gmail. A equipe não precisa de conta.</p>'+installHtml()+

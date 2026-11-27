@@ -1,6 +1,6 @@
 /* Salão PDV: guarda o app no aparelho para abrir rápido e funcionar sem internet. */
-const CACHE='salao-pdv-52ef6b69';
-const SHELL=["./", "./index.html", "./manifest.webmanifest?v=a448a9be", "./icon-192.png?v=a448a9be", "./icon-512.png?v=a448a9be", "./icon-maskable-512.png?v=a448a9be", "./apple-touch-icon.png?v=a448a9be"];
+const CACHE='salao-pdv-2a09b2b3';
+const SHELL=["./", "./index.html", "./manifest.webmanifest?v=f6fc060c", "./icon-192.png?v=f6fc060c", "./icon-512.png?v=f6fc060c", "./icon-maskable-512.png?v=f6fc060c", "./apple-touch-icon.png?v=f6fc060c", "./logo.webp?v=f6fc060c"];
 const EXTERNAL=['www.gstatic.com','fonts.googleapis.com','fonts.gstatic.com','cdnjs.cloudflare.com'];
 
 self.addEventListener('install',e=>{
@@ -8,6 +8,10 @@ self.addEventListener('install',e=>{
 });
 self.addEventListener('activate',e=>{
   e.waitUntil(caches.keys().then(ks=>Promise.all(ks.filter(k=>k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim()));
+});
+self.addEventListener('notificationclick',e=>{
+  e.notification.close();
+  e.waitUntil(self.clients.matchAll({type:'window',includeUncontrolled:true}).then(cs=>{const c=cs.find(x=>'focus' in x);return c?c.focus():self.clients.openWindow('./')}));
 });
 self.addEventListener('fetch',e=>{
   const req=e.request;
